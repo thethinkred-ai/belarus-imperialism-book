@@ -1,0 +1,1880 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" id="viewport" content="width=device-width, user-scalable=no">
+    <base href="https://www.nbrb.by/" />
+
+<title>404 - страница не найдена / 404 - старонка не знойдзена / 404 - page cannot be found | Национальный банк Республики Беларусь</title>
+<meta name="description" content="*" />
+<meta name="keywords" content="*" />
+    
+    <meta property="og:title" content="" />
+    <meta property="og:image" content="/img/nbrb5.png" />
+    <meta property="og:image" content="/img/nbrb6.png" />
+    <meta property="og:description" content="" />
+    <meta property="og:site_name" content="" />
+
+    <script src="/js/cookie-policy.js?v=T0TedKf0IhyZrhCg45ScqBCyulw"></script>
+    <script>
+        function chooseVersion() {
+            if (window.Cookies.get('gain') == 'true' || sessionStorage.getItem('gain') == 'true') {
+                toggleGain();
+            }
+
+            document.querySelector('body').classList.remove('hidden-body');
+        }
+
+        window.onload = chooseVersion;
+    </script>
+
+    <script src="/js/constructor?v=Vsb3gB7z4X_DinZls-HlYdhcvfk"></script>
+    <script src="/js/polyfills.js?v=Hb8DOkMZeowv1VpYtVdExvOjDOM"></script>
+    <!--[if lt IE 9]>
+        <script src="~/js/lib/html5shiv"></script>
+    <![endif]-->
+    <script src="/js/jquery?v=WSawEReWqxSUNkPw77HFmxFc-cc"></script>
+    <link rel="stylesheet" href="/lib/sweetalert2/sweetalert2.min.css" />
+    <link rel="stylesheet" href="/css/top?v=xn82mxhyZQUqWujD6Nom5_BMooY" />
+    <link rel="stylesheet" href="/css/fontawesome?v=5u2tYHp8e3cUNLbNz0MkyILaDAw" />
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" href="~/css/ie" />
+    <![endif]-->
+    
+
+    <script src="/js/metrika.js?v=yTDF9WQFLbx61YUfRnDYjSdk8LI"></script>
+
+
+
+    <link rel="stylesheet" href="/css/addprint?v=UvJuR3QGKQVlsCuidhdBKGgbhf8" />
+</head>
+<body class=" hidden-body">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K39GH9D"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- Yandex.Metrika counter -->
+    <noscript><div><img src="https://mc.yandex.ru/watch/48821606" style="position:absolute; left:-9999px;" alt="48821606" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+    <link rel="stylesheet" href="/css/bottom?v=u7Xbg_WMRWMkPCFdC0Hsg5XfvTI" />
+    <script>
+        document.body.className += ' js';
+    </script>
+    <div class="page-wrap">
+        <header class="l-header">
+            <div class="topnav__aside">
+                <div class="b-feedback">
+                    <a style="text-decoration: none;" href="https://rcfnew.nbrb.by/NBRBApplications" title="Электронные обращения">
+                        <svg class="svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                             viewBox="134 291.1 400 410.7" enable-background="new 134 291.1 400 410.7" xml:space="preserve">
+                        <path fill="#FFFFFF" d="M219.7,401.1c-10.4,0-20.1,4.1-27.3,11.4c-7.3,7.3-11.2,17.1-11.2,27.4c0.1,21.1,17.3,38.3,38.5,38.3h0
+								c0,0,0,0,0,0c10.3,0,20-4,27.3-11.4c7.3-7.4,11.3-17.1,11.2-27.5C258.1,418.3,240.9,401.1,219.7,401.1z M232.8,452.8
+								c-3.5,3.5-8.2,5.5-13.1,5.5v10l0-10c-10.2,0-18.5-8.2-18.5-18.4c0-5,1.9-9.8,5.4-13.3c3.5-3.5,8.2-5.5,13.3-5.5
+								c10.1,0,18.4,8.3,18.5,18.4C238.3,444.5,236.4,449.2,232.8,452.8z M526.2,303.9c-4.9-7.2-12.7-10.4-20.8-12.8
+								c-114.3,0-228.6,0-342.9,0c-5.5,2.8-11.5,4.9-16.5,8.4c-6.9,4.7-9.7,12.4-12,20.2c0,80,0,160,0,240c0.3,0.7,0.7,1.4,0.9,2.1
+								c4.2,16.2,17.2,26.4,34,26.4c23.3,0,46.7,0,70,0c33.8,0,67.6,0,101.3-0.1c0,0,0,0,0,0c3.6,0,6.1,1,8.7,3.5
+								c35.2,35.3,70.5,70.5,105.7,105.7c1.3,1.3,2.4,2.9,3.6,4.4c0.5-0.2,1-0.5,1.4-0.7c-3.8-37.5-7.6-74.9-11.4-112.9c6.1,0,12,0,17.8,0 c2.9,0,5.8,0,8.7,0c0,0,0,0,0.1,0c4.9,0,9.8,0,14.7,0c3,0,6,0,9,0c17.4-0.1,30.1-10,34.6-26.9c0.2-0.6,0.5-1.1,0.8-1.6 c0-80,0-160,0-240C531.4,314.4,529.4,308.7,526.2,303.9z M514,555.7c-0.1,0.2-0.1,0.4-0.2,0.6c-2.2,8.2-7,12-15.3,12c-3,0-6,0-9,0 c-2.4,0-4.9,0-7.3,0c-2.5,0-4.9,0-7.4,0h-0.1h-8.7h-17.8h-22.1l2.2,22l5.9,58.5c-23.3-23.3-47.5-47.4-71.2-71.2 c-6.2-6.2-13.9-9.4-22.9-9.4h-0.1h0c-31.5,0.1-64.6,0.1-101.3,0.1c-23.3,0-46.7,0-70,0c-7.6,0-12.7-4-14.7-11.5 c-0.1-0.3-0.2-0.6-0.3-0.9V322.8c0.9-2.6,2.2-5.9,3.4-6.8c2-1.4,5.1-2.8,8.3-4.3c0.5-0.2,0.9-0.4,1.4-0.6h335.4 c3,1,6.1,2.3,7.2,3.9c1.3,1.9,2.5,4.7,3.8,7.7c0.2,0.4,0.4,0.9,0.6,1.3V555.7z M448.3,401.1c-21.1,0-38.4,17.2-38.6,38.2
+								c-0.1,10.4,3.9,20.2,11.2,27.5c7.3,7.3,17,11.4,27.3,11.4h0c21.1,0,38.4-17.2,38.6-38.3c0.1-10.4-3.9-20.1-11.2-27.5
+								C468.3,405.2,458.6,401.1,448.3,401.1z M448.3,458.3v4.3c0,0,0,0,0,0L448.3,458.3c-5,0-9.6-1.9-13.1-5.5c-3.5-3.5-5.4-8.3-5.4-13.3 c0.1-10.1,8.4-18.4,18.6-18.4c5,0,9.6,1.9,13.2,5.5c3.5,3.5,5.4,8.3,5.4,13.3C466.8,450,458.4,458.3,448.3,458.3z M334,401.1 l-0.2,0c-21.1,0-38.3,17.1-38.5,38c-0.1,10.5,3.9,20.3,11.1,27.7c7.2,7.3,16.8,11.4,27.1,11.4h0.2c0,0,0,0,0,0 c10.3,0,20-4,27.3-11.4c7.3-7.3,11.3-17,11.3-27.2C372.4,418.5,355.2,401.2,334,401.1z M347,452.7c-3.6,3.6-8.2,5.5-13.2,5.5
+								c0,0,0,0,0,0h-0.1c-4.9,0-9.5-2-13-5.4c-3.5-3.6-5.4-8.3-5.4-13.5c0.1-10,8.4-18.2,18.5-18.2l0.1,0c10.2,0.1,18.5,8.4,18.5,18.5
+								C352.4,444.6,350.5,449.2,347,452.7z" />
+                        <text visibility="hidden">Электронные обращения</text>
+						</svg>
+                        <span class="hide-1024"><span class="hide-1295">Электронные</span> <span>обращения</span></span>
+                    </a>
+                </div>
+                <div id="open_search_Btn" onclick="this.className += 'hide_class'">
+                    <svg class="svg" height="32px" version="1.1" viewBox="0 0 32 32" width="32px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><title /><desc /><defs /><g fill="none" fill-rule="evenodd" stroke="none" stroke-width="1"><g fill="#929292"><path d="M19.4271164,21.4271164 C18.0372495,22.4174803 16.3366522,23 14.5,23 C9.80557939,23 6,19.1944206 6,14.5 C6,9.80557939 9.80557939,6 14.5,6 C19.1944206,6 23,9.80557939 23,14.5 C23,16.3366522 22.4174803,18.0372495 21.4271164,19.4271164 L27.0119176,25.0119176 C27.5621186,25.5621186 27.5575313,26.4424687 27.0117185,26.9882815 L26.9882815,27.0117185 C26.4438648,27.5561352 25.5576204,27.5576204 25.0119176,27.0119176 L19.4271164,21.4271164 L19.4271164,21.4271164 Z M14.5,21 C18.0898511,21 21,18.0898511 21,14.5 C21,10.9101489 18.0898511,8 14.5,8 C10.9101489,8 8,10.9101489 8,14.5 C8,18.0898511 10.9101489,21 14.5,21 L14.5,21 Z" /></g></g><text visibility="hidden">Поиск по сайту</text></svg>
+                </div>
+                <div class="b-search b-search_header">
+                    <form action="/search" method="get" class="search-form">
+                        <div id="close_search_Btn" onclick="document.getElementById('open_search_Btn').classList.remove('hide_class')">✖</div>
+                        <div class="search__submit">
+                            <input type="submit" value="">
+                            <svg class="svg" height="32px" version="1.1" viewBox="0 0 32 32" width="32px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><title /><desc /><defs /><g fill="none" fill-rule="evenodd" stroke="none" stroke-width="1"><g fill="#929292"><path d="M19.4271164,21.4271164 C18.0372495,22.4174803 16.3366522,23 14.5,23 C9.80557939,23 6,19.1944206 6,14.5 C6,9.80557939 9.80557939,6 14.5,6 C19.1944206,6 23,9.80557939 23,14.5 C23,16.3366522 22.4174803,18.0372495 21.4271164,19.4271164 L27.0119176,25.0119176 C27.5621186,25.5621186 27.5575313,26.4424687 27.0117185,26.9882815 L26.9882815,27.0117185 C26.4438648,27.5561352 25.5576204,27.5576204 25.0119176,27.0119176 L19.4271164,21.4271164 L19.4271164,21.4271164 Z M14.5,21 C18.0898511,21 21,18.0898511 21,14.5 C21,10.9101489 18.0898511,8 14.5,8 C10.9101489,8 8,10.9101489 8,14.5 C8,18.0898511 10.9101489,21 14.5,21 L14.5,21 Z" /></g></g><text visibility="hidden">Поиск по сайту</text></svg>
+                        </div>
+                        <input type="search" name="KeyWords" class="search__input js-search-header-input" placeholder="Поиск по сайту" maxlength="128" autocomplete="off">
+                    </form>
+                </div>
+                <div class="topnav__gain">
+                    <a href="#" rel="nofollow" title="Версия для слабовидящих" class="js-topnav-gain">
+                        <svg class="svg" height="6.1433mm" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" viewBox="0 0 278 212" width="8.0433mm" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path class="fil0" d="M94 118c-8,-7 -18,-12 -29,-12 -12,0 -22,5 -29,12 -6,5 -9,12 -11,20l0 0c-1,3 -1,6 -1,9 0,12 4,22 12,29 7,8 17,13 29,13 11,0 21,-5 29,-13 7,-7 12,-17 12,-29 0,-11 -5,-21 -12,-29zm148 0c-7,-7 -18,-12 -29,-12 -11,0 -22,5 -29,12 -8,8 -12,18 -12,29 0,12 4,22 12,29 7,8 18,13 29,13 11,0 22,-5 29,-13 7,-7 12,-17 12,-29 0,-11 -5,-21 -12,-29zm-177 -35c17,0 33,6 45,18 19,12 39,12 58,-1 12,-11 28,-17 45,-17 15,0 29,5 40,14l0 -63c0,-2 -1,-5 -3,-7l-1 -1c-1,-1 -3,-2 -4,-2l-36 0c-7,0 -12,-6 -12,-12 0,-7 5,-12 12,-12l36 0c8,0 15,4 21,10 1,0 1,1 1,1 6,6 10,15 10,23l0 101c0,1 0,1 0,1 0,4 1,8 1,11 0,18 -8,34 -19,46 -12,12 -28,19 -46,19 -18,0 -34,-7 -46,-19 -11,-11 -18,-25 -19,-42l0 0 0 0c0,-1 0,-2 0,-4l0 -1c-2,-10 -17,-11 -18,3 -1,17 -8,33 -19,44 -12,12 -28,19 -46,19 -18,0 -34,-7 -46,-19 -12,-12 -19,-28 -19,-46 0,-4 0,-9 1,-13l0 -100c0,-8 4,-17 10,-23 0,0 1,-1 1,-1 6,-6 14,-10 22,-10l35 0c7,0 12,5 12,12 0,6 -5,12 -12,12l-35 0c-2,0 -3,1 -5,2l0 1c-3,2 -4,5 -4,7l0 62c11,-8 25,-13 40,-13z" /><text visibility="hidden">Версия для слабовидящих</text></svg>
+                        <span class="hide-1400">Версия для слабовидящих</span>
+                    </a>
+                </div>
+                <div class="topnav__gain gain-off">
+                    <a href="#" rel="nofollow" title="Обычная версия" class="js-topnav-gain">
+                        <svg class="svg" enable-background="new 0 0 512 512" height="512px" id="Layer_1" version="1.1" viewBox="0 0 512 512" width="512px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M255.991,206.416c-26.52,0-48.092,21.57-48.092,48.08c0,26.532,21.572,48.12,48.092,48.12  c26.535,0,48.121-21.588,48.121-48.12C304.112,227.986,282.526,206.416,255.991,206.416 M255.991,117.315  C128.445,117.315,0,256.001,0,256.001s128.445,138.684,255.991,138.684C383.554,394.685,512,256.001,512,256.001  S383.554,117.315,255.991,117.315 M255.991,352.665c-54.2,0-98.142-43.899-98.142-98.169c0-54.2,43.942-98.128,98.142-98.128  c54.228,0,98.17,43.928,98.17,98.128C354.161,308.766,310.219,352.665,255.991,352.665" /><text visibility="hidden">Обычная версия</text></svg>
+                        <span class="hide-1400">Обычная версия</span>
+                    </a>
+                </div>
+                <ul class="topnav__lang">
+                    <li>
+                        <a id="current-lang" href="/Home/ErrorCode/404" >RU</a>
+                        <script>document.getElementById('current-lang').href = location.pathname + location.search;</script>
+                        <ul>
+                                <li><a href="/bel" class="js-cookie-lang" onclick="setLanguage('bel')">BE</a></li>
+                                <li><a href="/engl" class="js-cookie-lang" onclick="setLanguage('engl')">EN</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="menu-button js-menu-toggle">
+                <div class="ico-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+
+            <a href="/" class="logo">
+                <img src="/i/logo.svg" alt="Национальный банк Республики Беларусь, Главная" class="is-color">
+                <img src="/i/logo-gray.svg" alt="Национальный банк Республики Беларусь, Главная" class="is-gray">
+            </a>
+
+            <div class="topnav__arm"><img src="/i/arm.png" alt="arm.png" class="is-color"><img src="/i/arm-gray.png" alt="arm-gray.png" class="is-gray"></div>
+                <div class="topnav__phone">
+                    <button class="topnav__phone-btn">
+                        <svg class="svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                             viewBox="134 291.1 400 410.7" enable-background="new 134 291.1 400 410.7" xml:space="preserve">
+                        <path d="M442.4,696.6c-1.9,0-3.8-0.1-6-0.2c-24.5-1.7-49.3-8.9-80.1-23.6c-54.7-26.7-102.4-64.1-141.9-111.1
+							l-0.1-0.1c-31.5-37.7-54.5-76.2-68.4-114.4c-6.9-18.9-13.6-41.7-11.6-66.5l0-0.1c0.7-15.4,7.2-29.3,18.8-40.2l31.1-31.1
+							c8.4-8.4,18.3-12.8,28.7-12.8c10.3,0,20.4,4.4,29,12.6c5.7,5.3,11.3,11,16.7,16.6l1.3,1.4c2.4,2.4,4.8,4.9,7.3,7.4l24.6,24.6
+							c17.7,18.5,17.8,40.5,0.1,58.9c-5.4,5.4-10.7,10.6-15.9,15.5l-0.8,0.8c-4.1,4-8.4,8.1-12.6,12.3l-1.5,1.5l0.9,2
+							c5.4,12.3,13.3,24.4,25.5,39.2c25.1,30.5,49.3,52.5,76.3,69.2l0.5,0.3c3.5,2.5,7.9,4.6,12.1,6.7c1.2,0.6,2.4,1.2,3.5,1.8l2,1
+							l30.7-30.7c8.4-8.4,18.4-12.8,28.9-12.8c10.5,0,20.5,4.4,28.9,12.8l50.3,50.4c17.5,17.5,17.5,41,0,58.4c-2.9,2.9-5.7,5.6-8.5,8.4
+							l-1.3,1.3c-6.5,6.4-12.7,12.4-18.8,18.9l-0.1,0.1C479.7,689.3,463,696.6,442.4,696.6z M152.7,381.8c-1.8,21.7,4,41.2,10.5,59.1
+							c13.2,36.2,35.2,72.9,65.3,109c37.8,45,83.5,80.8,135.8,106.3c28.6,13.6,51.2,20.3,73.3,21.8c1.7,0.1,3.3,0.2,4.9,0.2
+							c15.1,0,26.9-5,36-15.4c6.7-7.1,13.5-13.8,19.6-19.7l1-1c2.9-2.8,5.8-5.7,8.7-8.6c5.2-5.2,7.9-10.7,7.9-16.2
+							c0-5.5-2.7-11-7.9-16.2l-50.3-50.3c-4.8-4.8-10.3-7.3-15.9-7.3c-5.6,0-11.1,2.5-15.9,7.3l-31.3,31.3c-1.7,1.7-5.6,5.6-11.5,5.6
+							c-2.4,0-5-0.7-7.7-2c-2.4-1.3-4.4-2.3-6.4-3.3l-0.5-0.3c-4.8-2.4-9.7-4.9-14.2-8l-0.1-0.1c-28.6-17.8-54.3-41-80.6-73
+							c-14.4-17.5-23.5-32.1-29.7-47.2c-3.8-9.4,0.9-15.4,4.1-18.2l0.1-0.1l0.1-0.1c4.9-4.9,9.9-9.8,14.8-14.5l0.7-0.6
+							c5.1-4.9,10.3-10,15.5-15.2c10.7-11.1,10.6-22-0.1-33.2l-24.4-24.4c-2.9-2.9-5.8-5.8-8.5-8.7c-5.6-5.7-10.8-11.1-16.4-16.3
+							c-5.3-5.1-10.9-7.7-16.4-7.7c-5.5,0-10.7,2.5-15.6,7.4L166,353.5C157.7,361.3,153.2,370.8,152.7,381.8z" />
+					</svg>
+                    </button>
+
+                    <div class="topnav__phone-numbers">
+                        <div class="topnav__phone-number">
+                            <a class="topnav__phone-link" href="tel:+375173752002" title="Контакт-центр">
+                                <svg class="topnav__phone-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                     viewBox="134 291.1 400 410.7" enable-background="new 134 291.1 400 410.7" xml:space="preserve">
+                                <path d="M442.4,696.6c-1.9,0-3.8-0.1-6-0.2c-24.5-1.7-49.3-8.9-80.1-23.6c-54.7-26.7-102.4-64.1-141.9-111.1
+							    l-0.1-0.1c-31.5-37.7-54.5-76.2-68.4-114.4c-6.9-18.9-13.6-41.7-11.6-66.5l0-0.1c0.7-15.4,7.2-29.3,18.8-40.2l31.1-31.1
+							    c8.4-8.4,18.3-12.8,28.7-12.8c10.3,0,20.4,4.4,29,12.6c5.7,5.3,11.3,11,16.7,16.6l1.3,1.4c2.4,2.4,4.8,4.9,7.3,7.4l24.6,24.6
+							    c17.7,18.5,17.8,40.5,0.1,58.9c-5.4,5.4-10.7,10.6-15.9,15.5l-0.8,0.8c-4.1,4-8.4,8.1-12.6,12.3l-1.5,1.5l0.9,2
+							    c5.4,12.3,13.3,24.4,25.5,39.2c25.1,30.5,49.3,52.5,76.3,69.2l0.5,0.3c3.5,2.5,7.9,4.6,12.1,6.7c1.2,0.6,2.4,1.2,3.5,1.8l2,1
+							    l30.7-30.7c8.4-8.4,18.4-12.8,28.9-12.8c10.5,0,20.5,4.4,28.9,12.8l50.3,50.4c17.5,17.5,17.5,41,0,58.4c-2.9,2.9-5.7,5.6-8.5,8.4
+							    l-1.3,1.3c-6.5,6.4-12.7,12.4-18.8,18.9l-0.1,0.1C479.7,689.3,463,696.6,442.4,696.6z M152.7,381.8c-1.8,21.7,4,41.2,10.5,59.1
+							    c13.2,36.2,35.2,72.9,65.3,109c37.8,45,83.5,80.8,135.8,106.3c28.6,13.6,51.2,20.3,73.3,21.8c1.7,0.1,3.3,0.2,4.9,0.2
+							    c15.1,0,26.9-5,36-15.4c6.7-7.1,13.5-13.8,19.6-19.7l1-1c2.9-2.8,5.8-5.7,8.7-8.6c5.2-5.2,7.9-10.7,7.9-16.2
+							    c0-5.5-2.7-11-7.9-16.2l-50.3-50.3c-4.8-4.8-10.3-7.3-15.9-7.3c-5.6,0-11.1,2.5-15.9,7.3l-31.3,31.3c-1.7,1.7-5.6,5.6-11.5,5.6
+							    c-2.4,0-5-0.7-7.7-2c-2.4-1.3-4.4-2.3-6.4-3.3l-0.5-0.3c-4.8-2.4-9.7-4.9-14.2-8l-0.1-0.1c-28.6-17.8-54.3-41-80.6-73
+							    c-14.4-17.5-23.5-32.1-29.7-47.2c-3.8-9.4,0.9-15.4,4.1-18.2l0.1-0.1l0.1-0.1c4.9-4.9,9.9-9.8,14.8-14.5l0.7-0.6
+							    c5.1-4.9,10.3-10,15.5-15.2c10.7-11.1,10.6-22-0.1-33.2l-24.4-24.4c-2.9-2.9-5.8-5.8-8.5-8.7c-5.6-5.7-10.8-11.1-16.4-16.3
+							    c-5.3-5.1-10.9-7.7-16.4-7.7c-5.5,0-10.7,2.5-15.6,7.4L166,353.5C157.7,361.3,153.2,370.8,152.7,381.8z" />
+					    </svg>
+                                &#x2B;375 (17) 375 20 02 (городской)
+                            </a>
+                        </div>
+                        <div class="topnav__phone-number">
+                            <a class="topnav__phone-link" href="tel:+375339001155" title="Контакт-центр">
+                                <svg class="topnav__phone-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                     viewBox="134 291.1 400 410.7" enable-background="new 134 291.1 400 410.7" xml:space="preserve">
+                                <path d="M442.4,696.6c-1.9,0-3.8-0.1-6-0.2c-24.5-1.7-49.3-8.9-80.1-23.6c-54.7-26.7-102.4-64.1-141.9-111.1
+							    l-0.1-0.1c-31.5-37.7-54.5-76.2-68.4-114.4c-6.9-18.9-13.6-41.7-11.6-66.5l0-0.1c0.7-15.4,7.2-29.3,18.8-40.2l31.1-31.1
+							    c8.4-8.4,18.3-12.8,28.7-12.8c10.3,0,20.4,4.4,29,12.6c5.7,5.3,11.3,11,16.7,16.6l1.3,1.4c2.4,2.4,4.8,4.9,7.3,7.4l24.6,24.6
+							    c17.7,18.5,17.8,40.5,0.1,58.9c-5.4,5.4-10.7,10.6-15.9,15.5l-0.8,0.8c-4.1,4-8.4,8.1-12.6,12.3l-1.5,1.5l0.9,2
+							    c5.4,12.3,13.3,24.4,25.5,39.2c25.1,30.5,49.3,52.5,76.3,69.2l0.5,0.3c3.5,2.5,7.9,4.6,12.1,6.7c1.2,0.6,2.4,1.2,3.5,1.8l2,1
+							    l30.7-30.7c8.4-8.4,18.4-12.8,28.9-12.8c10.5,0,20.5,4.4,28.9,12.8l50.3,50.4c17.5,17.5,17.5,41,0,58.4c-2.9,2.9-5.7,5.6-8.5,8.4
+							    l-1.3,1.3c-6.5,6.4-12.7,12.4-18.8,18.9l-0.1,0.1C479.7,689.3,463,696.6,442.4,696.6z M152.7,381.8c-1.8,21.7,4,41.2,10.5,59.1
+							    c13.2,36.2,35.2,72.9,65.3,109c37.8,45,83.5,80.8,135.8,106.3c28.6,13.6,51.2,20.3,73.3,21.8c1.7,0.1,3.3,0.2,4.9,0.2
+							    c15.1,0,26.9-5,36-15.4c6.7-7.1,13.5-13.8,19.6-19.7l1-1c2.9-2.8,5.8-5.7,8.7-8.6c5.2-5.2,7.9-10.7,7.9-16.2
+							    c0-5.5-2.7-11-7.9-16.2l-50.3-50.3c-4.8-4.8-10.3-7.3-15.9-7.3c-5.6,0-11.1,2.5-15.9,7.3l-31.3,31.3c-1.7,1.7-5.6,5.6-11.5,5.6
+							    c-2.4,0-5-0.7-7.7-2c-2.4-1.3-4.4-2.3-6.4-3.3l-0.5-0.3c-4.8-2.4-9.7-4.9-14.2-8l-0.1-0.1c-28.6-17.8-54.3-41-80.6-73
+							    c-14.4-17.5-23.5-32.1-29.7-47.2c-3.8-9.4,0.9-15.4,4.1-18.2l0.1-0.1l0.1-0.1c4.9-4.9,9.9-9.8,14.8-14.5l0.7-0.6
+							    c5.1-4.9,10.3-10,15.5-15.2c10.7-11.1,10.6-22-0.1-33.2l-24.4-24.4c-2.9-2.9-5.8-5.8-8.5-8.7c-5.6-5.7-10.8-11.1-16.4-16.3
+							    c-5.3-5.1-10.9-7.7-16.4-7.7c-5.5,0-10.7,2.5-15.6,7.4L166,353.5C157.7,361.3,153.2,370.8,152.7,381.8z" />
+					    </svg>
+                                &#x2B;375 (33) 900 11 55 (МТС)
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+        </header>
+        <div class="l-layout">
+            <div class="page-layout">
+    <main class="page-main usercontent">
+        <br />
+        <h1>
+            404 - страница не найдена
+        </h1>
+        <p>
+            К сожалению, запрашиваемая Вами страница не найдена на нашем сайте. О несуществующей странице Вы можете сообщить администрации интернет-сайта по электронной
+            почте: <span class="email">email@nbrb.by</span>
+        </p>
+        <a href="/search/map.aspx">
+            <i class="fa fa-sitemap" aria-hidden="true"></i>
+        </a> <a href="/search/map.aspx">
+            Карта
+            сайта
+        </a>
+        <br>
+        <hr>
+        <h1>
+            404 - старонка не знойдзена
+        </h1>
+        <p>
+            На жаль, старонка, якую Вы запыталі, не знойдзена на нашым сайце. Пра адсутную старонку Вы можаце паведаміць адміністрацыі інтэрнэт-сайта па электроннай
+            пошце: <span class="email">email@nbrb.by</span>
+        </p>
+        <a href="/bel/search/map.aspx">
+            <i class="fa fa-sitemap" aria-hidden="true"></i>
+        </a> <a href="/bel/search/map.aspx">
+            Карта
+            сайта
+        </a>
+        <br>
+        <hr>
+        <h1>
+            404 - page cannot be found
+        </h1>
+        <p>
+            Sorry, the requested page was not found.
+            To inform the site’s administration of the nonexistent page please send an e-mail
+            to: <span class="email">email@nbrb.by</span>
+        </p>
+        <a href="/engl/search/map.aspx">
+            <i class="fa fa-sitemap" aria-hidden="true"></i>
+        </a> <a href="/engl/search/map.aspx">Site map</a>
+    </main>
+</div>
+
+            <footer class="l-footer bg--red">
+                <div class="footer-in flex-row">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                        <div class="foot__menu">
+                            <ul>
+<li><a href="today/about/general">О банке</a></li>
+<li><a href="today/faq">FAQ</a></li>
+<li><a href="search/map.aspx">Карта сайта</a></li>
+<li><a href="today/personnel/careerinbank">Вакансии</a></li>
+<li><a href="today/services">Операции</a></li>
+<li><a href="today/about/privacy_policy">Политика в отношении обработки персональных данных</a></li>
+<li><a href="today/about/cookies_policy">Политика в отношении обработки cookie-файлов на интернет-сайте Национального банка</a></li>
+</ul>
+                        </div>
+                        <div class="b-search">
+                            <form action="/search" method="get">
+                                <div class="search__submit">
+                                    <input type="submit" value="">
+                                    <svg class="svg" height="32px" version="1.1" viewBox="0 0 32 32" width="32px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><title /><desc /><defs /><g fill="none" fill-rule="evenodd" stroke="none" stroke-width="1"><g fill="#929292"><path d="M19.4271164,21.4271164 C18.0372495,22.4174803 16.3366522,23 14.5,23 C9.80557939,23 6,19.1944206 6,14.5 C6,9.80557939 9.80557939,6 14.5,6 C19.1944206,6 23,9.80557939 23,14.5 C23,16.3366522 22.4174803,18.0372495 21.4271164,19.4271164 L27.0119176,25.0119176 C27.5621186,25.5621186 27.5575313,26.4424687 27.0117185,26.9882815 L26.9882815,27.0117185 C26.4438648,27.5561352 25.5576204,27.5576204 25.0119176,27.0119176 L19.4271164,21.4271164 L19.4271164,21.4271164 Z M14.5,21 C18.0898511,21 21,18.0898511 21,14.5 C21,10.9101489 18.0898511,8 14.5,8 C10.9101489,8 8,10.9101489 8,14.5 C8,18.0898511 10.9101489,21 14.5,21 L14.5,21 Z" /></g></g><text visibility="hidden">Поиск по сайту</text></svg>
+                                </div>
+                                <input type="search" name="KeyWords" class="search__input" placeholder="Поиск по сайту" maxlength="128" autocomplete="off">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                        <div class="footer__heading">Контактная информация</div>
+<p>Пр-т Независимости, 20, 220008, г.Минск, Республика Беларусь</p>
+<p>Время работы: <br />понедельник &ndash; четверг 8:30 &ndash; 17:30 <br />пятница 8:30 &ndash; 16:15</p>
+<p style="display: flex; flex-direction: column;">Контакт-центр: <a href="tel:+375173752002" rel="nofollow">+375 (17) 375 20 02 (городской)</a> <a href="tel:+375339001155" rel="nofollow">+375 (33) 900 11 55 (МТС)</a></p>
+<p>Электронная почта: <a href="mailto:email@nbrb.by" rel="nofollow">email@nbrb.by</a></p>
+<p>Единый портал финансовой грамотности:<br /><a class="fingramota" href="http://fingramota.by" target="_blank" rel="noopener">fingramota.by</a></p>
+<p>Сайт Музея денег:<br /><a class="fingramota" href="https://moneymuseum.by/ru/" target="_blank" rel="noopener">moneymuseum.by</a></p>
+<ul class="socials socials--vertical">
+<li class="social"><a href="https://t.me/pressnbrb" target="_blank" rel="noopener"><span class="ico"><i class="fa fa-telegram" aria-hidden="true" style="margin: 8px;"></i> </span> <span> Telegram</span></a></li>
+<li class="social"><a href="https://www.facebook.com/press.nbrb/" target="_blank" rel="noopener"> <span class="ico"><svg xmlns="http://www.w3.org/2000/svg" class="svg" viewbox="0 0 24 24" width="24px" height="24px" baseprofile="tiny" version="1.2" xmlns:xml="http://www.w3.org/XML/1998/namespace" xml:space="preserve" xmlns:ns1="" ns1:xmlns:xml="http://www.w3.org/XML/1998/namespace"><path d="M 13 10 h 3 v 3 h -3 v 7 h -3 v -7 H 7 v -3 h 3 V 8.745 c 0 -1.189 0.374 -2.691 1.118 -3.512 C 11.862 4.41 12.791 4 13.904 4 H 16 v 3 h -2.1 C 13.402 7 13 7.402 13 7.899 V 10 Z"></path></svg></span> <span>Facebook</span> </a></li>
+<li class="social"><a href="https://vk.com/press.nbrb" target="_blank" rel="noopener"> <span class="ico"><svg xmlns="http://www.w3.org/2000/svg" class="svg" id="Layer_21" viewbox="0 0 24 24" width="24" height="24"><path d="M 21.5474 7 H 18.2569 a 0.74281 0.74281 0 0 0 -0.65452 0.39156 s -1.31237 2.41693 -1.73392 3.231 C 14.7344 12.8125 14 12.125 14 11.1086 V 7.60417 A 1.10417 1.10417 0 0 0 12.8958 6.5 h -2.474 a 1.9818 1.9818 0 0 0 -1.751 0.8125 s 1.25626 -0.20312 1.25626 1.48958 c 0 0.41974 0.02162 1.62723 0.04132 2.64 a 0.72943 0.72943 0 0 1 -1.273 0.50431 a 21.5403 21.5403 0 0 1 -2.4982 -4.54359 A 0.69314 0.69314 0 0 0 5.5668 7 C 4.8532 7 3.42522 7 2.57719 7 a 0.508 0.508 0 0 0 -0.47969 0.68481 C 3.00529 10.1749 6.91576 18 11.3792 18 h 1.87865 A 0.74219 0.74219 0 0 0 14 17.2578 V 16.1234 a 0.7293 0.7293 0 0 1 1.22868 -0.5315 l 2.24861 2.1127 A 1.08911 1.08911 0 0 0 18.223 18 h 2.95281 c 1.42415 0 1.42415 -0.98824 0.64768 -1.75294 c -0.54645 -0.53817 -2.51832 -2.61663 -2.51832 -2.61663 A 1.01862 1.01862 0 0 1 19.2268 12.307 c 0.63737 -0.83876 1.67988 -2.21175 2.122 -2.79993 C 21.9531 8.70313 23.0469 7 21.5474 7 Z"></path></svg></span> <span>VK</span> </a></li>
+<li class="social"><a href="https://twitter.com/press_nbrb" target="_blank" rel="noopener"> <span class="ico"> <svg viewbox="0 0 30 30" aria-hidden="true" class="r-18jsvk2 r-4qtqp9 r-yyyyoo r-rxcuwo r-1777fci r-m327ed r-dnmrzs r-494qqr r-bnwqim r-1plcrui r-lrvibr svg"> <g style="transform: translate(3px,3px);"> <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"> </path> </g> </svg></span> <span>X</span> </a></li>
+<li class="social"><a href="http://www.youtube.com/user/nbrbvideo" target="_blank" rel="noopener"> <span class="ico"> <i class="fa fa-youtube-play" aria-hidden="true" style="margin: 8px;"></i> </span> <span> Youtube </span> </a></li>
+<li></li>
+</ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                        <div class="footer__heading">Информационные ресурсы Республики Беларусь</div>
+                        <div class="res-list flex-row">
+                            <p><a href="http://president.gov.by/" target="_blank" rel="nofollow noopener">Портал Президента Республики Беларусь</a></p>
+<p><a href="http://pravo.by" target="_blank" rel="nofollow noopener">Национальный правовой Интернет-портал Республики Беларусь</a></p>
+<p><a href="http://abbanks.by/" target="_blank" rel="nofollow noopener">Ассоциация белорусских банков</a></p>
+<p><a href="https://brrb.by" target="_blank" rel="nofollow noopener">ОАО "Банк развития Республики Беларусь"</a></p>
+<p><a href="https://leasing-belarus.by/" target="_blank" rel="nofollow noopener">Ассоциация лизингодателей</a></p>
+<p><a href="http://www.rafv.by/" target="_blank" rel="nofollow noopener">Республиканская ассоциация микрофинансовых организаций</a></p>
+<p><a href="http://arfin.by/" target="_blank" rel="nofollow noopener">Ассоциация развития финансового рынка</a></p>
+<p><a href="http://www.investinbelarus.by/" target="_blank" rel="nofollow noopener">Национальное агентство инвестиций и приватизации Республики Беларусь</a></p>
+<p><a href="https://portal.gov.by" target="_blank" rel="nofollow noopener">Единый портал электронных услуг ОАИС</a></p>
+<p><a href="https://обращения.бел/" target="_blank" rel="nofollow noopener">Государственная единая (интегрированная) республиканская информационная система учета и обработки обращений граждан и юридических лиц</a></p>
+<p><a href="https://bankrot.gov.by/" target="_blank" rel="nofollow noopener">Единый государственный реестр сведений о банкротстве</a></p>
+<p><a href="http://belkart.by/" target="_blank" rel="nofollow noopener">Платежная система Белкарт</a></p>
+<p><a href="http://tnpa.by/" target="_blank" rel="nofollow noopener">Национальный фонд ТНПА</a></p>
+<p><a href="http://adc.by/" target="_blank" rel="nofollow noopener">Агентство по гарантированному возмещению банковских вкладов (депозитов) физических лиц</a></p>
+<p><a href="http://forumpravo.by/" target="_blank" rel="nofollow noopener">Правовой форум Беларуси</a></p>
+<p><a href="http://mir.pravo.by/" target="_blank" rel="nofollow noopener">Детский правовой сайт</a></p>
+<p><a href="http://digitalbusiness.by/" target="_blank" rel="nofollow noopener">Конфедерация цифрового бизнеса</a></p>
+<p><a href="http://качество-услуг.бел/RatingPortal" target="_blank" rel="nofollow noopener">Портал рейтинговой оценки качества оказания услуг организациями Республики Беларусь</a></p>
+<p><a href="https://rap.gov.by/home.html" target="_blank" rel="noopener">Государственная &nbsp;информационная система "Реестр административных процедур"</a>&nbsp;</p>
+<p><a href="https://aptf.by/" target="_blank" rel="noopener">Ассоциация профессионалов по торговому финансированию&nbsp;</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="copyright flex-row">
+                    <div class="col-xs-12 col-md-6 align-left">
+                        © Национальный банк Республики Беларусь, 2000–2026
+                    </div>
+                    <div class="col-xs-12 col-md-6 align-right">
+                        <div>
+                            <a rel="nofollow noopener noreferrer" href="http://astronim.com" class="developer" target="_blank">
+                                <span>Дизайн </span><img src="/i/developer.png" height="21" width="149" alt="developer.png">
+                            </a>
+                        </div>
+                        <div>
+                            <a rel="nofollow noopener noreferrer" href="http://cbt.by" class="developer" target="_blank">
+                                <span>Разработка </span><img src="/i/developer2.png" height="41" width="131" alt="developer2.png">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <!--КНОПКА В НАЧАЛО-->
+    <div id="scroller" class="b-top" style="display: none;">
+        <span class="b-top-but">
+            <i class="fa fa-3x fa-chevron-circle-up" aria-hidden="true"></i>
+        </span>
+    </div>
+    <nav class="l-nav js-nav menu">
+<ul class="menu__level menu__root" style="display:none">
+                <ul class="menu__level">
+                <li class="menu__item">
+                <a href="/" target="_self" title="">ГЛАВНАЯ</a>
+                </li>
+                <li class="menu__item">
+                <span data-targetId="11">БАНК СЕГОДНЯ</span>
+                <ul class="menu__level">
+                <li class="menu__item">
+                <span data-targetId="112">О банке</span>
+                <ul class="menu__level">
+                <li class="menu__item">
+                <a href="today/about/general" target="_self" title="">Общие сведения</a>
+                </li>
+                <li class="menu__item">
+                <a href="today/about/board" target="_self" title="">Правление</a>
+                </li>
+                <li class="menu__item">
+                <a href="today/about/structure" target="_self" title="">Структура</a>
+                </li>
+                <li class="menu__item">
+                <a href="legislation/cpdkp?m=about" target="_self" title="">Целевые показатели денежно-кредитной политики Республики Беларусь</a>
+                </li>
+                <li class="menu__item">
+                <a href="publications/report" target="_self" title="">Отчет Национального банка</a>
+                </li>
+                <li class="menu__item">
+                <a href="publications/reportifrss" target="_self" title="">Консолидированная финансовая отчетность Национального банка в соответствии с МСФО</a>
+                </li>
+                <li class="menu__item">
+                <a href="publications/accountingstatements" target="_self" title="">Бухгалтерская (финансовая) отчетность Национального банка в соответствии с законодательством</a>
+                </li>
+                <li class="menu__item">
+                <a href="branches/educenter" target="_self" title="">Учебный центр</a>
+                </li>
+                <li class="menu__item">
+                <a href="today/about/history" target="_self" title="">Банки на территории Беларуси: вехи истории</a>
+                </li>
+                <li class="menu__item">
+                <a href="bv/pdf/supplements/107.pdf" target="_blank" title="">Становление и институциональное развитие Национального банка</a>
+                    </li></ul>
+                </li>
+                <li class="menu__item">
+                <a href="today/press" target="_self" title="">Пресс-служба</a>
+                </li>
+                <li class="menu__item">
+                <a href="today/services" target="_self" title="">Операции Национального банка</a>
+                </li>
+                <li class="menu__item">
+                <a href="today/procurements" target="_self" title="">Закупки</a>
+                </li>
+                <li class="menu__item">
+                <a href="today/internationalcooperation" target="_self" title="">Международное сотрудничество</a>
+                </li>
+                <li class="menu__item">
+                <a href="https://rcfnew.nbrb.by/today/personnel/careerinbank" target="_self" title="">Карьера в Национальном банке</a>
+                </li>
+                <li class="menu__item">
+                <a href="today/about/nbawards" target="_self" title="">Награды Национального банка</a>
+                </li>
+                <li class="menu__item">
+                <a href="today/finliteracy" target="_self" title="">Финансовая грамотность</a>
+                </li>
+                <li class="menu__item">
+                <a href="today/museum" target="_self" title="">Музей денег</a>
+                    </li></ul>
+                </li>
+                <li class="menu__item">
+                <span data-targetId="12">МОНЕТАРНАЯ ПОЛИТИКА</span>
+                <ul class="menu__level">
+                <li class="menu__item">
+                <span data-targetId="120">Цель</span>
+                <ul class="menu__level">
+                <li class="menu__item">
+                <a href="mp/targetdesc" target="_self" title="">Описание и объяснение выбора цели</a>
+                </li>
+                <li class="menu__item">
+                <span data-targetId="1203">Подходы к реализации монетарной политики </span>
+                <ul class="menu__level">
+                <li class="menu__item">
+                <a href="mp/target/general-character" target="_self" title="">Общая характеристика</a>
+                </li>
+                <li class="menu__item">
+                <a href="mp/target/current-mode" target="_self" title="">Текущий режим</a>
+                </li>
+                <li class="menu__item">
+                <a href="mp/target/exrate-policy" target="_self" title="">Курсовая политика</a>
+                </li>
+                <li class="menu__item">
+                <a href="mp/target/percent-policy" target="_self" title="">Процентная политика</a>
+                    </li></ul>
+                </li>
+                <li class="menu__item">
+                <span data-targetId="1204">Стратегические документы</span>
+                <ul class="menu__level">
+                <li class="menu__item">
+                <a href="mp/target/pser" target="_self" title="">Раздел ПСЭР</a>
+                </li>
+                <li class="menu__item">
+                <a href="legislation/ondkp" target="_self" title="">Основные направления денежно-кредитной политики</a>
+                    </li></ul>
+                    </li></ul>
+                </li>
+                <li class="menu__item">
+                <span data-targetId="120.1">Инфляция и инфляционные ожидания</span>
+                <ul class="menu__level">
+                <li class="menu__item">
+                <a href="mp/inflation/month" target="_self" title="">Обзор инфляции</a>
+                </li>
+                <li class="menu__item">
+                <a href="mp/inflation/quarterly" target="_self" title="">Квартальный обзор инфляции</a>
+                </li>
+                <li class="menu__item">
+                <a href="publications/inflationexp" target="_self" title="">Информация об инфляционных ожиданиях населения</a>
+                    </li></ul>
+                </li>
+                <li class="menu__item">
+                <span data-targetId="120.2">Инструменты</span>
+                <ul class="menu__level">
+                <li class="menu__item">
+                <span data-targetId="120.21">Оперативная информация</span>
+                <ul class="menu__level">
+                <li class="menu__item">
+                <a href="mp/info" target="_self" title="">Сообщения</a>
+                </li>
+                <li class="menu__item">
+                <a href="mp/liquidity/plan" target="_self" title="">Ближайшие планируемые операции по регулированию ликвидности</a>
+                </li>
+                <li class="menu__item">
+                <a href="mp/liquidity/plancur" target="_self" title="">Ближайшие планируемые операции по размещению облигаций Национального банка, номинированных в иностранной валюте</a>
+                </li>
+                <li class="menu__item">
+                <a href="mp/liquidity" target="_self" title="">Операции по регулированию ликвидности (фактические данные)</a>
+                </li>
+                <li class="menu__item">
+                <a href="mp/online/interbank1day" target="_self" title="">Показатели размещения банками Республики Беларусь средств в белорусских рублях на денежном рынке на срок один день (овернайт) по данным платежей в системе BISS</a>
+                </li>
+                <li class="menu__item">
+                <a href="mp/info/analyticalindicators" target="_self" title="">Cкользящая средневзвешенная ставка межбанковского рынка за 30 календарных дней</a>
+                    </li></ul>
+                </li>
+                <li class="menu__item">
+                <span data-targetId="120.22">Ставки, лимиты, обеспечение</span>
+                <ul class="menu__level">
+                <li class="menu__item">
+                <a href="statistics/monetarypolicyinstruments/refinancingrate" target="_self" title="">Ставка рефинансирования</a>
+                </li>
+                <li class="menu__item">
+                <a href="statistics/monetarypolicyinstruments/interestrates" target="_self" title="">Ставки по операциям Национального банка на финансовом рынке</a>
+                </li>
+                <li class="menu__item">
+                <a href="mp/overlimits" target="_self" title="">Лимиты по постоянно доступным операциям поддержки ликвидности</a>
+                </li>
+                <li class="menu__item">
+                <a href="mp/lomblist" target="_self" title="">Виды обеспечения</a>
+                    </li></ul>
+                </li>
+                <li class="menu__item">
+                <span data-targetId="120.23">Проведение операций</span>
+                <ul class="menu__level">
+                <li class="menu__item">
+                <a href="mp/liquidity/ops_timing" target="_self" title="">Временной регламент проведения постоянно доступных и двусторонних операций регулирования ликвидности</a>
+                </li>
+                <li class="menu__item">
+                <a href="mp/liquidity/swap_holidays" target="_self" title="">Дни, в которые Национальный банк не проводит сделки СВОП по соответствующим валютам</a>
+                </li>
+                <li class="menu__item">
+                <a href="mp/auctions/schedule.asp" target="_self" title="">График основных операций Национального банка на открытом рынке</a>
+                </li>
+                <li class="menu__item">
+                <a href="mp/auctions/schedulefx" target="_self" title="">График аукционов по размещению облигаций Национального банка, номинированных в иностранной валюте</a>
+                </li>
+                <li class="menu__item">
+                <a href="mp/liquidity/nbb_operations.xls" target="_blank" title="XLS, 241 KB">Ежемесячная статистика по операциям регулирования ликвидности</a>
+                </li>
+                <li class="menu__item">
+                <a href="mp/auctions/programmnye-sredstva-dlya-provedeniya-operacij" target="_self" title="">Программные средства для проведения операций</a>
+                    </li></ul>
+                </li>
+                <li class="menu__item">
+                <span data-targetId="120.24">Итоги аукционов Национального банка</span>
+                <ul class="menu__level">
+                <li class="menu__item">
+                <a href="mp/auctions/lombcredits" target="_self" title="">Кредитных аукционов</a>
+                </li>
+                <li class="menu__item">
+                <a href="mp/auctions/swap" target="_self" title="">Аукционов СВОП</a>
+                </li>
+                <li class="menu__item">
+                <a href="mp/auctions/repo" target="_self" title="">Аукционов прямого РЕПО</a>
+                </li>
+                <li class="menu__item">
+                <a href="mp/auctions/deposits" target="_self" title="">Депозитных аукционов</a>
+                </li>
+                <li class="menu__item">
+                <a href="mp/nbb_bonds/nbb_bonds" target="_self" title="">Размещение облигаций Национального банка, номинированных в белорусских рублях</a>
+                </li>
+                <li class="menu__item">
+                <a href="mp/nbb_bonds/nbb_bonds_cur" target="_self" title="">Размещение облигаций Национального банка, номинированных в иностранной валюте</a>
+                </li>
+                <li class="menu__item">
+                <a href="mp/auctions/reporeverse" target="_self" title="">Аукционов обратного РЕПО</a>
+                    </li></ul>
+                </li>
+                <li class="menu__item">
+                <span data-targetId="120.25">Контрагенты</span>
+                <ul class="menu__level">
+                <li class="menu__item">
+                <a href="mp/contragents/banklist" target="_self" title="">Список банков, присоединившихся к договору об операциях Национального банка для получения кредитов</a>
+                </li>
+                <li class="menu__item">
+                <a href="mp/contragents/swapbanklist" target="_self" title="">Список банков, присоединившихся к договору об операциях Национального банка для проведения сделок СВОП</a>
+                </li>
+                <li class="menu__item">
+                <a href="mp/contragents/credagreebanklist" target="_self" title="">Список банков, присоединившихся к договору об операциях Национального банка для размещения срочного депозита</a>
+                </li>
+                <li class="menu__item">
+                <a href="mp/contragents/investors" target="_self" title="">Список банков, присоединившихся к договору об операциях Национального банка для проведения операций с облигациями</a>
+                    </li></ul>
+                </li>
+                <li class="menu__item">
+                <span data-targetId="120.26">Обязательные резервы</span>
+                <ul class="menu__level">
+                <li class="menu__item">
+                <a href="mp/reserverequirements" target="_self" title="">Нормативы обязательных резервов</a>
+                </li>
+                <li class="menu__item">
+                <a href="mp/reserverequirements/coeffstandextr" target="_self" title="">Коэффициент стандартного вычета</a>
+                </li>
+                <li class="menu__item">
+                <a href="mp/reserverequirements/schedule.asp" target="_self" title="">График периодов выполнения резервных требований</a>
+                </li>
+                <li class="menu__item">
+                <a href="mp/reserverequirements/reserve_requirements_statistics.xls" target="_blank" title="XLS, 67 KB">Размер и структура фонда обязательных резервов</a>
+                </li>
+                <li class="menu__item">
+                <a href="mp/reserverequirements/reserve_requirements_fixed.asp" target="_self" title="">Норматив фиксированной части резервных требований</a>
+                </li>
+                <li class="menu__item">
+                <a href="mp/reserverequirements/accountremaindersexclusionreference" target="_self" title="">Справочник общих кодов исключений из расчета резервных требований</a>
+                </li>
+                <li class="menu__item">
+                <a href="mp/reserverequirements/legalreservebanks" target="_self" title="">Перечень банков, формирующих фонд обязательных резервов</a>
+                    </li></ul>
+                </li>
+                <li class="menu__item">
+                <a href="legislation/mp?m=mp" target="_self" title="">Нормативные правовые акты</a>
+                    </li></ul>
+                </li>
+                <li class="menu__item">
+                <span data-targetId="121">Решения по вопросам денежно-кредитной политики</span>
+                <ul class="menu__level">
+                <li class="menu__item">
+                <a href="mp/decisions/recent-developments" target="_self" title="">Основные события</a>
+                </li>
+                <li class="menu__item">
+                <a href="news/keywords/4/year" target="_self" title="">Пресс-релизы</a>
+                    </li></ul>
+                </li>
+                <li class="menu__item">
+                <span data-targetId="122">Обучение</span>
+                <ul class="menu__level">
+                <li class="menu__item">
+                <a href="mp/obuchenie/prezentacii" target="_self" title="">Презентации</a>
+                </li>
+                <li class="menu__item">
+                <span data-targetId="1220">Семинары</span>
+                <ul class="menu__level">
+                <li class="menu__item">
+                <a href="mp/seminars/seminars" target="_self" title="">Семинар "Практические аспекты проведения Национальным банком операций на внутреннем финансовом рынке" </a>
+                </li>
+                <li class="menu__item">
+                <a href="mp/seminars/realizatsiya-dkp-usloviyah-monetarnogo-targetirovaniya" target="_self" title="">Семинар "Реализация денежно-кредитной политики в условиях монетарного таргетирования и переход к режиму инфляционного таргетирования"</a>
+                    </li></ul>
+                    </li></ul>
+                </li>
+                <li class="menu__item">
+                <span data-targetId="123">Публикации</span>
+                <ul class="menu__level">
+                <li class="menu__item">
+                <span data-targetId="1231">Аналитика</span>
+                <ul class="menu__level">
+                <li class="menu__item">
+                <a href="publications/economicconjuncture" target="_self" title="">Экспресс-обзор "Экономическая коньюнктура"</a>
+                </li>
+                <li class="menu__item">
+                <a href="publications/ectendencies" target="_self" title="">Аналитическое обозрение "Основные тенденции в экономике и денежно-кредитной сфере Республики Беларусь"</a>
+                </li>
+                <li class="menu__item">
+                <a href="publications/realcoursinfo" target="_self" title="">Информация об изменении реального эффективного курса белорусского рубля</a>
+                </li>
+                <li class="menu__item">
+                <a href="publications/monitoringpredpriyatij" target="_self" title="">Аналитическое обозрение "Мониторинг предприятий реального сектора экономики Республики Беларусь"</a>
+                    </li></ul>
+                </li>
+                <li class="menu__item">
+                <a href="mp/theoretical-materials" target="_self" title="">Статьи и теоретические материалы</a>
+                    </li></ul>
+                </li>
+                <li class="menu__item">
+                <a href="mp/faq" target="_self" title="">Часто задаваемые вопросы</a>
+                    </li></ul>
+                </li>
+                <li class="menu__item">
+                <span data-targetId="12.1">Финансовая стабильность</span>
+                <ul class="menu__level">
+                <li class="menu__item">
+                <a href="finsector/financialstability/geninfo" target="_self" title="">Общие сведения</a>
+                </li>
+                <li class="menu__item">
+                <span data-targetId="12.10.-2">Мониторинг финансовой стабильности</span>
+                <ul class="menu__level">
+                <li class="menu__item">
+                <a href="publications/finstabrep" target="_self" title="">Аналитическое обозрение "Финансовая стабильность в&nbsp;Республике Беларусь"</a>
+                </li>
+                <li class="menu__item">
+                <a href="statistics/financialcapability" target="_self" title="">Показатели финансовой устойчивости</a>
+                    </li></ul>
+                </li>
+                <li class="menu__item">
+                <span data-targetId="12.11">Макропруденциальное регулирование</span>
+                <ul class="menu__level">
+                <li class="menu__item">
+                <a href="finsector/financialstability/macroprudentialregulation" target="_self" title="">Общие сведения</a>
+                </li>
+                <li class="menu__item">
+                <a href="finsector/financialstability/macroprudentialregulation/kontrciklicheskij-bufer" target="_self" title="">Контрциклический буфер</a>
+                </li>
+                <li class="menu__item">
+                <a href="finsector/financialstability/macroprudentialregulation/bufer-sistemnoj-znachimosti" target="_self" title="">Буфер системной значимости</a>
+                </li>
+                <li class="menu__item">
+                <a href="finsector/financialstability/macroprudentialregulation/instrumenty-ogranicheniya-dolgovoj-nagruzki-naseleniya" target="_self" title="">Инструменты ограничения долговой нагрузки физических лиц</a>
+                </li>
+                <li class="menu__item">
+                <a href="finsector/financialstability/macroprudentialregulation/raschetnye-velichiny-standartnogo-riska" target="_self" title="">Расчетные величины стандартного риска</a>
+                    </li></ul>
+                    </li></ul>
+                </li>
+                <li class="menu__item">
+                <span data-targetId="12.2">Банковский сектор</span>
+                <ul class="menu__level">
+                <li class="menu__item">
+                <span data-targetId="12.21">Банки и НКФО</span>
+                <ul class="menu__level">
+                <li class="menu__item">
+                <a href="system/banks/list" target="_self" title="">Сведения о банках и НКФО, действующих на территории Республики Беларусь, их филиалах</a>
+                </li>
+                <li class="menu__item">
+                <a href="system/main-banks" target="_self" title="">Перечень системно значимых банков и НКФО</a>
+                </li>
+                <li class="menu__item">
+                <a href="system/banks/register" target="_self" title="">Реестр специальных разрешений (лицензий) на осуществление банковской деятельности</a>
+                </li>
+                <li class="menu__item">
+                <a href="system/banks/reorganized" target="_self" title="">Сведения о реорганизованных банках на территории Республики Беларусь</a>
+                </li>
+                <li class="menu__item">
+                <a href="system/banks/liquidated" target="_self" title="">Сведения о банках, находящихся в стадии ликвидации, и ликвидированных банках (исключенных из Единого государственного регистра юридических лиц и индивидуальных предпринимателей), на территории Республики Беларусь</a>
+                </li>
+                <li class="menu__item">
+                <a href="system/banks/podft" target="_self" title="">Санкции к банкам по ПОД/ФТ</a>
+                    </li></ul>
+                </li>
+                <li class="menu__item">
+                <span data-targetId="12.21.1">Криптобанки</span>
+                <ul class="menu__level">
+                <li class="menu__item">
+                <a href="system/cryptobanks" target="_self" title="">Общие сведения</a>
+                </li>
+                <li class="menu__item">
+                <a href="system/cryptobanks/nbrbcompetency" target="_self" title="">Компетенция Национального банка</a>
+                </li>
+                <li class="menu__item">
+                <a href="legislation/cryptobanks?p=cryptobanks" target="_self" title="">Нормативные правовые акты</a>
+                </li>
+                <li class="menu__item">
+                <a href="system/cryptobanks/comments" target="_self" title="">Комментарии и разъяснения</a>
+                </li>
+                <li class="menu__item">
+                <a href="system/cryptobanks/register" target="_self" title="">Сведения о криптобанках, включенных в реестр криптобанков Национального банка</a>
+                </li>
+                <li class="menu__item">
+                <a href="today/adminproc/cryptobanks" target="_self" title="">Административные процедуры</a>
+                    </li></ul>
+                </li>
+                <li class="menu__item">
+                <span data-targetId="12.22">Информация о финансовом состоянии банков и НКФО, действующих на территории Республики Беларусь</span>
+                <ul class="menu__level">
+                <li class="menu__item">
+                <a href="system/banks/financialposition/balancesheet" target="_self" title="">Бухгалтерский баланс и отчет о прибылях и убытках</a>
+                </li>
+                <li class="menu__item">
+                <a href="system/banks/financialposition/cashflowsreport" target="_self" title="">Отчет о движении денежных средств</a>
+                </li>
+                <li class="menu__item">
+                <a href="system/banks/financialposition/capitalchange" target="_self" title="">Отчет об изменении собственного капитала и сведения о совокупном доходе</a>
+                    </li></ul>
+                </li>
+                <li class="menu__item">
+                <a href="publications/banksector" target="_self" title="">Информационный сборник "Обзор деятельности и характеристика устойчивости функционирования банков Республики Беларусь"</a>
+                </li>
+                <li class="menu__item">
+                <span data-targetId="12.23.1">Нормативный капитал</span>
+                <ul class="menu__level">
+                <li class="menu__item">
+                <a href="system/regulatorycapital/totalvolbanksregulatorycapital" target="_self" title="">Совокупный размер нормативного капитала банков</a>
+                </li>
+                <li class="menu__item">
+                <a href="system/regulatorycapital/minregulatorycapital" target="_self" title="">Минимальный размер нормативного капитала банка, НКФО</a>
+                    </li></ul>
+                </li>
+                <li class="menu__item">
+                <span data-targetId="12.26">Расчеты</span>
+                <ul class="menu__level">
+                <li class="menu__item">
+                <a href="publications/settlementstradefinance" target="_self" title="">Документарные операции</a>
+                </li>
+                <li class="menu__item">
+                <span data-targetId="12.262">Денежные переводы</span>
+                <ul class="menu__level">
+                <li class="menu__item">
+                <a href="system/settlements/money_remittances/docs.asp" target="_self" title="">Документы</a>
+                </li>
+                <li class="menu__item">
+                <a href="system/settlements/money_remittances/info" target="_self" title="">Аналитическая информация</a>
+                </li>
+                <li class="menu__item">
+                <a href="system/settlements/money_remittances/db" target="_self" title="">База данных по денежным переводам, осуществленным посредством систем денежных переводов</a>
+                    </li></ul>
+                </li>
+                <li class="menu__item">
+                <a href="publications/settlementstransactions" target="_self" title="">Операции с платежными документами в иностранной валюте, банковскими чеками</a>
+                    </li></ul>
+                </li>
+                <li class="menu__item">
+                <a href="system/electroniccommunication" target="_self" title="">Представление банковской информации</a>
+                </li>
+                <li class="menu__item">
+                <a href="system/banks/guaranteesregister" target="_self" title="">Реестр банковских гарантий</a>
+                </li>
+                <li class="menu__item">
+                <a href="system/supervisorg" target="_self" title="">Организация банковского надзора</a>
+                </li>
+                <li class="menu__item">
+                <a href="system/basel" target="_self" title="">Внедрение международных стандартов Базельского комитета по банковскому надзору в Республике Беларусь</a>
+                </li>
+                <li class="menu__item">
+                <span data-targetId="12.210.1">Специальная квалификационная комиссия</span>
+                <ul class="menu__level">
+                <li class="menu__item">
+                <span data-targetId="12.210.1-1">Оценка соответствия/аттестация/подтверждение квалификации</span>
+                <ul class="menu__level">
+                <li class="menu__item">
+                <span data-targetId="12.210.1-11">Оценка соответствия/аттестация/подтверждение квалификации</span>
+                <ul class="menu__level">
+                <li class="menu__item">
+                <a href="https://rcfnew.nbrb.by/Identity/Account/Register/1" target="_self" title="">Оценка соответствия</a>
+                </li>
+                <li class="menu__item">
+                <a href="https://rcfnew.nbrb.by/Identity/Account/Register/1?info=2" target="_self" title="">Аттестация/подтверждение квалификации</a>
+                    </li></ul>
+                </li>
+                <li class="menu__item">
+                <a href="https://rcfnew.nbrb.by/Identity/Account/Register/2" target="_self" title="">Оценка соответствия аудитора</a>
+                </li>
+                <li class="menu__item">
+                <a href="https://rcfnew.nbrb.by/Identity/Account/Register/3" target="_self" title="">Специальная аттестация антикризисного управляющего</a>
+                    </li></ul>
+                </li>
+                <li class="menu__item">
+                <a href="system/commission/docs" target="_self" title="">Нормативные правовые акты, письма</a>
+                </li>
+                <li class="menu__item">
+                <a href="system/commission/question" target="_self" title="">Перечень тем для прохождения оценки соответствия квалификационным требованиям и требованиям к деловой репутации</a>
+                </li>
+                <li class="menu__item">
+                <span data-targetId="12.210.14">Лица, прошедшие оценку соответствия (аттестацию)</span>
+                <ul class="menu__level">
+                <li class="menu__item">
+                <a href="https://rcfnew.nbrb.by/system/commission/bankmanagercandidates/qualifications" target="_self" title="">Сведения о кандидатах, проходивших оценку соответствия квалификационным требованиям и требованиям к деловой репутации</a>
+                </li>
+                <li class="menu__item">
+                <a href="https://rcfnew.nbrb.by/system/commission/bankmanagercandidates/businessreputation" target="_self" title="">Сведения о кандидатах, проходивших оценку соответствия квалификационным требованиям и требованиям к деловой репутации, предъявляемым к члену совета директоров (наблюдательного совета) банка (за исключением независимого директора)</a>
+                </li>
+                <li class="menu__item">
+                <a href="https://rcfnew.nbrb.by/system/commission/bankmanagercandidates/buhgalter" target="_self" title="">Сведения о лицах, прошедших аттестацию на право получения сертификата профессионального бухгалтера банка, и подтверждении ими квалификации</a>
+                </li>
+                <li class="menu__item">
+                <a href="https://rcfnew.nbrb.by/system/commission/crisismanagers" target="_self" title="">Сведения об антикризисных управляющих при банкротстве банков и НКФО</a>
+                </li>
+                <li class="menu__item">
+                <a href="https://rcfnew.nbrb.by/system/commission/references/audits" target="_self" title="">Сведения об аудиторах – сотрудниках аудиторских организаций, получивших свидетельства о соответствии квалификационным требованиям и требованиям к деловой репутации</a>
+                    </li></ul>
+                    </li></ul>
+                    </li></ul>
+                </li>
+                <li class="menu__item">
+                <span data-targetId="12.3">Некредитные финансовые организации</span>
+                <ul class="menu__level">
+                <li class="menu__item">
+                <span data-targetId="12.31">Лизинговая деятельность</span>
+                <ul class="menu__level">
+                <li class="menu__item">
+                <a href="finsector/leasing" target="_self" title="">Общие сведения</a>
+                </li>
+                <li class="menu__item">
+                <a href="finsector/leasing/nbrbcompetency" target="_self" title="">Компетенция Национального банка</a>
+                </li>
+                <li class="menu__item">
+                <a href="legislation/leasing?p=leasing" target="_self" title="">Нормативные правовые акты</a>
+                </li>
+                <li class="menu__item">
+                <a href="legislation/aml-non-credit?p=leasing" target="_self" title="">Законодательство о предотвращении легализации доходов, полученных преступным путем, финансирования террористической деятельности и финансирования распространения оружия массового поражения</a>
+                </li>
+                <li class="menu__item">
+                <a href="finsector/leasing/comments" target="_self" title="">Комментарии и разъяснения</a>
+                </li>
+                <li class="menu__item">
+                <a href="finsector/leasing/register" target="_self" title="">Сведения о лизинговых организациях, включенных в реестр лизинговых организаций</a>
+                </li>
+                <li class="menu__item">
+                <a href="finsector/leasing/register_iskl" target="_self" title="">Сведения о лизинговых организациях, исключенных из реестра лизинговых организаций</a>
+                </li>
+                <li class="menu__item">
+                <a href="finsector/leasing/glossariy-terminov" target="_self" title="">Глоссарий терминов</a>
+                </li>
+                <li class="menu__item">
+                <a href="today/adminproc/leasing" target="_self" title="">Административные процедуры</a>
+                    </li></ul>
+                </li>
+                <li class="menu__item">
+                <span data-targetId="12.32">Микрофинансовая деятельность</span>
+                <ul class="menu__level">
+                <li class="menu__item">
+                <a href="finsector/microfinance" target="_self" title="">Общие сведения</a>
+                </li>
+                <li class="menu__item">
+                <a href="finsector/microfinance/nbrbcompetency" target="_self" title="">Компетенция Национального банка</a>
+                </li>
+                <li class="menu__item">
+                <a href="legislation/microfinance?p=microfinance" target="_self" title="">Нормативные правовые акты</a>
+                </li>
+                <li class="menu__item">
+                <a href="legislation/aml-non-credit?p=microfinance" target="_self" title="">Законодательство о предотвращении легализации доходов, полученных преступным путем, финансирования террористической деятельности и финансирования распространения оружия массового поражения</a>
+                </li>
+                <li class="menu__item">
+                <a href="finsector/microfinance/comments" target="_self" title="">Комментарии и разъяснения</a>
+                </li>
+                <li class="menu__item">
+                <a href="finsector/microfinance/register" target="_self" title="">Сведения о микрофинансовых организациях, включенных в реестр микрофинансовых организаций</a>
+                </li>
+                <li class="menu__item">
+                <a href="finsector/microfinance/without_register" target="_self" title="">Сведения о юридических лицах, которые вправе осуществлять микрофинансовую деятельность без включения в реестр</a>
+                </li>
+                <li class="menu__item">
+                <a href="finsector/microfinance/register_iskl" target="_self" title="">Сведения о микрофинансовых организациях, исключенных из реестра микрофинансовых организаций</a>
+                </li>
+                <li class="menu__item">
+                <a href="finsector/microfinance/glossariy-terminov" target="_self" title="">Глоссарий терминов</a>
+                </li>
+                <li class="menu__item">
+                <a href="today/adminproc/microfinance" target="_self" title="">Административные процедуры</a>
+                    </li></ul>
+                </li>
+                <li class="menu__item">
+                <span data-targetId="12.32.1">Внебиржевой рынок Форекс</span>
+                <ul class="menu__level">
+                <li class="menu__item">
+                <a href="finsector/forex" target="_self" title="">Общие сведения</a>
+                </li>
+                <li class="menu__item">
+                <a href="finsector/forex/nbrbcompetency" target="_self" title="">Компетенция Национального банка</a>
+                </li>
+                <li class="menu__item">
+                <a href="legislation/forex?p=forex" target="_self" title="">Нормативные правовые акты</a>
+                </li>
+                <li class="menu__item">
+                <a href="legislation/aml-non-credit?p=forex" target="_self" title="">Законодательство о предотвращении легализации доходов, полученных преступным путем, финансирования террористической деятельности и финансирования распространения оружия массового поражения</a>
+                </li>
+                <li class="menu__item">
+                <a href="finsector/forex/comments" target="_self" title="">Комментарии и разъяснения</a>
+                </li>
+                <li class="menu__item">
+                <a href="finsector/forex/register" target="_self" title="">Сведения о юридических лицах, включенных в реестр форекс-компаний</a>
+                </li>
+                <li class="menu__item">
+                <a href="finsector/forex/glossariy-terminov" target="_self" title="">Глоссарий терминов</a>
+                </li>
+                <li class="menu__item">
+                <a href="today/adminproc/forex" target="_self" title="">Административные процедуры</a>
+                    </li></ul>
+                </li>
+                <li class="menu__item">
+                <span data-targetId="12.33">Форфейтинг</span>
+                <ul class="menu__level">
+                <li class="menu__item">
+                <a href="finsector/forfeiting" target="_self" title="">Общие сведения</a>
+                </li>
+                <li class="menu__item">
+                <a href="finsector/forfeiting/nbrbcompetency" target="_self" title="">Компетенция Национального банка</a>
+                </li>
+                <li class="menu__item">
+                <a href="legislation/forfeiting?p=forfeiting" target="_self" title="">Нормативные правовые акты</a>
+                </li>
+                <li class="menu__item">
+                <a href="legislation/aml-non-credit?p=forfeiting" target="_self" title="">Законодательство о предотвращении легализации доходов, полученных преступным путем, финансирования террористической деятельности и финансирования распространения оружия массового поражения</a>
+                </li>
+                <li class="menu__item">
+                <a href="finsector/forfeiting/comments" target="_self" title="">Комментарии и разъяснения</a>
+                </li>
+                <li class="menu__item">
+                <a href="finsector/forfeiting/registerrules" target="_self" title="">Порядок включения юридических лиц в реестр юридических лиц, осуществляющих учет векселей</a>
+                </li>
+                <li class="menu__item">
+                <a href="finsector/forfeiting/register" target="_self" title="">Сведения о юридических лицах, включенных в реестр юридических лиц, осуществляющих учет векселей </a>
+                </li>
+                <li class="menu__item">
+                <a href="finsector/forfeiting/memo" target="_self" title="">Памятка о представлении в Национальный банк информации об учете векселей</a>
+                </li>
+                <li class="menu__item">
+                <a href="finsector/forfeiting/vocabulary" target="_self" title="">Словарь терминов</a>
+                    </li></ul>
+                </li>
+                <li class="menu__item">
+                <span data-targetId="12.34">Рейтинговая деятельность</span>
+                <ul class="menu__level">
+                <li class="menu__item">
+                <a href="finsector/rating" target="_self" title="">Общие сведения</a>
+                </li>
+                <li class="menu__item">
+                <a href="finsector/rating/nbrbcompetency" target="_self" title="">Компетенция Национального банка</a>
+                </li>
+                <li class="menu__item">
+                <a href="legislation/reytingovayadeyatelnost?p=rating" target="_self" title="">Нормативные правовые акты</a>
+                </li>
+                <li class="menu__item">
+                <a href="legislation/aml-non-credit?p=rating" target="_self" title="">Законодательство о предотвращении легализации доходов, полученных преступным путем, финансирования террористической деятельности и финансирования распространения оружия массового поражения</a>
+                </li>
+                <li class="menu__item">
+                <a href="legislation/foreign_agency" target="_self" title="">Критерии признания иностранных (международных) рейтинговых агентств</a>
+                </li>
+                <li class="menu__item">
+                <a href="finsector/rating/comments" target="_self" title="">Комментарии и разъяснения</a>
+                </li>
+                <li class="menu__item">
+                <a href="finsector/rating/glossariy-terminov" target="_self" title="">Глоссарий терминов</a>
+                </li>
+                <li class="menu__item">
+                <a href="finsector/rating/metodology" target="_self" title="">Информация о действующих методологиях   рейтинговых   агентств, согласованных Национальным банком</a>
+                </li>
+                <li class="menu__item">
+                <a href="finsector/rating/informaciya-iz-reestra-rejtingovyh-agentstv.pdf" target="_blank" title="">Информация из реестра рейтинговых агентств</a>
+                </li>
+                <li class="menu__item">
+                <a href="today/adminproc/rating" target="_self" title="">Административные процедуры (реестр рейтинговых агентств)</a>
+                </li>
+                <li class="menu__item">
+                <a href="today/adminproc/filial-foreign-rating" target="_self" title="">Административные процедуры (реестр филиалов иностранных рейтинговых агентств)</a>
+                </li>
+                <li class="menu__item">
+                <a href="finsector/rating/branch-register" target="_self" title="">Информация из реестра филиалов иностранных рейтинговых агентств</a>
+                    </li></ul>
+                </li>
+                <li class="menu__item">
+                <span data-targetId="12.35">Сервисы онлайн-заимствования</span>
+                <ul class="menu__level">
+                <li class="menu__item">
+                <a href="finsector/onlineborrowingservices" target="_self" title="">Общие сведения</a>
+                </li>
+                <li class="menu__item">
+                <a href="finsector/onlineborrowingservices/nbrbcompetency" target="_self" title="">Компетенция Национального банка</a>
+                </li>
+                <li class="menu__item">
+                <a href="legislation/onlineborrowingservices?p=obs" target="_self" title="">Нормативные правовые акты</a>
+                </li>
+                <li class="menu__item">
+                <a href="legislation/aml-non-credit?p=onlineborrowingservices" target="_self" title="">Законодательство о предотвращении легализации доходов, полученных преступным путем, финансирования террористической деятельности и финансирования распространения оружия массового поражения</a>
+                </li>
+                <li class="menu__item">
+                <a href="finsector/onlineborrowingservices/register" target="_self" title="">Сведения об операторах сервисов онлайн-заимствования, включенных в реестр операторов сервисов онлайн-заимствования</a>
+                </li>
+                <li class="menu__item">
+                <a href="finsector/onlineborrowingservices/register_iskl" target="_self" title="">Сведения об операторах сервисов онлайн-заимствования, исключенных из реестра операторов сервисов онлайн-заимствования</a>
+                </li>
+                <li class="menu__item">
+                <a href="today/adminproc/onlineborrowingservices" target="_self" title="">Административные процедуры</a>
+                    </li></ul>
+                </li>
+                <li class="menu__item">
+                <span data-targetId="12.36">Факторинговые организации</span>
+                <ul class="menu__level">
+                <li class="menu__item">
+                <a href="finsector/factoring" target="_self" title="">Общие сведения</a>
+                </li>
+                <li class="menu__item">
+                <a href="finsector/factoring/nbrbcompetency" target="_self" title="">Компетенция Национального банка</a>
+                </li>
+                <li class="menu__item">
+                <a href="legislation/factoring?p=factoring" target="_self" title="">Нормативные правовые акты</a>
+                </li>
+                <li class="menu__item">
+                <a href="legislation/aml-non-credit?p=factoring" target="_self" title="">Законодательство о предотвращении легализации доходов, полученных преступным путем, финансирования террористической деятельности и финансирования распространения оружия массового поражения</a>
+                </li>
+                <li class="menu__item">
+                <a href="finsector/factoring/register_factoring.pdf" target="_blank" title="">Сведения о факторинговых организациях, включенных в реестр факторинговых организаций</a>
+                </li>
+                <li class="menu__item">
+                <a href="today/adminproc/factoring" target="_self" title="">Административные процедуры</a>
+                    </li></ul>
+                    </li></ul>
+                </li>
+                <li class="menu__item">
+                <span data-targetId="12.3.1">ПЛАТЕЖНЫЙ РЫНОК И ЦИФРОВЫЕ ТЕХНОЛОГИИ</span>
+                <ul class="menu__level">
+                <li class="menu__item">
+                <a href="payment" target="_self" title="">Общие сведения</a>
+                </li>
+                <li class="menu__item">
+                <span data-targetId="12.3.12">Платежные системы и платежные услуги</span>
+                <ul class="menu__level">
+                <li class="menu__item">
+                <a href="legislation/documents/zakon_o_plat_sis.pdf" target="_blank" title="">Закон Республики Беларусь от 19 апреля 2022 № 164-З ”О платежных системах и платежных услугах“ </a>
+                </li>
+                <li class="menu__item">
+                <a href="payment/payment_services" target="_self" title="">Платежные услуги</a>
+                </li>
+                <li class="menu__item">
+                <span data-targetId="12.3.123"> Реестр поставщиков платежных услуг и видов оказываемых ими платежных услуг</span>
+                <ul class="menu__level">
+                <li class="menu__item">
+                <a href="payment/register_of_payment_service_providers/polozenie-o-reestre-ppu.pdf" target="_blank" title="payment/register_of_payment_service_providers/polo">Положение о порядке формирования и ведения реестра поставщиков платежных услуг и видов оказываемых ими платежных услуг</a>
+                </li>
+                <li class="menu__item">
+                <a href="today/adminproc/register_of_payment_service_providers" target="_self" title="">Общие сведения об административной процедуре</a>
+                </li>
+                <li class="menu__item">
+                <a href="payment/register_of_payment_service_providers" target="_self" title="">Реестр поставщиков платежных услуг и видов оказываемых ими платежных услуг</a>
+                    </li></ul>
+                </li>
+                <li class="menu__item">
+                <a href="payment/oversight/register" target="_self" title="">Реестр программных (программно-технических) средств участников платежного рынка Республики Беларусь и платежных программных приложений поставщиков платежных услуг</a>
+                </li>
+                <li class="menu__item">
+                <span data-targetId="12.3.125">Платежные системы</span>
+                <ul class="menu__level">
+                <li class="menu__item">
+                <span data-targetId="12.3.1251">Система BISS</span>
+                <ul class="menu__level">
+                <li class="menu__item">
+                <a href="payment/biss/about" target="_self" title="">Общие сведения</a>
+                </li>
+                <li class="menu__item">
+                <a href="legislation/documents/rules_biss.pdf" target="_blank" title="">Об осуществлении межбанковских расчетов и утверждении Правил системы BISS</a>
+                </li>
+                <li class="menu__item">
+                <a href="payment/participants" target="_self" title="">Информация об участниках</a>
+                </li>
+                <li class="menu__item">
+                <a href="payment/biss_schedule" target="_self" title="">График работы системы BISS</a>
+                </li>
+                <li class="menu__item">
+                <a href="payment/mainindicators" target="_self" title="">Основные показатели работы</a>
+                    </li></ul>
+                </li>
+                <li class="menu__item">
+                <span data-targetId="12.3.1252">Система мгновенных платежей</span>
+                <ul class="menu__level">
+                <li class="menu__item">
+                <a href="payment/smp/about" target="_self" title="">Общие сведения</a>
+                </li>
+                <li class="menu__item">
+                <a href="/legislation/documents/pp_354.pdf" target="_blank" title="">Правила системы мгновенных платежей</a>
+                </li>
+                <li class="menu__item">
+                <a href="payment/info_about_participants_and_key_performance_indicators" target="_self" title="">Информация об участниках</a>
+                </li>
+                <li class="menu__item">
+                <a href="payment/SMP_grafik" target="_self" title="">График работы СМП</a>
+                </li>
+                <li class="menu__item">
+                <a href="payment/info_key_performance_indicators" target="_self" title="">Основные показатели работы</a>
+                </li>
+                <li class="menu__item">
+                <a href="payment/smp/service_krok" target="_self" title="">Сервис "КРОК"</a>
+                    </li></ul>
+                </li>
+                <li class="menu__item">
+                <span data-targetId="12.3.1253">Платежная система в ЕРИП </span>
+                <ul class="menu__level">
+                <li class="menu__item">
+                <a href="payment/erip/about" target="_self" title="">Общие сведения</a>
+                </li>
+                <li class="menu__item">
+                <a href="payment/payment_system_in_ERIP" target="_self" title="">Платежная система в ЕРИП</a>
+                    </li></ul>
+                    </li></ul>
+                </li>
+                <li class="menu__item">
+                <span data-targetId="12.3.126">Платежные инструменты и средства платежа</span>
+                <ul class="menu__level">
+                <li class="menu__item">
+                <span data-targetId="12.3.1261">Платежные программные приложения и иные платежные инструменты</span>
+                <ul class="menu__level">
+                <li class="menu__item">
+                <a href="legislation/Documents/pp_342.pdf" target="_blank" title="">Правила осуществления операций с платежным программным приложением и иными платежными инструментами </a>
+                    </li></ul>
+                </li>
+                <li class="menu__item">
+                <span data-targetId="12.3.1262">Электронные деньги</span>
+                <ul class="menu__level">
+                <li class="menu__item">
+                <a href="legislation/Documents/pp_350.pdf" target="_blank" title="">Правила осуществления операций с электронными деньгами</a>
+                </li>
+                <li class="menu__item">
+                <a href="payment/servicing_electronic_money_holders" target="_self" title="">Обслуживание держателей электронных денег</a>
+                </li>
+                <li class="menu__item">
+                <a href="payment/e-money" target="_self" title="">Состояние рынка электронных денег</a>
+                    </li></ul>
+                </li>
+                <li class="menu__item">
+                <span data-targetId="12.3.1263">Банковские платежные карточки</span>
+                <ul class="menu__level">
+                <li class="menu__item">
+                <a href="legislation/documents/pp_284-2023.pdf" target="_blank" title="PDF, 355K">Концепция создания и развития платежных систем на основе банковских платежных карточек, операторами которых являются резиденты</a>
+                </li>
+                <li class="menu__item">
+                <a href="legislation/Documents/pp_378.pdf" target="_blank" title="">Инструкция об осуществлении операций с банковскими платежными карточками и платежными инструментами, обеспечивающими их использование</a>
+                </li>
+                <li class="menu__item">
+                <a href="payment/plasticcards/bankcardholder.aspx" target="_self" title="">Обслуживание держателей банковских платежных карточек</a>
+                </li>
+                <li class="menu__item">
+                <a href="payment/plasticcards/state_of_the_market_of_bank_payment_cards" target="_self" title="">Состояние рынка банковских платежных карточек</a>
+                    </li></ul>
+                    </li></ul>
+                </li>
+                <li class="menu__item">
+                <span data-targetId="12.3.127">Оверсайт и управление платежными рисками</span>
+                <ul class="menu__level">
+                <li class="menu__item">
+                <a href="legislation/Documents/pp_315.pdf" target="_blank" title="">Стратегия Национального банка по управлению платежными рисками на платежном рынке Республики Беларусь</a>
+                </li>
+                <li class="menu__item">
+                <a href="payment/oversight/infrastructure" target="_self" title="">Оценка инфраструктур финансового рынка</a>
+                </li>
+                <li class="menu__item">
+                <a href="payment/oversight/paymentrisks" target="_self" title="">Управление платежными рисками</a>
+                </li>
+                <li class="menu__item">
+                <a href="payment/oversight/analytics" target="_self" title="">Аналитика</a>
+                </li>
+                <li class="menu__item">
+                <a href="payment/oversight/paymentservicesreporting" target="_self" title="">Отчетность поставщиков платежных услуг</a>
+                </li>
+                <li class="menu__item">
+                <a href="payment/oversight/internationalcooperation" target="_self" title="">Международное сотрудничество</a>
+                    </li></ul>
+                    </li></ul>
+                </li>
+                <li class="menu__item">
+                <span data-targetId="12.3.13">Базовый счет</span>
+                <ul class="menu__level">
+                <li class="menu__item">
+                <a href="legislation/Documents/up_363.pdf" target="_blank" title="">Указ Президента Республики Беларусь от 23 сентября 2021 г. № 363 ”О текущем (расчетном) банковском счете физического лица с базовыми условиями обслуживания“</a>
+                </li>
+                <li class="menu__item">
+                <a href="legislation/Documents/pp_33.pdf" target="_blank" title="">Инструкция о порядке осуществления операций по базовым счетам, с базовыми счетами и функционирования автоматизированной системы учета базовых счетов</a>
+                </li>
+                <li class="menu__item">
+                <a href="legislation/Documents/psm_93-3.pdf" target="_blank" title="">Постановление Совета Министров Республики Беларусь и Национального банка Республики Беларусь от 22 февраля 2022 г. № 93/3 ”Об определении выплат социального характера“</a>
+                </li>
+                <li class="menu__item">
+                <a href="payment/list_of_banks_opening_current" target="_self" title="">Перечень банков, открывающих текущие (расчетные) банковские счета физических лиц с базовыми условиями обслуживания (базовые счета)</a>
+                    </li></ul>
+                </li>
+                <li class="menu__item">
+                <span data-targetId="12.3.14">Удаленная идентификация и аутентификация</span>
+                <ul class="menu__level">
+                <li class="menu__item">
+                <a href="legislation/documents/pp379.pdf" target="_blank" title="">Инструкция об использовании программно-аппаратных средств и технологий, проведении процедур удаленной идентификации, удаленного обновления (актуализации)</a>
+                </li>
+                <li class="menu__item">
+                <a href="legislation/documents/i_497.pdf" target="_blank" title="">Инструкция о порядке функционирования межбанковской системы идентификации</a>
+                    </li></ul>
+                </li>
+                <li class="menu__item">
+                <span data-targetId="12.3.15">Цифровые технологии и инициативы по развитию платежного рынка</span>
+                <ul class="menu__level">
+                <li class="menu__item">
+                <a href="payment/vzaimodejstvie-s-konfederaciej-cifrovogo-biznesa" target="_self" title="">Общие сведения   </a>
+                </li>
+                <li class="menu__item">
+                <a href="payment/koncepcija-rasvitija-platioznogo-rinka_2023-2025.pdf " target="_blank" title="PDF, 850K">Концепция развития платежного  рынка Республики Беларусь и  цифровизации банковского сектора на 2023  – 2025 годы</a>
+                </li>
+                <li class="menu__item">
+                <a href="payment/vzaimodejstvie-s-konfederaciej-cifrovogo-biznesa/kiberbezopasnost" target="_self" title="">Кибербезопасность</a>
+                </li>
+                <li class="menu__item">
+                <a href="legislation/documents/e_478.pdf" target="_blank" title="">Указ Президента Республики Беларусь от 1 декабря 2015 г. № 478 ”О развитии цифровых банковских технологий“</a>
+                </li>
+                <li class="menu__item">
+                <a href="legislation/documents/u_148.pdf" target="_blank" title="">Указ Президента Республики Беларусь от 18 апреля 2019 г. № 148 ”О цифровых банковских технологиях“ (в редакции Указа Президента Республики Беларусь от 19 февраля 2024 г. № 64)</a>
+                </li>
+                <li class="menu__item">
+                <a href="legislation/documents/pp_428.pdf" target="_blank" title="">Положение о порядке совершения и (или) исполнения сделок, иных юридически значимых действий при осуществлении банковских, других финансовых операций и иной деятельности, связанной с осуществлением этих операций, посредством смарт-контрактов</a>
+                    </li></ul>
+                </li>
+                <li class="menu__item">
+                <span data-targetId="12.3.16">Кодификатор назначения платежа</span>
+                <ul class="menu__level">
+                <li class="menu__item">
+                <a href="payment/knp.xlsx" target="_blank" title="">Справочник</a>
+                </li>
+                <li class="menu__item">
+                <a href="legislation/documents/spr_%203-01-2022.pdf" target="_blank" title="">Стандарт проведения расчетов СПР 3.01-2022 ”Банковская деятельность. Информационные технологии. Финансовые сообщения, используемые при переводе денежных средств. Общие требования“</a>
+                </li>
+                <li class="menu__item">
+                <a href="payment/iso20022/faq_codificator" target="_self" title="">Актуальные вопросы/ответы в связи с внедрением Кодификатора назначения платежа в Республике Беларусь</a>
+                    </li></ul>
+                </li>
+                <li class="menu__item">
+                <a href="payment/automated_system_central_archive_of_interbank_settlements" target="_self" title="">Автоматизированная система ”Центральный архив межбанковских расчетов“</a>
+                </li>
+                <li class="menu__item">
+                <a href="payment/iso20022" target="_self" title="">Внедрение методологии ISO 20022</a>
+                </li>
+                <li class="menu__item">
+                <a href="payment/open_banking_APIs" target="_self" title="">Открытые банковские АРI</a>
+                </li>
+                <li class="menu__item">
+                <a href="payment/sertify" target="_self" title="">Стандарты</a>
+                </li>
+                <li class="menu__item">
+                <a href="payment/bic-rb.xlsx" target="_blank" title="">Справочник банковских идентификационных кодов и бизнес-идентификационных кодов</a>
+                </li>
+                <li class="menu__item">
+                <a href="payment/bic" target="_self" title="">Сведения о действующих, прекративших участие в системе BISS (закрытых), находящихся в стадии ликвидации (ликвидируемых) банках и их филиалах, небанковских кредитно-финансовых организациях и специализированных финансовых организациях</a>
+                </li>
+                <li class="menu__item">
+                <a href="publications/paymentcyclestructure" target="_self" title="">Структура безналичного платежного оборота Республики Беларусь</a>
+                </li>
+                <li class="menu__item">
+                <a href="payment/biss_services" target="_self" title="">Расчетные услуги Национального банка</a>
+                </li>
+                <li class="menu__item">
+                <a href="payment/iso20022_eaeunion" target="_self" title="">Внедрение ISO 20022 в рамках Евразийского экономического союза</a>
+                </li>
+                <li class="menu__item">
+                <a href="payment/digital_ruble" target="_self" title="">Внедрение цифрового белорусского рубля</a>
+                </li>
+                <li class="menu__item">
+                <a href="payment/publications" target="_self" title="">Публикации</a>
+                    </li></ul>
+                </li>
+                <li class="menu__item">
+                <span data-targetId="13">ЗАКОНОДАТЕЛЬСТВО</span>
+                <ul class="menu__level">
+                <li class="menu__item">
+                <a href="legislation/references/bankingcode" target="_blank" title="">Банковский кодекс Республики Беларусь</a>
+                </li>
+                <li class="menu__item">
+                <a href="legislation/references/statute" target="_blank" title="">Устав Национального банка Республики Беларусь</a>
+                </li>
+                <li class="menu__item">
+                <a href="legislation/cpdkp" target="_self" title="">Целевые показатели денежно-кредитной политики Республики Беларусь</a>
+                </li>
+                <li class="menu__item">
+                <a href="legislation/ondkp?m=legisl" target="_self" title="">Основные направления денежно-кредитной политики Республики Беларусь</a>
+                </li>
+                <li class="menu__item">
+                <a href="/legislation/documents/pp_38-2026.pdf" target="_blank" title="">Среднесрочная программа деятельности Национального банка и финансового сектора на 2026–2030 годы</a>
+                </li>
+                <li class="menu__item">
+                <span data-targetId="134">Нормативные правовые акты и&nbsp;письма Национального банка</span>
+                <ul class="menu__level">
+                <li class="menu__item">
+                <a href="legislation/search" target="_self" title="">Рубрикатор и поиск по разделу</a>
+                </li>
+                <li class="menu__item">
+                <a href="legislation/bankcreation" target="_self" title="">Создание банков и небанковских кредитно-финансовых организаций</a>
+                </li>
+                <li class="menu__item">
+                <a href="legislation/banksupervision" target="_self" title="">Банковский надзор</a>
+                </li>
+                <li class="menu__item">
+                <a href="legislation/bankoperregul" target="_self" title="">Регулирование банковских операций</a>
+                </li>
+                <li class="menu__item">
+                <a href="legislation/cryptobanks" target="_self" title="">Криптобанки</a>
+                </li>
+                <li class="menu__item">
+                <a href="legislation/forexregul" target="_self" title="">Валютное регулирование и валютный контроль</a>
+                </li>
+                <li class="menu__item">
+                <a href="legislation/mp" target="_self" title="">Монетарные операции</a>
+                </li>
+                <li class="menu__item">
+                <a href="legislation/transactionsPreciousMetals" target="_self" title="">Операции с драгоценными металлами, драгоценными камнями, памятными и слитковыми (инвестиционными) монетами</a>
+                </li>
+                <li class="menu__item">
+                <a href="legislation/fininstrumentsoper" target="_self" title="">Операции с финансовыми инструментами срочных сделок</a>
+                </li>
+                <li class="menu__item">
+                <a href="legislation/depositary" target="_self" title="">Депозитарная деятельность</a>
+                </li>
+                <li class="menu__item">
+                <a href="legislation/payment" target="_self" title="">Платежный рынок и цифровые технологии</a>
+                </li>
+                <li class="menu__item">
+                <a href="legislation/electroniccommunication" target="_self" title="">Электронное взаимодействие</a>
+                </li>
+                <li class="menu__item">
+                <a href="legislation/cashoperations" target="_self" title="">Наличное денежное обращение</a>
+                </li>
+                <li class="menu__item">
+                <a href="legislation/leasing" target="_self" title="">Нормативные правовые акты по вопросам лизинга</a>
+                </li>
+                <li class="menu__item">
+                <a href="legislation/microfinance" target="_self" title="">Регулирование порядка привлечения и предоставления микрозаймов</a>
+                </li>
+                <li class="menu__item">
+                <a href="legislation/forfeiting" target="_self" title="">Применение Указа Президента Республики Беларусь от 17 февраля 2015 г. № 69 "Об использовании векселей"</a>
+                </li>
+                <li class="menu__item">
+                <a href="legislation/forex" target="_self" title="">Применение Указа Президента Республики Беларусь от 4 июня 2015 г. № 231 "Об осуществлении деятельности на внебиржевом рынке Форекс"</a>
+                </li>
+                <li class="menu__item">
+                <span data-targetId="13415">Предотвращение легализации доходов, полученных преступным путем, финансирования террористической деятельности и финансирования распространения оружия массового поражения</span>
+                <ul class="menu__level">
+                <li class="menu__item">
+                <a href="legislation/aml-general" target="_self" title="">Общее законодательство</a>
+                </li>
+                <li class="menu__item">
+                <a href="legislation/aml-banks" target="_self" title="">Для банков</a>
+                </li>
+                <li class="menu__item">
+                <a href="legislation/aml-non-credit" target="_self" title="">Для некредитных финансовых организаций</a>
+                </li>
+                <li class="menu__item">
+                <a href="legislation/aml-payment-service-providers" target="_self" title="">Для поставщиков платежных услуг</a>
+                </li>
+                <li class="menu__item">
+                <a href="legislation/aml-nbrb" target="_self" title="">Для клиентов Национального банка</a>
+                    </li></ul>
+                </li>
+                <li class="menu__item">
+                <a href="legislation/informationsecur" target="_self" title="">Безопасность</a>
+                </li>
+                <li class="menu__item">
+                <a href="legislation/informationsecurity" target="_self" title="">Обеспечение информационной безопасности банков Республики Беларусь</a>
+                </li>
+                <li class="menu__item">
+                <a href="legislation/accountingreporting" target="_self" title="">Бухгалтерский учет и отчетность</a>
+                </li>
+                <li class="menu__item">
+                <a href="legislation/credithistory" target="_self" title="">Кредитные истории</a>
+                </li>
+                <li class="menu__item">
+                <a href="legislation/reytingovayadeyatelnost" target="_self" title="">Рейтинговая деятельность</a>
+                </li>
+                <li class="menu__item">
+                <a href="legislation/onlineborrowingservices" target="_self" title="">Сервисы онлайн-заимствования</a>
+                </li>
+                <li class="menu__item">
+                <a href="legislation/factoring" target="_self" title="">Факторинговые организации</a>
+                    </li></ul>
+                </li>
+                <li class="menu__item">
+                <a href="https://pravo.by/document/?guid=3871&amp;p0=P924v0005" target="_blank" title="">Концепция национальной безопасности</a>
+                </li>
+                <li class="menu__item">
+                <span data-targetId="137">Закон Республики Беларусь ”О платежных системах и платежных услугах“</span>
+                <ul class="menu__level">
+                <li class="menu__item">
+                <a href="/payment/concept-plat-usl.pdf" target="_blank" title="">Концепция проекта Закона Республики Беларусь "О платежных услугах в Республике Беларусь"</a>
+                </li>
+                <li class="menu__item">
+                <a href="legislation/documents/zakon_o_plat_sis.pdf" target="_blank" title="">Закон Республики Беларусь ”О платежных системах и платежных услугах“ </a>
+                    </li></ul>
+                </li>
+                <li class="menu__item">
+                <span data-targetId="138">Внедрение МСФО</span>
+                <ul class="menu__level">
+                <li class="menu__item">
+                <a href="legislation/msfo" target="_self" title="">Нормативные правовые акты и письма Национального банка</a>
+                </li>
+                <li class="menu__item">
+                <a href="msfo/publication" target="_self" title="">Публикации</a>
+                    </li></ul>
+                    </li></ul>
+                </li>
+                <li class="menu__item">
+                <span data-targetId="14">СТАТИСТИКА</span>
+                <ul class="menu__level">
+                <li class="menu__item">
+                <span data-targetId="141">Курсы валют</span>
+                <ul class="menu__level">
+                <li class="menu__item">
+                <a href="statistics/rates/ratesdaily" target="_self" title="">Официальные курсы белорусского рубля по отношению к иностранным валютам, устанавливаемые ежедневно</a>
+                </li>
+                <li class="menu__item">
+                <a href="statistics/rates/ratesmonth" target="_self" title="">Официальные курсы белорусского рубля по отношению к иностранным валютам, устанавливаемые ежемесячно</a>
+                </li>
+                <li class="menu__item">
+                <a href="statistics/rates/currbasket" target="_self" title="">Официальные курсы белорусского рубля по отношению к иностранным валютам и стоимость  корзины иностранных валют</a>
+                </li>
+                <li class="menu__item">
+                <a href="statistics/rates/avgrate" target="_self" title="">Средний официальный курс белорусского рубля по отношению к иностранным валютам</a>
+                </li>
+                <li class="menu__item">
+                <a href="statistics/rates/indices" target="_self" title="">Индексы курса белорусского рубля по отношению к валютам стран – основных торговых партнеров</a>
+                    </li></ul>
+                </li>
+                <li class="menu__item">
+                <span data-targetId="142">Статистика внешнеэкономической деятельности</span>
+                <ul class="menu__level">
+                <li class="menu__item">
+                <a href="statistics/balpays" target="_self" title="">Платежный баланс Республики Беларусь</a>
+                </li>
+                <li class="menu__item">
+                <a href="statistics/investpos" target="_self" title="">Международная инвестиционная позиция Республики Беларусь</a>
+                </li>
+                <li class="menu__item">
+                <a href="statistics/externaldebt" target="_self" title="">Валовой внешний долг Республики Беларусь</a>
+                </li>
+                <li class="menu__item">
+                <a href="statistics/foreigntrade" target="_self" title="">Внешняя торговля товарами и услугами Республики Беларусь</a>
+                </li>
+                <li class="menu__item">
+                <a href="statistics/remittances" target="_self" title="">Личные переводы</a>
+                </li>
+                <li class="menu__item">
+                <a href="statistics/foreigndirectinvestments" target="_self" title="">Прямые иностранные инвестиции</a>
+                </li>
+                <li class="menu__item">
+                <a href="statistics/portfolioinvestment" target="_self" title="">Портфельные иностранные инвестиции</a>
+                </li>
+                <li class="menu__item">
+                <a href="statistics/reserveassets/assets" target="_self" title="">Международные резервные активы Республики Беларусь</a>
+                </li>
+                <li class="menu__item">
+                <a href="statistics/sstandard/report" target="_self" title="">Международные резервные активы и ликвидность Республики Беларусь в иностранной валюте</a>
+                </li>
+                <li class="menu__item">
+                <a href="statistics/goldreserve" target="_self" title="">Золотой запас</a>
+                    </li></ul>
+                </li>
+                <li class="menu__item">
+                <span data-targetId="143">Денежно-кредитная статистика</span>
+                <ul class="menu__level">
+                <li class="menu__item">
+                <a href="statistics/monetarystat/broadmoney" target="_self" title="">Широкая денежная масса</a>
+                </li>
+                <li class="menu__item">
+                <a href="statistics/monetarystat/avgbroadmoney" target="_self" title=""> Средняя широкая денежная масса</a>
+                </li>
+                <li class="menu__item">
+                <a href="statistics/monetarystat/centralbanksurvey" target="_self" title="">Обзор Национального банка Республики Беларусь</a>
+                </li>
+                <li class="menu__item">
+                <a href="statistics/monetarystat/otherdepositarycorporationssurvey" target="_self" title="">Обзор других депозитных организаций Республики Беларусь</a>
+                </li>
+                <li class="menu__item">
+                <a href="statistics/monetarystat/depositarycorporationssurvey" target="_self" title="">Обзор депозитных организаций Республики Беларусь</a>
+                </li>
+                <li class="menu__item">
+                <a href="statistics/monetarystat/insuranceorgsurvey" target="_self" title="">Обзор страховых организаций Республики Беларусь</a>
+                </li>
+                <li class="menu__item">
+                <a href="statistics/monetarystat/leasingorgsurvey" target="_self" title="">Обзор лизинговых организаций Республики Беларусь</a>
+                </li>
+                <li class="menu__item">
+                <a href="statistics/monetarystat/otherfincorpsurvey" target="_self" title="">Обзор других финансовых организаций Республики Беларусь</a>
+                </li>
+                <li class="menu__item">
+                <a href="statistics/monetarystat/finsectorsurvey" target="_self" title="">Обзор финансового сектора Республики Беларусь</a>
+                </li>
+                <li class="menu__item">
+                <a href="statistics/monetarystat/monetarysurvey/monsurvarch2000_2006.xls" target="_blank" title="XLS, 128 КБ">Денежный обзор Республики Беларусь за 2000&nbsp;– 2006 годы</a>
+                </li>
+                <li class="menu__item">
+                <a href="statistics/monetarystat/nbrbaccounts/nbrbaccountsarch2000_2006.xls" target="_blank" title="XLS, 130 KB">Основные агрегаты аналитических счетов Национального банка за&nbsp;2000&nbsp;– 2006 годы</a>
+                    </li></ul>
+                </li>
+                <li class="menu__item">
+                <span data-targetId="144">Инструменты денежно-кредитной политики</span>
+                <ul class="menu__level">
+                <li class="menu__item">
+                <a href="statistics/monetarypolicyinstruments/refinancingrate?m=stat" target="_self" title="">Ставка рефинансирования</a>
+                </li>
+                <li class="menu__item">
+                <a href="statistics/dynamic" target="_self" title="">Динамика средней ставки рефинансирования</a>
+                </li>
+                <li class="menu__item">
+                <a href="statistics/monetarypolicyinstruments/interestrates/?menu=stat" target="_self" title="">Ставки по операциям Национального банка на финансовом рынке</a>
+                </li>
+                <li class="menu__item">
+                <a href="mp/reserverequirements/?menu=stat" target="_self" title="">Нормативы обязательных резервов</a>
+                    </li></ul>
+                </li>
+                <li class="menu__item">
+                <span data-targetId="145">Финансовые рынки</span>
+                <ul class="menu__level">
+                <li class="menu__item">
+                <a href="statistics/forexmarket/avrexrate" target="_self" title="">Средневзвешенный курс белорусского рубля по отношению к иностранным валютам на валютном рынке</a>
+                </li>
+                <li class="menu__item">
+                <a href="statistics/financialmarkets/forexmarket" target="_self" title="">Покупка-продажа иностранной валюты на внутреннем рынке</a>
+                </li>
+                <li class="menu__item">
+                <a href="statistics/financialmarkets/creditDepositMarket" target="_self" title="">Кредитно-депозитный рынок</a>
+                </li>
+                <li class="menu__item">
+                <a href="statistics/financialmarkets/interbankrates" target="_self" title="">Ставки межбанковского рынка</a>
+                </li>
+                <li class="menu__item">
+                <a href="statistics/financialmarkets/corpsecurmarket" target="_self" title="">Показатели рынка корпоративных ценных бумаг</a>
+                </li>
+                <li class="menu__item">
+                <a href="statistics/financialmarkets/nbbondsregister" target="_self" title="">Реестр выпусков облигаций Национального банка</a>
+                </li>
+                <li class="menu__item">
+                <a href="statistics/valuables/pricemetalsstones" target="_self" title="">Цены на драгоценные металлы и камни</a>
+                </li>
+                <li class="menu__item">
+                <a href="statistics/indicators" target="_self" title="">Индикаторы рыночного портфеля ГКО и ГДО</a>
+                    </li></ul>
+                </li>
+                <li class="menu__item">
+                <span data-targetId="146">Статистический бюллетень</span>
+                <ul class="menu__level">
+                <li class="menu__item">
+                <a href="publications/bulletin" target="_self" title="">Ежемесячник</a>
+                </li>
+                <li class="menu__item">
+                <a href="publications/monthlybook" target="_self" title="">Ежемесячник (кредиты по видам экономической деятельности)</a>
+                </li>
+                <li class="menu__item">
+                <a href="publications/bulletinyearbook" target="_self" title="">Ежегодник</a>
+                </li>
+                <li class="menu__item">
+                <a href="publications/bulletinregional" target="_self" title="">Региональный выпуск</a>
+                    </li></ul>
+                </li>
+                <li class="menu__item">
+                <a href="statistics/bankreports" target="_self" title="">Перечень форм отчетности банков, НКФО и других финансовых организаций, представляемой в Национальный банк</a>
+                </li>
+                <li class="menu__item">
+                <a href="statistics/financialcapability?m=stat" target="_self" title="">Показатели финансовой устойчивости</a>
+                </li>
+                <li class="menu__item">
+                <span data-targetId="149">Специальный стандарт распространения данных МВФ</span>
+                <ul class="menu__level">
+                <li class="menu__item">
+                <a href="statistics/sstandard" target="_self" title="">Общие сведения</a>
+                </li>
+                <li class="menu__item">
+                <a href="statistics/sstandard/calendar" target="_self" title="">Календарь предварительных сроков публикации данных, распространяемых Национальным банком в соответствии с требованиями Специального стандарта распространения данных МВФ</a>
+                </li>
+                <li class="menu__item">
+                <a href="statistics/sstandard/metadata/chart.asp" target="_self" title="">Метаданные</a>
+                </li>
+                <li class="menu__item">
+                <a href="statistics/sstandard/data" target="_self" title="">Важнейшие макроэкономические и финансовые показатели Национального банка</a>
+                    </li></ul>
+                </li>
+                <li class="menu__item">
+                <a href="statistics/timetable" target="_self" title="">График предварительных сроков размещения официальной статистической информации на интернет-сайте Национального банка</a>
+                </li>
+                <li class="menu__item">
+                <a href="http://eaeunion.org/statistics" target="_blank" title="">Статистика Евразийской экономической комиссии</a>
+                    </li></ul>
+                </li>
+                <li class="menu__item">
+                <span data-targetId="17.0">Публикации</span>
+                <ul class="menu__level">
+                <li class="menu__item">
+                <a href="publications/ectendencies/?m=publ" target="_self" title="">Аналитическое обозрение "Основные тенденции в экономике и денежно-кредитной сфере Республики Беларусь"</a>
+                </li>
+                <li class="menu__item">
+                <a href="publications/monitoringpredpriyatij?m=public" target="_self" title="">Аналитическое обозрение "Мониторинг предприятий реального сектора экономики Республики Беларусь"</a>
+                </li>
+                <li class="menu__item">
+                <a href="publications/economicconjuncture/?m=publ" target="_self" title="">Экспресс-обзор "Экономическая конъюнктура"</a>
+                </li>
+                <li class="menu__item">
+                <a href="publications/realcoursinfo/?m=publ" target="_self" title="">Информация об изменении реального эффективного курса белорусского рубля</a>
+                </li>
+                <li class="menu__item">
+                <span data-targetId="17.01">Аналитические обозрения по банковским кредитам и вкладам (депозитам)</span>
+                <ul class="menu__level">
+                <li class="menu__item">
+                <a href="publications/creditsmonitoring" target="_self" title="">Мониторинг условий банковского кредитования</a>
+                </li>
+                <li class="menu__item">
+                <a href="publications/kyc" target="_self" title="">Обследование по реализации банковского принципа "Знай своего клиента"</a>
+                </li>
+                <li class="menu__item">
+                <a href="publications/pk" target="_self" title="">Портрет кредитополучателя – физического лица</a>
+                    </li></ul>
+                </li>
+                <li class="menu__item">
+                <span data-targetId="17.01.1">Журнал "Банкаўскі веснік"</span>
+                <ul class="menu__level">
+                <li class="menu__item">
+                <a href="bv" target="_self" title="">Последний номер</a>
+                </li>
+                <li class="menu__item">
+                <a href="bv/search" target="_self" title="">Поиск по журналу</a>
+                </li>
+                <li class="menu__item">
+                <a href="bv/arch" target="_self" title="">Архив журнала</a>
+                </li>
+                <li class="menu__item">
+                <a href="bv/o-zhurnale" target="_self" title="">О журнале</a>
+                </li>
+                <li class="menu__item">
+                <span data-targetId="17.01.14">Авторам</span>
+                <ul class="menu__level">
+                <li class="menu__item">
+                <a href="bv/information-for-authors" target="_self" title="">Общие сведения</a>
+                </li>
+                <li class="menu__item">
+                <a href="bv/information-for-authors/struktura-nauchnoj-publikacii" target="_self" title="">Структура научной публикации</a>
+                </li>
+                <li class="menu__item">
+                <a href="bv/information-for-authors/trebovaniya-redakcii" target="_self" title="">Требования редакции к оформлению публикаций</a>
+                    </li></ul>
+                    </li></ul>
+                </li>
+                <li class="menu__item">
+                <a href="today/about/research" target="_self" title="">Исследовательская деятельность</a>
+                </li>
+                <li class="menu__item">
+                <a href="publications/povysheniya-doveriya-k-nacionalnym-valyutam" target="_self" title="">Материалы по вопросам повышения доверия к национальным валютам</a>
+                </li>
+                <li class="menu__item">
+                <a href="publications/expertcommunitymeetings" target="_self" title="">Материалы к встречам с представителями экспертного сообщества</a>
+                    </li></ul>
+                </li>
+                <li class="menu__item">
+                <span data-targetId="17.1">Кредитный регистр</span>
+                <ul class="menu__level">
+                <li class="menu__item">
+                <a href="today/creditregistry" target="_self" title="">Общие сведения</a>
+                </li>
+                <li class="menu__item">
+                <a href="today/creditregistry/creditreports.asp" target="_self" title="">Предоставление кредитных отчетов</a>
+                </li>
+                <li class="menu__item">
+                <a href="today/creditregistry/credithistorycorrection" target="_self" title="">Исправление недостоверных сведений</a>
+                </li>
+                <li class="menu__item">
+                <a href="today/creditregistry/creditreportban" target="_self" title="">Установка запрета на предоставление кредитного отчета</a>
+                </li>
+                <li class="menu__item">
+                <a href="legislation/credithistory/?m=cred" target="_self" title="">Нормативные правовые акты</a>
+                </li>
+                <li class="menu__item">
+                <a href="today/creditregistry/price" target="_self" title="">Тарифы</a>
+                </li>
+                <li class="menu__item">
+                <a href="today/creditregistry/creditregistrystat.xlsx" target="_blank" title="XLS, 37 KB">Cтатистика кредитного регистра</a>
+                </li>
+                <li class="menu__item">
+                <span data-targetId="17.16">Информация для источников формирования кредитной истории, пользователей кредитных историй и иных участников Кредитного регистра</span>
+                <ul class="menu__level">
+                <li class="menu__item">
+                <a href="today/creditregistry/news" target="_self" title="">Новости</a>
+                </li>
+                <li class="menu__item">
+                <a href="today/creditregistry/comments" target="_self" title="">Комментарии и разъяснения</a>
+                </li>
+                <li class="menu__item">
+                <a href="today/creditregistry/instructions" target="_self" title="">Технические инструкции</a>
+                </li>
+                <li class="menu__item">
+                <a href="today/creditregistry/order" target="_self" title="">Порядок подключения к Кредитному регистру</a>
+                </li>
+                <li class="menu__item">
+                <a href="today/creditregistry/aktualnye-versii-prikladnogo-programmnogo-obespecheniya-kr" target="_self" title="">Программное обеспечение</a>
+                    </li></ul>
+                    </li></ul>
+                </li>
+                <li class="menu__item">
+                <span data-targetId="18">БАНКНОТЫ И МОНЕТЫ</span>
+                <ul class="menu__level">
+                <li class="menu__item">
+                <a href="coinsbanknotes" target="_self" title="">Общие сведения</a>
+                </li>
+                <li class="menu__item">
+                <a href="coinsbanknotes/byn-ico" target="_self" title="">Графический знак белорусского рубля</a>
+                </li>
+                <li class="menu__item">
+                <a href="coinsbanknotes/coins" target="_self" title="">Монеты, выпущенные в обращение Национальным банком</a>
+                </li>
+                <li class="menu__item">
+                <span data-targetId="183">Банкноты, выпущенные в обращение Национальным банком</span>
+                <ul class="menu__level">
+                <li class="menu__item">
+                <a href="coinsbanknotes/banknotes" target="_self" title="">Находящиеся в обращении</a>
+                </li>
+                <li class="menu__item">
+                <a href="coinsbanknotes/banknotes/outofcircl" target="_self" title="">Выведенные из обращения</a>
+                </li>
+                <li class="menu__item">
+                <a href="coinsbanknotes/banknotes/exchange" target="_self" title="">Сроки и условия обмена банкнот, выпущенных в обращение Национальным банком</a>
+                </li>
+                <li class="menu__item">
+                <a href="coinsbanknotes/banknotes/authenticity" target="_self" title="">Проверка банкнот Национального банка и иностранных государств на подлинность</a>
+                    </li></ul>
+                </li>
+                <li class="menu__item">
+                <span data-targetId="185">Памятные монеты, выпущенные в обращение  Национальным банком</span>
+                <ul class="menu__level">
+                <li class="menu__item">
+                <a href="coinsbanknotes/coins/commemorative/catalog" target="_self" title="">Каталог</a>
+                </li>
+                <li class="menu__item">
+                <a href="coinsbanknotes/coins/commemorative/search" target="_self" title="">Поиск</a>
+                </li>
+                <li class="menu__item">
+                <a href="coinsbanknotes/coins/commemorative/prices" target="_self" title="">Отпускные цены</a>
+                </li>
+                <li class="menu__item">
+                <a href="coinsbanknotes/coins/commemorative/plan" target="_self" title="">План выпуска</a>
+                </li>
+                <li class="menu__item">
+                <a href="coinsbanknotes/coins/commemorative/25-years" target="_self" title="">25 интересных фактов о белорусских памятных монетах</a>
+                    </li></ul>
+                </li>
+                <li class="menu__item">
+                <a href="coinsbanknotes/coins/bullioncoins/1" target="_self" title="">Слитковые (инвестиционные) монеты, выпущенные в обращение Национальным банком</a>
+                </li>
+                <li class="menu__item">
+                <span data-targetId="187">Памятные банкноты, выпущенные в обращение  Национальным банком</span>
+                <ul class="menu__level">
+                <li class="menu__item">
+                <a href="coinsbanknotes/banknotes/commemorative/pack/42" target="_self" title="">10-летие Национального банка Республики Беларусь</a>
+                </li>
+                <li class="menu__item">
+                <a href="coinsbanknotes/banknotes/commemorative/pack/43" target="_self" title="">Миллениум</a>
+                </li>
+                <li class="menu__item">
+                <a href="coinsbanknotes/banknotes/commemorative/pack/44" target="_self" title="">Замковый комплекс "Мир"</a>
+                </li>
+                <li class="menu__item">
+                <a href="coinsbanknotes/banknotes/commemorative/pack/45" target="_self" title="">Национальный банк Республики Беларусь. 20 лет</a>
+                </li>
+                <li class="menu__item">
+                <a href="coinsbanknotes/banknotes/commemorative/pack/46" target="_self" title="">Памятные банкноты "Мая краіна – Беларусь"</a>
+                </li>
+                <li class="menu__item">
+                <a href="coinsbanknotes/banknotes/commemorative/pack/47" target="_self" title="">Памятные банкноты "80 год Перамогі савецкага народа ў Вялікай Айчыннай вайне"</a>
+                </li>
+                <li class="menu__item">
+                <a href="coinsbanknotes/banknotes/commemorative/prices" target="_self" title="">Отпускные цены</a>
+                    </li></ul>
+                </li>
+                <li class="menu__item">
+                <a href="today/services/coins/avail/1" target="_self" title="">Информация о поступлениях, ценах продажи и наличии памятных монет и памятных банкнот в кассах Национального банка</a>
+                </li>
+                <li class="menu__item">
+                <a href="publications/coinageoffense" target="_self" title="">Поддельные денежные знаки, выявленные в банковской системе Республики Беларусь</a>
+                    </li></ul>
+                </li>
+                <li class="menu__item">
+                <span data-targetId="19">Работа с обращениями граждан и юридических лиц</span>
+                <ul class="menu__level">
+                <li class="menu__item">
+                <a href="today/applications" target="_self" title="">Общая информация</a>
+                </li>
+                <li class="menu__item">
+                <a href="today/faq" target="_self" title="">Часто задаваемые вопросы</a>
+                </li>
+                <li class="menu__item">
+                <a href="today/applications/cyber-security" target="_self" title="">Противодействие киберпреступности</a>
+                    </li></ul>
+                </li>
+                <li class="menu__item">
+                <a href="today/adminproc" target="_self" title="">Административные процедуры</a>
+        </li></ul>
+<li class="menu__item mm-divider" aria-hidden="true">
+    <a href="/admin/panel/login?userId=639270105488705853" style="position: absolute !important; left: -999px;" rel="nofollow" aria-hidden="true">Admin panel - login</a>
+</li>
+</ul>    </nav>
+    <link rel="stylesheet" href="/js/lib/mmenu/dist/extensions/widescreen/jquery.mmenu.widescreen.min.css?v=Us6ttRFBlsnqEa0FJVhAAXMvzzI" media="all and (min-width: 992px)" />
+    <link rel="stylesheet" href="/js/lib/owl/assets/css?v=tdZu_Zyiw7B-eATkJP9KCp4iFNI" />
+    <link rel="stylesheet" href="/css/flatpickr?v=PYNbXGnfe33JT6wf8yY1Mt0zNtw" />
+    <link rel="stylesheet" href="/css/stacktable?v=3zoYZ8DfmZGwyMsHjsblIchwq3E" />
+    <script src="/js/lib/parsley?v=ZJo9RRxwrtPJpqGMlvC2Yo8wf_I"></script>
+    <script src="/js/lib/TweenMax?v=K3xu-PYOqcr9T0S07fIcVSfFrHc"></script>
+    <script src="/js/lib/isotope?v=i26Gw54T-J1ou3T3S_yiP-eznWA"></script>
+    <script src="/js/lib/webfont?v=SWTopHMkIfMYDXY9se0oedGGFCM"></script>
+    <script src="/js/lib/stickykit?v=LnHw-iYx23FFGxf7_UjgLtLeNNY"></script>
+    <script src="/js/lib/sly?v=3w8NkjSAluzzBjN5fUtBRwGzcY0"></script>
+    <script src="/js/lib/easing?v=Cz8tx2iwPTagL9bYSlFN1oRvvRU"></script>
+    <script src="/js/lib/cookie?v=LUGOahJREQsOeWVHaum6F5_80UI"></script>
+    <script src="/js/lib/cleave?v=1tIR0GEzrwh_g8Q3gfO9nSz7v6w"></script>
+    <script src="/js/lib/selectizejs?v=9BNe-fhctxaLq4TsbegWdPjOnG0"></script>
+    <script src="/js/lib/mmenujs?v=STFy1u7yFwv2DB_nQ73_uAmoHL4"></script>
+    <script src="/js/lib/mmenuaddjs?v=47YdFlxsP0DKFaF_oUqOdCf0WV0"></script>
+    <script src="/js/lib/matchHeight?v=dK_Z__pSnN0Rc2hNTcDDD7MwMQk"></script>
+    <script src="/js/lib/carousel?v=36hNBnVm08gVhwkN5T7TwFGaUqQ"></script>
+    <script src="/js/jquerygray?v=eJdcpfo12WI7He1ZNMoyACiBPFw"></script>
+    <script src="/js/lib/nocdn?v=j-Dvqm2sTO5AsGUY--EAWcZ3PH4"></script>
+    <script src="/js/i18n/ru?v=JsCU84tWxzbv1KPTpIEK-Ev6-HE"></script>
+    <script src="/js/lib/flatpicker/ru?v=TpLKXSIHyP-yYgrL6_yKBELFAow"></script>
+    <script src="/js/stackable?v=SdMbzc6MR1GVg5YHdrbmXp4HgHM"></script>
+    <script src="/lib/sweetalert2/sweetalert2.min.js"></script>
+    <script src="/js/gain.js?v=9uLlxu0fYicPJXyWzntw-FY9uaU"></script>
+    <script src="/js/common.js?v=HteKBOMKQhhiSNSFLgp4Y43FDhE"></script>
+
+    <script src="/js/grey.js?v=z0ctAAEQG7zAt2OkBBegXaQxBLc"></script>
+
+    <link rel="stylesheet" href="/lib/slider.css?v=hXl1W8nsy5pCdrkc5POmnHEmfuo" />
+    <script src="/lib/slider.js?v=RCdErVzIR7zVmr7sxIiixsl1-C0"></script>
+
+    <link rel="stylesheet" href="/lib/chartjs.css?v=6Kzd7iFsD9fuQtdh9qsajKtayhg" />
+    <script src="/lib/chartjs.js?v=hu_wzMW7R2QjjqCBj3art3EubIs"></script>
+
+    <link rel="stylesheet" href="/less/bundle.css?v=VS2d0P-myVxiHQevG86JbZuz5lw" />
+    
+    
+</body>
+</html>
