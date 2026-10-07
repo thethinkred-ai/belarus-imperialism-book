@@ -9,7 +9,7 @@ on:
     branches: [main]
     paths:
       - "site_out/**"
-      - "scripts/ftp_deploy.py"
+      - "scripts/**"
       - ".github/workflows/library-deploy.yml"
 
 concurrency:
@@ -30,6 +30,12 @@ jobs:
           FTP_USER: ${{ secrets.FTP_USER }}
           FTP_PASS: ${{ secrets.FTP_PASS }}
         run: python scripts/ftp_deploy.py site_out /library
+      - name: Обновление sitemap.xml
+        env:
+          FTP_HOSTS: ${{ secrets.FTP_HOSTS }}
+          FTP_USER: ${{ secrets.FTP_USER }}
+          FTP_PASS: ${{ secrets.FTP_PASS }}
+        run: python scripts/ftp_sitemap.py
       - name: Бэкап предыдущих версий (артефакт, 30 дней)
         if: always()
         uses: actions/upload-artifact@v4
