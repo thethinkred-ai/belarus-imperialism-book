@@ -4,7 +4,7 @@
 Стиль — по образцу библиотеки ThinkRed (bezrukova.html/morozova.html):
 - индексная страница с плашками-карточками на каждую главу (details с параграфами);
 - отдельная страница на главу: сайтбар, крошка, статья, prev/next, футер;
-- JSON-LD Book; SEO-мета; honesty-плашка о статусе черновика v0.6.
+- JSON-LD Book; SEO-мета; honesty-плашка о статусе черновика v0.7.
 
 Запуск:  python scripts/build_site.py   →  site_out/*.html
 """
@@ -18,8 +18,9 @@ os.makedirs(OUT, exist_ok=True)
 BOOK_TITLE = "Место современной Республики Беларусь в системе мирового империализма"
 BOOK_SLUG = "belarus-imperialism.html"
 BASE = "https://thinkred.ru/library/"
-VERSION_NOTE = ("Публикуется в развитии: черновик v0.6, прошедший внешнее рецензирование. "
-                "Места, отмеченные [источник], требуют документального подтверждения — реестр открыт.")
+VERSION_NOTE = ("Публикуется в развитии: черновик v0.7 — цикл внешних рецензий глав 1–14, "
+                "заключения и приложений применён. Места, отмеченные [задание], требуют документального "
+                "подтверждения — реестр открыт (48 источников, 66 утверждений).")
 
 # (файл, выходной html, короткое имя для навигации, описание для плашки)
 PARTS = [
@@ -219,7 +220,7 @@ def chapter_page(idx, title, body_html, next_ref, prev_ref):
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>{html_mod.escape(title)} — {html_mod.escape(BOOK_TITLE)} — ThinkRed</title>
-<meta name="description" content="{html_mod.escape(title)} из книги «{html_mod.escape(BOOK_TITLE)}» (ThinkRed, черновик v0.6)."/>
+<meta name="description" content="{html_mod.escape(title)} из книги «{html_mod.escape(BOOK_TITLE)}» (ThinkRed, черновик v0.7)."/>
 <link rel="canonical" href="{BASE}bel-g{idx:02d}.html"/>
 <link rel="icon" href="https://thinkred.ru/favicon.png"/>
 {CH_CSS}
@@ -229,7 +230,7 @@ def chapter_page(idx, title, body_html, next_ref, prev_ref):
 <div class="crumb"><a href="/library/{BOOK_SLUG}">{html_mod.escape(BOOK_TITLE)}</a> → {html_mod.escape(title)}</div>
 <div class="layout">
 <article>
-<div class="status">Черновик v0.6 — публикация в развитии. Места <b>[источник]</b> требуют документального подтверждения.</div>
+<div class="status">Черновик v0.7 — цикл внешних рецензий применён; публикация в развитии. Места <b>[задание]</b> требуют документального подтверждения.</div>
 {body_html}
 </article>
 </div>
@@ -304,9 +305,9 @@ index = f"""<!doctype html>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Место современной Республики Беларусь в системе мирового империализма — ThinkRed</title>
-<meta name="description" content="Исследование места Беларуси в системе мирового империализма по Ленину: пять признаков как отношения, критерий субъектности К∧В∧Г∧Р, контуры накопления, классовая структура и проект программных тезисов. Черновик v0.6."/>
+<meta name="description" content="Исследование места Беларуси в системе мирового империализма по Ленину: пять признаков как отношения, критерий субъектности К∧В∧Г∧Р, контуры накопления, классовая структура и проект программных тезисов. Черновик v0.7 — цикл внешних рецензий применён."/>
 <meta property="og:title" content="Место современной Республики Беларусь в системе мирового империализма"/>
-<meta property="og:description" content="Книга ThinkRed: критерий прежде вывода; политика из экономики; черновик v0.6 под открытым рецензированием."/>
+<meta property="og:description" content="Книга ThinkRed: критерий прежде вывода; политика из экономики; черновик v0.7 — цикл внешних рецензий под открытым рецензированием."/>
 <meta property="og:type" content="book"/>
 <link rel="canonical" href="{BASE}{BOOK_SLUG}"/>
 <link rel="icon" href="https://thinkred.ru/favicon.png"/>
@@ -389,7 +390,7 @@ body{{margin:0;background:var(--bg);color:var(--fg);font-family:-apple-system,Bl
   <div class="toc-grid">
   {chr(10).join(toc_app_cards)}
   </div>
-  <div class="note">Книга собрана и рецензирована с помощью <a href="https://thinkred.ru/assistant/">Методологического ассистента</a> ThinkRed: реестр из 34 источников и 50+ проверяемых утверждений с конспектами — конвейер книги. Найдёте ошибку — напишите в <a href="https://t.me/thinkred_marx" target="_blank" rel="noopener">Telegram</a>.</div>
+  <div class="note">Книга собрана и рецензирована с помощью <a href="https://thinkred.ru/assistant/">Методологического ассистента</a> ThinkRed: реестр из 48 источников и 66 проверяемых утверждений с конспектами — конвейер книги. Найдёте ошибку — напишите в <a href="https://t.me/thinkred_marx" target="_blank" rel="noopener">Telegram</a>.</div>
 </div>
 {SITEFOOT}
 </body>
