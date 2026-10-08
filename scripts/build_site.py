@@ -54,6 +54,10 @@ PARTS = [
  ("zaklyuchenie.md", "bel-zakl.html", "Заключение", "Итог, ограничения, задание на следующие издания"),
  ("prilozhenie-a-tezisy-programmy.md", "bel-pril-a.html", "Приложение А. Проект программных тезисов",
   "Тезисы для обсуждения самостоятельной рабочей организацией: социалистическая цель, 12 требований, этап"),
+ ("prilozhenie-b-reestr.md", "bel-pril-b.html", "Приложение Б. Реестр SRC и CLM: как читать ссылки книги",
+  "Система самопроверки: 34 источника и 53 утверждения с типами и статусами; как цифры глав связаны с доказательствами"),
+ ("prilozhenie-v-kak-pisalas.md", "bel-pril-v.html", "Приложение В. Как писалась эта книга",
+  "Методологический ассистент, внешнее рецензирование GPT-6 Astra Pro ($5.54), найденные и исправленные ошибки, честный список лакун"),
 ]
 
 # ---------------- markdown → html ----------------
@@ -368,6 +372,8 @@ body{{margin:0;background:var(--bg);color:var(--fg);font-family:-apple-system,Bl
     <a href="bel-g01.html">Читать с главы 1 →</a>
     <a class="o" href="bel-g12.html">Вывод (глава 12)</a>
     <a class="o" href="bel-pril-a.html">Проект тезисов</a>
+    <a class="o" href="bel-pril-b.html">Реестр SRC/CLM</a>
+    <a class="o" href="bel-pril-v.html">Как писалась книга</a>
     <a class="o" href="https://thinkred.ru/library/morozova.html">Книга Морозовой</a>
     <a class="o" href="https://thinkred.ru/library/bezrukova.html">Безрукова: методика</a>
   </div>

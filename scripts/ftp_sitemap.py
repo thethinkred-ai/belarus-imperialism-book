@@ -11,7 +11,7 @@ USER = os.environ.get("FTP_USER", "")
 PWD = os.environ.get("FTP_PASS", "")
 BASE = "https://thinkred.ru/library/"
 FILES = ["belarus-imperialism.html"] + [f"bel-g{i:02d}.html" for i in range(1, 15)] + \
-        ["bel-zakl.html", "bel-pril-a.html"]
+        ["bel-zakl.html", "bel-pril-a.html", "bel-pril-b.html", "bel-pril-v.html"]
 REMOTE = "/sitemap.xml"
 
 def connect():
