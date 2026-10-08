@@ -116,7 +116,7 @@ def trade():
     return bars(d, 270, 190, BLU, "% товарной торговли, 2025", lambda v: f"{v:g}%")
 
 def milex():
-    a = bars([("2024", 1.49), ("2025", 1.94)], 260, 185, ACC, "SIPRI, млрд $", lambda v: f"{v:g}")
+    a = bars([("2024", 1.50), ("2025", 1.94)], 260, 185, ACC, "SIPRI, млрд $", lambda v: f"{v:g}")
     b = bars([("2024 исп.", 3.58), ("2025 исп.", 4.5), ("2025 план", 4.73)], 320, 185, BLU, "бюджет «Нац. оборона», млрд BYN", lambda v: f"{v:g}")
     body = (f'<rect width="610" height="200" fill="{SOFT}" rx="8"/>'
             f'<g transform="translate(12,8)">{a}</g><g transform="translate(292,8)">{b}</g>')
