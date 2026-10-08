@@ -243,6 +243,11 @@ hr{border:0;border-top:1px solid var(--line);margin:34px 0}
 .figure{margin:20px 0}
 .figure figcaption{font-size:13px;color:var(--muted);margin-top:8px;line-height:1.45}
 a.ref{white-space:nowrap}
+.badge{display:inline-block;border-radius:20px;padding:1px 10px;font-size:12px;white-space:nowrap}
+.b-ok{background:#e7f5ee;color:#047857}
+.b-part{background:#fff4e0;color:#9a6700}
+.b-na{background:#eef0f3;color:#5b636e}
+.b-no{background:#fde8e8;color:#c11d2a}
 .src{border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin:12px 0}
 .src .m{color:var(--muted);font-size:13px;margin:4px 0}
 .src div{font-size:14px}
@@ -325,8 +330,35 @@ for n, (md_file, out_file, name, desc) in enumerate(PARTS):
 
 # ---------------- страница реестра (registry.html) ----------------
 
+STATUS_RU = {"supported": "подтверждено", "partial": "частично", "unverified": "не проверено",
+             "refuted": "опровергнуто", "monitoring": "мониторинг", "controversial": "спорное"}
+STATUS_CLS = {"supported": "b-ok", "partial": "b-part", "unverified": "b-na",
+              "refuted": "b-no", "monitoring": "b-na", "controversial": "b-part"}
+TYPE_RU = {"definition": "определение", "theoretical": "теоретическое", "textual": "текстуальное (цитата)",
+           "causal": "причинное", "quantitative": "количественное", "empirical": "эмпирическое",
+           "historical": "историческое", "normative": "нормативное"}
+
 def build_registry_page():
     reg = json.load(open(os.path.join(ROOT, "sources", "registry.json"), encoding="utf-8"))
+    # глава(i) каждого CLM — из цитирований CLM-xxx в текстах глав
+    clm_chapters = {}
+    ch_files = sorted(f for f in os.listdir(CH) if f.endswith(".md"))
+    for f in ch_files:
+        mnum = re.match(r"(\d{2})-", f)
+        label = (str(int(mnum.group(1))) if mnum else
+                 {"zaklyuchenie.md": "закл.", "prilozhenie-a-tezisy-programmy.md": "прил.А",
+                  "prilozhenie-b-reestr.md": "прил.Б", "prilozhenie-v-kak-pisalas.md": "прил.В"}.get(f, f))
+        text_f = open(os.path.join(CH, f), encoding="utf-8").read()
+        ids_found = set(re.findall(r"CLM-\d{2,3}", text_f))
+        # разворот диапазонов вида CLM-044…047 / CLM-033–035 (охват ≤ 12)
+        for lo_s, hi_s in re.findall(r"CLM-(\d{2,3})\s*[\u2013\u2014\u2026-]{1,3}\s*(\d{2,3})", text_f):
+            lo, hi = int(lo_s), int(hi_s)
+            if 0 < hi - lo <= 12:
+                ids_found.update("CLM-%03d" % k for k in range(lo, hi + 1))
+        for cid in ids_found:
+            clm_chapters.setdefault(cid, [])
+            if label not in clm_chapters[cid]:
+                clm_chapters[cid].append(label)
     src_cards = []
     for srcref in reg["sources"]:
         notes = srcref.get("notes", {}) or {}
@@ -343,14 +375,28 @@ def build_registry_page():
             f'<div>{url}</div>{nk}</div>')
     rows = []
     for c in reg["claims"]:
-        srcs = " ".join(f'<a href="#{x}">{x}</a>' for x in c.get("sources", [])) or "—"
+        cid = c["id"]
+        st = c.get("status", "")
+        st_ru = STATUS_RU.get(st, st or "—")
+        st_cls = STATUS_CLS.get(st, "b-na")
+        st_span = f'<span class="badge {st_cls}">{st_ru}</span>' if st else "—"
+        ch_list = clm_chapters.get(cid, [])
+        if not ch_list:
+            m_note = re.search(r"гл\.\s*(\d+)", str(c.get("note", "")))
+            if m_note:
+                ch_list = [m_note.group(1)]
+        chs = ", ".join(ch_list) or "—"
+        srcs = " ".join(f'<a href="#{x}">{x}</a>' for x in c.get("sourceIds", []))
+        srcs = srcs if srcs else '<span class="m">прямая привязка не заполнена — задание</span>'
+        typ = TYPE_RU.get(c.get("type", ""), "")
+        typ_html = f'<div class="m">тип: {typ}</div>' if typ else ""
         corr = ""
         if c.get("notes", {}).get("review-correction"):
             corr = ('<div class="m">правка по рецензии: '
                     + html_mod.escape(str(c["notes"]["review-correction"])) + '</div>')
-        rows.append(f'<tr id="{c["id"]}"><td><code>{c["id"]}</code></td><td>{c.get("chapter","—")}</td>'
-                    f'<td>{html_mod.escape(str(c.get("status","")))}</td>'
-                    f'<td>{html_mod.escape(str(c.get("text","")))}{corr}</td><td>{srcs}</td></tr>')
+        rows.append(f'<tr id="{cid}"><td><code>{cid}</code></td><td>{chs}</td>'
+                    f'<td>{st_span}</td>'
+                    f'<td>{html_mod.escape(str(c.get("text","")))}{typ_html}{corr}</td><td>{srcs}</td></tr>')
     head = ("<!doctype html>\n<html lang=\"ru\">\n<head>\n<meta charset=\"utf-8\"/>\n"
             "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/>\n"
             "<title>Реестр SRC и CLM — " + html_mod.escape(BOOK_TITLE) + " — ThinkRed</title>\n"
@@ -369,14 +415,29 @@ def build_registry_page():
             "Методологического ассистента</a>; исходный JSON — "
             "<a href=\"https://github.com/thethinkred-ai/belarus-imperialism-book/blob/main/sources/registry.json\" "
             "target=\"_blank\" rel=\"noopener\">sources/registry.json</a> в репозитории книги.</p>\n"
-            "<h2 id=\"источники-src\">Источники (SRC) — " + str(len(reg["sources"])) + "</h2>\n")
-    page = (head + "".join(src_cards)
+            "<h2 id=\"источники-src\">Источники (SRC) — " + str(len(reg["sources"])) + "</h2>\n"
+            "<p class=\"m\">Карточка источника: автор, год, тип, надёжность, ссылка на публикацию и конспект "
+            "(основные понятия, факты, гипотезы автора, замечания). Реестр заполняется в ассистенте по мере работы над главами.</p>\n"
+            + "".join(src_cards))
+    page = (head
             + "\n<h2 id=\"утверждения-clm\">Утверждения (CLM) — " + str(len(reg["claims"])) + "</h2>\n"
-            + "<table><thead><tr><th>ID</th><th>Гл.</th><th>Статус</th><th>Текст утверждения</th>"
-              "<th>Источники</th></tr></thead><tbody>"
+            + "<p><b>Как читать таблицу.</b> <b>ID</b> — идентификатор утверждения, под которым оно цитируется "
+            "в главах (CLM-033 и т.д.). <b>Главы</b> — где утверждение используется (собирается автоматически "
+            "из текста глав при каждой сборке). <b>Статус</b> — состояние доказательности в реестре: "
+            "<span class=\"badge b-ok\">подтверждено</span> — есть прямые источники; "
+            "<span class=\"badge b-part\">частично</span> — источники покрывают часть утверждения; "
+            "<span class=\"badge b-na\">не проверено</span> — формулировка внесена, проверка впереди. "
+            "<b>Текст</b> — формулировка утверждения (после рецензионного цикла v0.7 многие переформулированы — "
+            "см. пометки «правка по рецензии»); строкой ниже — тип утверждения (определение, причинное, "
+            "количественное и т.д.). <b>Источники</b> — SRC-id, на которые опирается утверждение (кликабельны, "
+            "ведут в раздел выше); пометка «прямая привязка не заполнена — задание» означает, что связь "
+            "конкретного SRC с этим утверждением ещё не проставлена в реестре — это открытые задания, "
+            "а не отсутствие данных в принципе.</p>\n"
+            "<table><thead><tr><th>ID</th><th>Главы</th><th>Статус</th><th>Текст утверждения</th><th>Источники</th></tr></thead><tbody>"
             + "".join(rows) + "</tbody></table>\n</article>\n</div>\n" + SITEFOOT + "\n</body>\n</html>\n")
     open(os.path.join(OUT, "registry.html"), "w", encoding="utf-8", newline="\n").write(page)
     return len(reg["sources"]), len(reg["claims"])
+
 
 N_SRC, N_CLM = build_registry_page()
 toc_app_cards.append(
