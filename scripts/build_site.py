@@ -247,6 +247,7 @@ def chapter_page(idx, title, body_html, next_ref, prev_ref):
 
 built = []
 toc_cards = []
+toc_app_cards = []
 jsonld_parts = []
 for n, (md_file, out_file, name, desc) in enumerate(PARTS):
     md = open(os.path.join(CH, md_file), encoding="utf-8").read()
@@ -277,9 +278,12 @@ for n, (md_file, out_file, name, desc) in enumerate(PARTS):
     if paras:
         det = "<details><summary>Параграфы</summary><ul>" + "".join(
             f'<li><a href="{out_file}#{a}">{html_mod.escape(t)}</a></li>' for a, t in paras[:14]) + "</ul></details>"
-    toc_cards.append(
-        f'<div class="toc-card"><b><a href="{out_file}">{html_mod.escape(name)}</a></b>'
-        f"<span>{html_mod.escape(desc)}</span>{det}</div>")
+    card = (f'<div class="toc-card"><b><a href="{out_file}">{html_mod.escape(name)}</a></b>'
+            f"<span>{html_mod.escape(desc)}</span>{det}</div>")
+    if out_file.startswith("bel-pril"):
+        toc_app_cards.append(card)
+    else:
+        toc_cards.append(card)
     jsonld_parts.append({"@type": "Chapter", "name": name, "url": BASE + out_file})
 
 # ---------------- индексная страница ----------------
@@ -380,6 +384,10 @@ body{{margin:0;background:var(--bg);color:var(--fg);font-family:-apple-system,Bl
   <h2>Оглавление</h2>
   <div class="toc-grid">
   {chr(10).join(toc_cards)}
+  </div>
+  <h2>Приложения — прозрачность методологии</h2>
+  <div class="toc-grid">
+  {chr(10).join(toc_app_cards)}
   </div>
   <div class="note">Книга собрана и рецензирована с помощью <a href="https://thinkred.ru/assistant/">Методологического ассистента</a> ThinkRed: реестр из 34 источников и 50+ проверяемых утверждений с конспектами — конвейер книги. Найдёте ошибку — напишите в <a href="https://t.me/thinkred_marx" target="_blank" rel="noopener">Telegram</a>.</div>
 </div>
