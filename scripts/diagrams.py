@@ -217,30 +217,87 @@ def contour():
     return _svg(w, h, "".join(body))
 
 def map12():
-    w, h, x0, y0, x1, y1 = 640, 400, 60, 30, 600, 340
-    body = [f'<rect width="{w}" height="{h}" rx="10" fill="{SOFT}"/>',
-            f'<line x1="{x0}" y1="{y1}" x2="{x1}" y2="{y1}" stroke="{INK}" marker-end="url(#a3)"/>',
-            f'<line x1="{x0}" y1="{y1}" x2="{x0}" y2="{y0}" stroke="{INK}" marker-end="url(#a3)"/>',
-            _txt(x1, y1 + 16, "структурная зависимость →", 11, INK, "end", "600"),
-            _txt(x0 - 8, y0 + 10, "собственная субъектность ↑", 11, INK, "600")]
-    def zone(x, y, t1, t2, col):
-        return [f'<circle cx="{x}" cy="{y}" r="26" fill="#fff" stroke="{col}" stroke-width="1.6"/>',
-                _txt(x, y + 4, t1, 12, col, "middle", "700"),
-                _txt(x, y + 44, t2, 10, MUT, "middle")]
-    body += zone(150, 90, "I", "империалистический центр", BLU)
-    body += zone(430, 80, "II", "подчинённый участник", GRN)
-    body += zone(450, 200, "III", "зависимая с монопозициями", BLU)
-    body += zone(450, 300, "IV", "зависимая без субъектности", MUT)
-    body.append(f'<circle cx="460" cy="252" r="14" fill="{ACC}"/>')
-    body.append(_txt(460, 256, "РБ", 10, "#fff", "middle", "700"))
-    body.append(f'<path d="M 300 300 C 360 300 400 285 440 262" stroke="{ACC}" fill="none" stroke-width="1.6" stroke-dasharray="6 4" marker-end="url(#a3)"/>')
-    body.append(_txt(300, 322, "смещение 2020→2026:", 10, ACC, "middle"))
-    body.append(_txt(300, 335, "углубление зависимости", 10, ACC, "middle"))
-    body.append(_txt(505, 258, "рабочая:", 9.5, MUT, "start"))
-    body.append(_txt(505, 270, "между III и IV", 9.5, ACC, "start", "700"))
-    body.append(_txt(320, 385, "схема качественная (гл. 1–2): положение зон — не измерение", 10, MUT, "middle"))
-    body.append('<defs><marker id="a3" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6" fill="#111827"/></marker></defs>')
-    return _svg(w, h, "".join(body))
+    """Карта классификации: оси простым языком, зоны-пояснения, позиция РБ, зона «отложено»."""
+    W, H = 780, 610
+    body = [f'<rect width="{W}" height="{H}" rx="12" fill="{SOFT}"/>']
+
+    # оси координат
+    px0, py0, px1, py1 = 70, 40, 560, 520
+    body += [
+        f'<line x1="{px0}" y1="{py1}" x2="{px1}" y2="{py1}" stroke="{INK}" stroke-width="1.5" marker-end="url(#a12)"/>',
+        f'<line x1="{px0}" y1="{py1}" x2="{px0}" y2="{py0}" stroke="{INK}" stroke-width="1.5" marker-end="url(#a12)"/>',
+        _txt(px0 + 8, py1 - 10, "слабая зависимость", 10.5, MUT),
+        _txt(px1 - 6, py1 + 22, "насколько страна зависит от внешних центров →", 12, INK, "end", "700"),
+        f'<text x="30" y="{(py0+py1)//2}" font-size="12" font-weight="700" fill="{INK}" text-anchor="middle" transform="rotate(-90 30 {(py0+py1)//2})">своя субъектность («кто хозяин») ↑</text>',
+    ]
+
+    def zone(x, y, w, h, col, title, lines):
+        b = [f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="10" fill="#fff" stroke="{col}" stroke-width="1.8"/>',
+             _txt(x + w / 2, y + 22, title, 12, col, "middle", "700")]
+        yy = y + 42
+        for ln in lines:
+            b.append(_txt(x + w / 2, yy, ln, 10.5, INK, "middle"))
+            yy += 17
+        return b
+
+    body += zone(92, 64, 196, 96, BLU, "Тип I — центр",
+                 ["командует сам,", "зависит слабо"])
+    body += zone(344, 64, 192, 96, GRN, "Тип II — участник",
+                 ["командует сам,", "сильно зависит", "(гипотеза Б)"])
+    body += zone(330, 252, 206, 104, BLU, "Тип III — зависимая",
+                 ["с внешними монопозициями", "(как калий: влияние на", "условия мирового рынка —", "статус см. гл. 7, 12)"])
+    body += zone(330, 396, 206, 88, MUT, "Тип IV — зависимая",
+                 ["без своей субъектности"])
+
+    # зона «отложено»
+    body.append(f'<rect x="92" y="396" width="196" height="88" rx="10" fill="none" stroke="{MUT}" stroke-dasharray="5 4"/>')
+    body.append(_txt(190, 424, "доказательств мало", 10.5, MUT, "middle", "600"))
+    body.append(_txt(190, 441, "по обеим осям →", 10.5, MUT, "middle", "600"))
+    body.append(_txt(190, 458, "классификация отложена", 10.5, MUT, "middle", "600"))
+    body.append(_txt(190, 475, "(не типы I–V)", 10, MUT, "middle"))
+
+    # позиция РБ между III и IV
+    body.append(f'<circle cx="300" cy="374" r="17" fill="{ACC}"/>')
+    body.append(_txt(300, 379, "РБ", 11, "#fff", "middle", "700"))
+    body.append(_txt(322, 368, "рабочая позиция:", 10.5, ACC, "start", "700"))
+    body.append(_txt(322, 384, "между III и IV", 10.5, ACC, "start", "700"))
+    body.append(_txt(322, 400, "(предварительно, срез 2026)", 10, MUT, "start"))
+
+    # стрелка смещения
+    body.append(f'<path d="M 150 476 C 200 470 240 440 276 388" stroke="{ACC}" fill="none" '
+                f'stroke-width="1.8" stroke-dasharray="6 4" marker-end="url(#a12r)"/>')
+    body.append(_txt(96, 502, "смещение 2020→2026: углубление зависимости", 10.5, ACC, "start", "600"))
+
+    # колонка «как читать»
+    body.append(_txt(584, 64, "Как читать схему", 13, INK, "start", "700"))
+    guide = [
+        "Чем правее — тем сильнее",
+        "зависимость от внешних",
+        "центров (энергия, рынки,",
+        "деньги). Чем выше — тем",
+        "увереннее капитал страны",
+        "сам командует, присваивает",
+        "и защищает своё.",
+        "",
+        "РБ: субъектность не",
+        "установлена (гл. 9, 12),",
+        "зависимость высокая (гл. 10)",
+        "→ между III и IV.",
+    ]
+    yy = 90
+    for ln in guide:
+        body.append(_txt(584, yy, ln, 10.5, INK if ln else MUT, "start"))
+        yy += 17
+
+    # сноска
+    body.append(f'<rect x="20" y="548" width="740" height="44" rx="10" fill="none" stroke="{MUT}" stroke-dasharray="5 4"/>')
+    body.append(_txt(390, 566, "Положение зон и РБ — качественная схема, не измерение:", 11, INK, "middle", "600"))
+    body.append(_txt(390, 583, "статусы и цифры — в карточке §12.5, матрице §10.6 и гл. 9", 10.5, MUT, "middle"))
+    body.append('<defs>'
+                f'<marker id="a12" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6" fill="{INK}"/></marker>'
+                f'<marker id="a12r" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6" fill="{ACC}"/></marker>'
+                '</defs>')
+    return _svg(W, H, "".join(body))
 
 def program():
     w, h = 640, 210
@@ -269,7 +326,7 @@ ALL = {
     "energy": (energy, "Рис. 10.1. Чистый импорт энергии, % энергопотребления (WDI — SRC-032): внешняя энергозависимость вообще — не зависимость от РФ (см. уровни §10.1)."),
     "trade": (trade, "Рис. 10.2. Товарная внешняя торговля Беларуси, 2025, по контрагентам (Еврокомиссия — SRC-055)."),
     "milex": (milex, "Рис. 11.1. Военные расходы в двух несмешиваемых измерениях: SIPRI (SRC-060) и бюджетная статья «Национальная оборона» (SRC-059)."),
-    "map": (map12, "Рис. 12.1. Рабочая позиция Беларуси на осях классификации (схема качественная; статусы — в карточке §12.5)."),
+    "map": (map12, "Рис. 12.1. Рабочая позиция Беларуси на карте классификации: как читать оси, где зоны типов и почему РБ — между III и IV (схема качественная; статусы и цифры — в §12.5)."),
     "program": (program, "Рис. 14.1. Три блока программы и их логика (схема; полный канон — в тексте главы)."),
     "potash": (potash, "Рис. 12.2. Железнодорожные отправки Belaruskali к российским портовым станциям, 2025 (SRC-062)."),
 }
