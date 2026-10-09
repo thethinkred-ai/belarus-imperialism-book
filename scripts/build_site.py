@@ -12,6 +12,7 @@ import re, os, json, html as html_mod
 import sys as _sys
 _sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import diagrams
+import widgets
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CH = os.path.join(ROOT, "chapters")
@@ -158,6 +159,14 @@ def md_to_html(md):
     return "\n".join(out)
 
 
+def render_widgets(body_html):
+    def _wid(mo):
+        item = widgets.ALL.get(mo.group(1))
+        if not item:
+            return ""
+        return item[1]
+    return re.sub(r"<p>\{\{WIDGET:(\w+)\}\}</p>", _wid, body_html)
+
 def render_figures(body_html):
     def _fig(mo):
         fn, cap = diagrams.ALL.get(mo.group(1), (None, None))
@@ -251,6 +260,22 @@ a.ref{white-space:nowrap}
 .src{border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin:12px 0}
 .src .m{color:var(--muted);font-size:13px;margin:4px 0}
 .src div{font-size:14px}
+.widget{margin:22px 0;border:1px solid var(--line);border-radius:12px;background:var(--card);padding:16px 18px}
+.widget h4{margin:0 0 6px;font-size:16px}
+.widget .hint{font-size:13px;color:var(--muted);margin:0 0 12px}
+.wrow{display:flex;align-items:center;gap:10px;margin:9px 0;flex-wrap:wrap}
+.wrow label{flex:0 0 300px;font-size:14px}
+.wrow input[type=range]{flex:1 1 180px;accent-color:#e11d2a}
+.wrow output{flex:0 0 92px;font-size:13px;font-variant-numeric:tabular-nums}
+.wstatus{display:inline-block;min-width:132px;text-align:center;border-radius:14px;padding:1px 8px;font-size:12px;font-weight:600}
+.s-prov{background:#e7f5ee;color:#047857}.s-na{background:#eef0f3;color:#5b636e}.s-ref{background:#fde8e8;color:#c11d2a}
+.wverdict{margin-top:12px;background:#fff;border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:0 8px 8px 0;padding:10px 14px;font-size:14.5px;line-height:1.55}
+.wbtns{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}
+.wbtns button{border:1px solid var(--line);background:#fff;border-radius:8px;padding:6px 12px;font-size:13px;cursor:pointer}
+.wbtns button:hover{border-color:var(--accent);color:var(--accent)}
+.wsel{font-size:13px;padding:4px 6px;border-radius:6px;border:1px solid var(--line);background:#fff}
+.wnote{font-size:12.5px;color:var(--muted);margin-top:8px}
+@media (max-width:640px){.wrow label{flex:1 1 100%}}
 @media print{.sitebar,.pnav,.backtop,.sitefoot,.crumb{display:none}}
 </style>"""
 
@@ -297,7 +322,7 @@ for n, (md_file, out_file, name, desc) in enumerate(PARTS):
     body = re.sub(r"^>\s*Статус:[^\n]*\n(>.*\n)*", "", md.lstrip("# " + md_file), count=0) if False else md
     body = re.sub(r"^(> Статус:[^\n]*(?:\n>[^\n]*)*)\n+", "", body, flags=re.M)
     body = re.sub(r"^# .+?\n", "", body, count=1)  # h1 страницы сгенерируем сами
-    body_html = render_figures(md_to_html(body))
+    body_html = render_widgets(render_figures(md_to_html(body)))
     h1 = name
     body_html = f'<h1 id="{slugify(h1)}">{html_mod.escape(h1)}</h1>\n' + body_html
 

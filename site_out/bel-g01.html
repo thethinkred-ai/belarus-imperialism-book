@@ -60,6 +60,22 @@ a.ref{white-space:nowrap}
 .src{border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin:12px 0}
 .src .m{color:var(--muted);font-size:13px;margin:4px 0}
 .src div{font-size:14px}
+.widget{margin:22px 0;border:1px solid var(--line);border-radius:12px;background:var(--card);padding:16px 18px}
+.widget h4{margin:0 0 6px;font-size:16px}
+.widget .hint{font-size:13px;color:var(--muted);margin:0 0 12px}
+.wrow{display:flex;align-items:center;gap:10px;margin:9px 0;flex-wrap:wrap}
+.wrow label{flex:0 0 300px;font-size:14px}
+.wrow input[type=range]{flex:1 1 180px;accent-color:#e11d2a}
+.wrow output{flex:0 0 92px;font-size:13px;font-variant-numeric:tabular-nums}
+.wstatus{display:inline-block;min-width:132px;text-align:center;border-radius:14px;padding:1px 8px;font-size:12px;font-weight:600}
+.s-prov{background:#e7f5ee;color:#047857}.s-na{background:#eef0f3;color:#5b636e}.s-ref{background:#fde8e8;color:#c11d2a}
+.wverdict{margin-top:12px;background:#fff;border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:0 8px 8px 0;padding:10px 14px;font-size:14.5px;line-height:1.55}
+.wbtns{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}
+.wbtns button{border:1px solid var(--line);background:#fff;border-radius:8px;padding:6px 12px;font-size:13px;cursor:pointer}
+.wbtns button:hover{border-color:var(--accent);color:var(--accent)}
+.wsel{font-size:13px;padding:4px 6px;border-radius:6px;border:1px solid var(--line);background:#fff}
+.wnote{font-size:12.5px;color:var(--muted);margin-top:8px}
+@media (max-width:640px){.wrow label{flex:1 1 100%}}
 @media print{.sitebar,.pnav,.backtop,.sitefoot,.crumb{display:none}}
 </style>
 </head>
@@ -137,6 +153,73 @@ a.ref{white-space:nowrap}
 <h2 id="15-две-оси-собственная-субъектность-и-структурная-зависимость">1.5. Две оси: собственная субъектность и структурная зависимость</h2>
 <p>Определим две аналитически различные оси, по которым будет классифицироваться страна.</p>
 <figure class="figure"><svg viewBox="0 0 640 250" role="img" style="width:100%;height:auto;display:block" font-family="system-ui,Segoe UI,Arial,sans-serif"><rect width="640" height="250" rx="10" fill="#f9fafb"/><rect x="24" y="30" width="250" height="120" rx="8" fill="#fff" stroke="#1d4ed8" stroke-width="1.5"/><text x="149" y="56" font-size="13" fill="#1d4ed8" text-anchor="middle" font-weight="700" >Ось I — собственная</text><text x="149" y="74" font-size="13" fill="#1d4ed8" text-anchor="middle" font-weight="700" >субъектность капитала</text><text x="149" y="100" font-size="11.5" fill="#111827" text-anchor="middle" font-weight="normal" >критерий К∧В∧Г∧Р:</text><text x="149" y="117" font-size="10.5" fill="#6b7280" text-anchor="middle" font-weight="normal" >центр командования · внешнее</text><text x="149" y="132" font-size="10.5" fill="#6b7280" text-anchor="middle" font-weight="normal" >господство · гос. закрепление ·</text><text x="149" y="147" font-size="10.5" fill="#6b7280" text-anchor="middle" font-weight="normal" >воспроизводимость</text><rect x="366" y="30" width="250" height="120" rx="8" fill="#fff" stroke="#e11d2a" stroke-width="1.5"/><text x="491" y="56" font-size="13" fill="#e11d2a" text-anchor="middle" font-weight="700" >Ось II — структурная</text><text x="491" y="74" font-size="13" fill="#e11d2a" text-anchor="middle" font-weight="700" >зависимость</text><text x="491" y="100" font-size="11.5" fill="#111827" text-anchor="middle" font-weight="normal" >четыре компонента узла:</text><text x="491" y="117" font-size="10.5" fill="#6b7280" text-anchor="middle" font-weight="normal" >значимость · концентрация ·</text><text x="491" y="132" font-size="10.5" fill="#6b7280" text-anchor="middle" font-weight="normal" >незаменимость · устойчивость</text><text x="491" y="147" font-size="10.5" fill="#6b7280" text-anchor="middle" font-weight="normal" >механизм воздействия</text><path d="M 274 90 C 310 90 330 90 366 90" stroke="#6b7280" fill="none" stroke-dasharray="5 4" marker-end="url(#arw)"/><text x="320" y="78" font-size="9.5" fill="#6b7280" text-anchor="middle" font-weight="normal" >аналитически различные,</text><text x="320" y="108" font-size="9.5" fill="#6b7280" text-anchor="middle" font-weight="normal" >не независимые</text><defs><marker id="arw" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6" fill="#6b7280"/></marker></defs><text x="320" y="185" font-size="12" fill="#111827" text-anchor="middle" font-weight="600" >классификация страны — по обеим осям вместе;</text><text x="320" y="204" font-size="11" fill="#6b7280" text-anchor="middle" font-weight="normal" >контур накопления — единица анализа, не страновой агрегат</text></svg><figcaption>Рис. 1.1. Две аналитически различные оси классификации (схема; критерий и ловушки — в тексте главы).</figcaption></figure>
+<div class="widget" id="w1">
+<h4>Дашборд 1.1. Конструктор критерия К∧В∧Г∧Р и классификации</h4>
+<p class="hint">Двигайте ползунки — это «сила свидетельств» по каждому условию критерия (гл. 1 §1.7). Порог отделяет «доказано» от «не установлено»: попробуйте его поднять — и убедитесь, что вывод зависит от стандарта доказательства. Помните правило главы: <b>«не установлено» ≠ «установлено отсутствие»</b>.</p>
+<div class="wrow"><label>К — центр командования внутри страны</label><input type="range" id="w1k" min="0" max="100" value="85"><output id="w1ko">85</output><span class="wstatus s-prov" id="w1ks">доказано</span></div>
+<div class="wrow"><label>В — внешнее господство (зарубежный контур)</label><input type="range" id="w1v" min="0" max="100" value="30"><output id="w1vo">30</output><span class="wstatus s-na" id="w1vs">не установлено</span></div>
+<div class="wrow"><label>Г — государственное закрепление внешнего контура</label><input type="range" id="w1g" min="0" max="100" value="20"><output id="w1go">20</output><span class="wstatus s-na" id="w1gs">не установлено</span></div>
+<div class="wrow"><label>Р — воспроизводимость контура</label><input type="range" id="w1r" min="0" max="100" value="35"><output id="w1ro">35</output><span class="wstatus s-na" id="w1rs">не установлено</span></div>
+<div class="wrow"><label>Порог «доказано» (стандарт доказательства)</label><input type="range" id="w1thr" min="30" max="95" value="75"><output id="w1thro">75</output><span></span></div>
+<div class="wrow"><label>Ось II — структурная зависимость (сила свидетельств)</label><input type="range" id="w1dep" min="0" max="100" value="80"><output id="w1depo">80</output><span class="wstatus s-prov" id="w1deps">доказано</span></div>
+<div class="wrow"><label>Внешняя монопольная позиция (тип III, как калий)</label><input type="checkbox" id="w1mono" style="accent-color:#e11d2a"><span class="wnote">отдельный статус — см. гл. 12</span></div>
+<div class="wbtns">
+<button id="w1p-by">Пресет: Беларусь-2026</button>
+<button id="w1p-center">Пресет: империалистический центр</button>
+<button id="w1p-sub">Пресет: подчинённый участник</button>
+<button id="w1p-none">Пресет: всё не доказано</button>
+</div>
+<div class="wverdict" id="w1out" aria-live="polite"></div>
+<p class="wnote">Схема обучающая: типы I–V и правило «классификация отложена» — гл. 1 §1.6, §1.10; статусы — §1.4.</p>
+</div>
+<script>
+(function(){
+ var K=document.getElementById('w1k'),V=document.getElementById('w1v'),G=document.getElementById('w1g'),
+     R=document.getElementById('w1r'),T=document.getElementById('w1thr'),D=document.getElementById('w1dep'),
+     M=document.getElementById('w1mono');
+ function st(v,t){if(v>=t)return['доказано','s-prov'];if(v>=20)return['не установлено','s-na'];return['опровергнуто','s-ref'];}
+ function set(id,v){var o=document.getElementById(id+'o');o.textContent=v;}
+ function badge(id,txt,cls){var e=document.getElementById(id);e.textContent=txt;e.className='wstatus '+cls;}
+ function upd(){
+  var t=+T.value;
+  [['w1k',K],['w1v',V],['w1g',G],['w1r',R],['w1dep',D]].forEach(function(p){set(p[0],p[1].value);});
+  var sk=st(+K.value,t),sv=st(+V.value,t),sg=st(+G.value,t),sr=st(+R.value,t),sd=st(+D.value,t);
+  badge('w1ks',sk[0],sk[1]);badge('w1vs',sv[0],sv[1]);badge('w1gs',sg[0],sg[1]);
+  badge('w1rs',sr[0],sr[1]);badge('w1deps',sd[0],sd[1]);
+  var allProven=sk[0]=='доказано'&&sv[0]=='доказано'&&sg[0]=='доказано'&&sr[0]=='доказано';
+  var anyRef=sk[0]=='опровергнуто'||sv[0]=='опровергнуто'||sg[0]=='опровергнуто'||sr[0]=='опровергнуто';
+  var subj=allProven?'установлено':'не установлено';
+  var html='<b>Собственная субъектность (К∧В∧Г∧Р): '+subj+'.</b> ';
+  if(!allProven){
+   html+='Конъюнкция не собрана — достаточного основания для положительного вывода нет. ';
+   html+='<i>Но «не установлено» ≠ «установлено отсутствие»'+(anyRef?' (а «опровергнуто» хотя бы одного условия всё равно не равняется вечному отрицанию — закрытые зоны могут открыться).':'.')+'</i> ';
+  } else {html+='Все четыре условия доказаны — достаточное основание положительного вывода есть. ';}
+  var depTxt;
+  if(sd[0]=='доказано')depTxt='высокая';
+  else if(sd[0]=='опровергнуто')depTxt='низкая';
+  else depTxt='не доказана';
+  var klass;
+  if(allProven&&depTxt=='высокая')klass='Тип II — подчинённый участник с собственными контурами (гипотеза Б)';
+  else if(allProven&&depTxt!='высокая')klass='Тип I — империалистический центр';
+  else if(!allProven&&depTxt=='высокая')klass=(M.checked?'Тип III — зависимая страна с внешними монопольными позициями':'Тип III/IV — зависимая страна; вопрос о внешней монопольной позиции открыт');
+  else klass='Классификация отложена: не доказана ни субъектность, ни структурная зависимость (правило §1.10)';
+  html+='<br><b>Рабочая классификация: '+klass+'.</b> ';
+  if(!allProven&&depTxt=='высокая'&&!M.checked)html+='(Отметьте «монопольную позицию», чтобы увидеть различение III/IV.) ';
+  html+='<br><i>Ось II (структурная зависимость): '+depTxt+'. Бремя доказательства: положительный вывод — на утверждающем, категорическое отрицание — на отрицающем.</i>';
+  document.getElementById('w1out').innerHTML=html;
+ }
+ function preset(k,v,g,r,t,d,m){
+  K.value=k;V.value=v;G.value=g;R.value=r;T.value=t;D.value=d;M.checked=m;upd();
+ }
+ document.getElementById('w1p-by').onclick=function(){preset(85,30,20,35,75,80,false);};
+ document.getElementById('w1p-center').onclick=function(){preset(90,85,90,90,75,15,false);};
+ document.getElementById('w1p-sub').onclick=function(){preset(85,80,80,85,75,85,true);};
+ document.getElementById('w1p-none').onclick=function(){preset(15,15,15,15,75,15,false);};
+ [K,V,G,R,T,D].forEach(function(el){el.addEventListener('input',upd);});
+ M.addEventListener('change',upd);
+ upd();
+})();
+</script>
 <h3 id="ось-i-собственная-империалистическая-субъектность">Ось I. Собственная империалистическая субъектность</h3>
 <p><strong>Собственная империалистическая субъектность</strong> — способность действующих через данное государство групп капитала устойчиво организовывать внешнее накопление посредством монополистического контроля, опираясь на собственные (или совместно используемые с государством) средства: капитал, институты, силу.</p>
 <p>Три необходимых различения:</p>
