@@ -59,24 +59,21 @@ def fdi():
     stock = [("01.01.22", 1338), ("01.01.24", 1549), ("01.01.26", 2664)]
     w, h, pad = 620, 210, 40
     body, (x0, y0, x1, y1, ymax) = _axes(w, h, pad, 2800, "млн $", lambda v: f"{v/1000:g}к" if v else "0")
-    # bars: чистый приток
-    vals = [v for _, v in infl]; sc = (y0 - y1) / 2800
+    sc = (y0 - y1) / 2800
     bw, step = 26, (x1 - x0) / len(infl)
     for k, (lab, v) in enumerate(infl):
         x = x0 + 10 + k * step + (step - bw) / 2
         body.append(f'<rect x="{x:.1f}" y="{y0 - v*sc:.1f}" width="{bw}" height="{v*sc:.1f}" rx="2" fill="{BLU}" opacity=".85"/>')
         body.append(_txt(x + bw / 2, y0 - v*sc - 4, f"{v:,}".replace(",", " "), 8.5, BLU, "middle"))
         body.append(_txt(x + bw / 2, y0 + 12, lab, 9, MUT, "middle"))
-    # line: запас за рубежом
-    sx0 = x0 + 10 + 0 * step + step / 2
-    pts = [(x0 + 10 + i * step + step / 2, y0 - v * sc) for i, (_, v) in enumerate(stock)]
-    # запас на первые три позиции года (22,24,26 -> позиции 3,5,6?) — отдельная мини-линия справа
     lx0 = x1 - 150
     body.append(f'<line x1="{lx0}" y1="{y1}" x2="{lx0}" y2="{y0}" stroke="{GRID}" stroke-dasharray="3 3"/>')
+    pts_old = None
     for i, (lab, v) in enumerate(stock):
         px = lx0 + 8 + i * 62
         body.append(f'<circle cx="{px}" cy="{y0 - v*sc:.1f}" r="4" fill="{ACC}"/>')
-        if i: body.append(f'<line x1="{pts_old[0]}" y1="{pts_old[1]}" x2="{px}" y2="{y0 - v*sc:.1f}" stroke="{ACC}" stroke-width="1.6"/>')
+        if i and pts_old:
+            body.append(f'<line x1="{pts_old[0]}" y1="{pts_old[1]}" x2="{px}" y2="{y0 - v*sc:.1f}" stroke="{ACC}" stroke-width="1.6"/>')
         body.append(_txt(px, y0 - v*sc - 8, f"{v:,}".replace(",", " "), 8.5, ACC, "middle"))
         body.append(_txt(px, y0 + 12, lab, 8.5, MUT, "middle"))
         pts_old = (px, y0 - v*sc)
@@ -97,7 +94,6 @@ def iip():
         cx = x0 + 16 + step * i + step / 2
         ha = (y0 - ymid) * assets[i] / 60000
         hl = (y0 - ymid) * liab[i] / 60000
-        hn = (ymid - y0) * 0  # net вниз от средней: рисуем от ymid вниз пропорц. 70к
         hn = (y0 - ymid) * (-net[i]) / 70000
         body.append(f'<rect x="{cx-40:.1f}" y="{y0-ha:.1f}" width="24" height="{ha:.1f}" rx="2" fill="{GRN}" opacity=".9"/>')
         body.append(f'<rect x="{cx-12:.1f}" y="{y0-hl:.1f}" width="24" height="{hl:.1f}" rx="2" fill="{BLU}" opacity=".75"/>')
@@ -126,29 +122,83 @@ def potash():
     return donut(86, "к рос. портам")
 
 def axes_diag():
-    w, h = 640, 250
-    body = [f'<rect width="{w}" height="{h}" rx="10" fill="{SOFT}"/>',
-            f'<rect x="24" y="30" width="250" height="120" rx="8" fill="#fff" stroke="{BLU}" stroke-width="1.5"/>',
-            _txt(149, 56, "Ось I — собственная", 13, BLU, "middle", "700"),
-            _txt(149, 74, "субъектность капитала", 13, BLU, "middle", "700"),
-            _txt(149, 100, "критерий К∧В∧Г∧Р:", 11.5, INK, "middle"),
-            _txt(149, 117, "центр командования · внешнее", 10.5, MUT, "middle"),
-            _txt(149, 132, "господство · гос. закрепление ·", 10.5, MUT, "middle"),
-            _txt(149, 147, "воспроизводимость", 10.5, MUT, "middle"),
-            f'<rect x="366" y="30" width="250" height="120" rx="8" fill="#fff" stroke="{ACC}" stroke-width="1.5"/>',
-            _txt(491, 56, "Ось II — структурная", 13, ACC, "middle", "700"),
-            _txt(491, 74, "зависимость", 13, ACC, "middle", "700"),
-            _txt(491, 100, "четыре компонента узла:", 11.5, INK, "middle"),
-            _txt(491, 117, "значимость · концентрация ·", 10.5, MUT, "middle"),
-            _txt(491, 132, "незаменимость · устойчивость", 10.5, MUT, "middle"),
-            _txt(491, 147, "механизм воздействия", 10.5, MUT, "middle"),
-            f'<path d="M 274 90 C 310 90 330 90 366 90" stroke="{MUT}" fill="none" stroke-dasharray="5 4" marker-end="url(#arw)"/>',
-            _txt(320, 78, "аналитически различные,", 9.5, MUT, "middle"),
-            _txt(320, 108, "не независимые", 9.5, MUT, "middle"),
-            f'<defs><marker id="arw" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6" fill="{MUT}"/></marker></defs>',
-            _txt(320, 185, "классификация страны — по обеим осям вместе;", 12, INK, "middle", "600"),
-            _txt(320, 204, "контур накопления — единица анализа, не страновой агрегат", 11, MUT, "middle")]
-    return _svg(w, h, "".join(body))
+    """Схема двух осей: вопрос простым языком + пункты каждой оси + итоговые типы на примерах."""
+    def panel(x, y, w, h, color, title_lines, question_lines, items):
+        b = [f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="12" fill="#fff" stroke="{color}" stroke-width="2"/>',
+             _txt(x + w / 2, y + 26, title_lines[0], 14, color, "middle", "700"),
+             _txt(x + w / 2, y + 44, title_lines[1], 14, color, "middle", "700")]
+        yy = y + 72
+        for line in question_lines:
+            b.append(_txt(x + w / 2, yy, line, 11.5, INK, "middle", "600"))
+            yy += 16
+        yy += 6
+        for letter, head, plain in items:
+            b.append(f'<rect x="{x+14}" y="{yy-16}" width="26" height="26" rx="6" fill="{color}" opacity=".13"/>')
+            b.append(_txt(x + 27, yy + 2, letter, 13, color, "middle", "700"))
+            b.append(_txt(x + 50, yy - 2, head, 11.5, INK, "start", "700"))
+            b.append(_txt(x + 50, yy + 13, plain, 10.5, MUT, "start"))
+            yy += 42
+        return b
+
+    body = []
+
+    # ---- Панель I
+    body += panel(20, 14, 362, 268, BLU,
+        ("ОСЬ I — СУБЪЕКТНОСТЬ:", "кто хозяин?"),
+        ["Может ли капитал этой страны сам командовать,",
+         "присваивать и защищать своё — в т.ч. за рубежом?"],
+        [("К", "Центр командования", "ключевые решения принимаются внутри страны"),
+         ("В", "Внешнее господство", "свои активы и контроль за рубежом, доход от них"),
+         ("Г", "Гос. закрепление", "государство гарантирует и защищает внешний контур"),
+         ("Р", "Воспроизводимость", "повторяется год за годом, а не разовая сделка")])
+
+    # ---- Панель II
+    body += panel(398, 14, 362, 268, ACC,
+        ("ОСЬ II — ЗАВИСИМОСТЬ:", "насколько страна зависит извне?"),
+        ["Насколько экономика опирается на внешние центры",
+         "(энергия, рынки, деньги) и можно ли их заменить?"],
+        [("1", "Значимость узла", "без него воспроизводство останавливается"),
+         ("2", "Концентрация", "узел замкнут на одного контрагента"),
+         ("3", "Незаменимость", "быстро заменить источник нельзя"),
+         ("4", "Механизм давления", "контрагент может влиять на условия и решения")])
+
+    # ---- соединитель
+    body.append(f'<rect x="20" y="296" width="740" height="52" rx="10" fill="{SOFT}"/>')
+    body.append(_txt(390, 317, "Две оси отвечают на РАЗНЫЕ вопросы — поэтому нужны обе:", 12.5, INK, "middle", "700"))
+    body.append(_txt(390, 335, "ответ по одной оси не заменяет ответ по другой, их нельзя вывести друг из друга", 11.5, MUT, "middle"))
+
+    # ---- итог: классификация на примерах
+    body.append(_txt(390, 374, "Классификация — по обеим осям вместе", 14, INK, "middle", "700"))
+    cards = [
+        (20, BLU, "Тип I — центр",
+         ["командует сам (К∧В∧Г∧Р ✓)",
+          "зависит слабо",
+          "крупнейшие державы,",
+          "экспортирующие капитал"]),
+        (270, GRN, "Тип II — участник",
+         ["командует сам (К∧В∧Г∧Р ✓)",
+          "сильно зависит",
+          "свои контуры внутри",
+          "чужой системы (гипотеза Б)"]),
+        (520, ACC, "Тип III/IV — зависимая",
+         ["субъектность не доказана",
+          "сильно зависит",
+          "Беларусь-2026 —",
+          "предварительно (гл. 12)"]),
+    ]
+    for x, col, title, lines in cards:
+        body.append(f'<rect x="{x}" y="388" width="240" height="152" rx="12" fill="#fff" stroke="{col}" stroke-width="1.8"/>')
+        body.append(_txt(x + 120, 414, title, 13, col, "middle", "700"))
+        yy = 442
+        for ln in lines:
+            body.append(_txt(x + 120, yy, ln, 11, INK, "middle"))
+            yy += 22
+    body.append(f'<rect x="20" y="556" width="740" height="40" rx="10" fill="none" stroke="{MUT}" stroke-dasharray="5 4"/>')
+    body.append(_txt(390, 573, "Если по обеим осям доказательств недостаточно — классификация отложена", 11.5, INK, "middle", "600"))
+    body.append(_txt(390, 590, "(это не типы I–V, а честное «мы пока не знаем»)", 11, MUT, "middle"))
+    body.append(_txt(390, 626, "Единица анализа — контур накопления (решения → производство → присвоение),", 11.5, MUT, "middle"))
+    body.append(_txt(390, 644, "а не страна «вообще»: у разных контуров одной страны ответ по осям может различаться", 11.5, MUT, "middle"))
+    return _svg(780, 664, "".join(body))
 
 def contour():
     labels = ["Центр\nкомандования", "Мобилизация\nресурсов", "Производство", "Присвоение", "Реинвест", "Гос.\nобеспечение"]
@@ -212,7 +262,7 @@ def program():
     return _svg(w, h, "".join(body))
 
 ALL = {
-    "axes": (axes_diag, "Рис. 1.1. Две аналитически различные оси классификации (схема; критерий и ловушки — в тексте главы)."),
+    "axes": (axes_diag, "Рис. 1.1. Две оси классификации: что каждая спрашивает и как вместе дают тип страны (схема для читателя-неспециалиста; строгие определения — в тексте главы)."),
     "contour": (contour, "Рис. 2.1. Контур накопления как единица анализа (схема; цепочка доказательства — §2.2)."),
     "fdi": (fdi, "Рис. 9.1. ПИИ: чистый приток по годам — flow (WDI — SRC-032) и запас прямых инвестиций резидентов за рубежом — stock (IIP НБРБ — SRC-013). Показатели не смешиваются."),
     "iip": (iip, "Рис. 9.2. Международная инвестиционная позиция на 1 января (НБРБ — SRC-013): активы, обязательства, чистая позиция должника."),
