@@ -27,6 +27,8 @@ VERSION_NOTE = ("черновик v0.8; публикация в развитии
 
 # (файл, выходной html, короткое имя для навигации, описание для плашки)
 PARTS = [
+ ("00-vvedenie.md", "bel-v00.html", "Введение",
+  "Актуальность, метод и адресаты: зачем нужна марксистская классификация Беларуси и как устроено исследование"),
  ("01-kategorii-i-kriterij.md", "bel-g01.html", "Глава 1. Категории и критерий",
   "Пять признаков Ленина как система отношений; критерий К + В + Г + Р; две оси; четыре гипотезы; семь ловушек"),
  ("02-metod-i-periodizaciya.md", "bel-g02.html", "Глава 2. Метод, источники и периодизация",
@@ -626,7 +628,7 @@ body{{margin:0;background:var(--bg);color:var(--fg);font-family:-apple-system,Bl
     различением войн.</p>
   </div>
   <div class="cta-read">
-    <a href="bel-g01.html">Читать с главы 1 →</a>
+    <a href="bel-v00.html">Введение</a><a href="bel-g01.html">Читать с главы 1 →</a>
     <a class="o" href="bel-g12.html">Вывод (глава 12)</a>
     <a class="o" href="bel-pril-a.html">Проект тезисов</a>
     <a class="o" href="bel-pril-b.html">Реестр SRC/CLM</a>
