@@ -22,8 +22,8 @@ os.makedirs(OUT, exist_ok=True)
 BOOK_TITLE = "Место современной Республики Беларусь в системе мирового империализма"
 BOOK_SLUG = "belarus-imperialism.html"
 BASE = "https://thinkred.ru/library/"
-VERSION_NOTE = ("Публикуется в развитии: черновик v0.7 — цикл внешних рецензий глав 1–14, "
-                "заключения и приложений применён. Места, отмеченные [задание], требуют документального "
+VERSION_NOTE = ("черновик v0.8 — рецензии review2 применены по всем 18 разделам (слияние трёх "
+                "независимых прогонов). Места, отмеченные [задание], требуют документального "
                 "подтверждения — реестр открыт ({n_src}, {n_clm}).")
 
 # (файл, выходной html, короткое имя для навигации, описание для плашки)
@@ -288,7 +288,7 @@ def chapter_page(idx, title, body_html, next_ref, prev_ref):
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>{html_mod.escape(title)} — {html_mod.escape(BOOK_TITLE)} — ThinkRed</title>
-<meta name="description" content="{html_mod.escape(title)} из книги «{html_mod.escape(BOOK_TITLE)}» (ThinkRed, черновик v0.7)."/>
+<meta name="description" content="{html_mod.escape(title)} из книги «{html_mod.escape(BOOK_TITLE)}» (ThinkRed, черновик v0.8)."/>
 <link rel="canonical" href="{BASE}bel-g{idx:02d}.html"/>
 <link rel="icon" href="https://thinkred.ru/favicon.png"/>
 {CH_CSS}
@@ -298,7 +298,7 @@ def chapter_page(idx, title, body_html, next_ref, prev_ref):
 <div class="crumb"><a href="/library/{BOOK_SLUG}">{html_mod.escape(BOOK_TITLE)}</a> → {html_mod.escape(title)}</div>
 <div class="layout">
 <article>
-<div class="status">Черновик v0.7 — цикл внешних рецензий применён; публикация в развитии. Места <b>[задание]</b> требуют документального подтверждения. Ссылки <b>SRC-/CLM-</b> в тексте ведут в <a href="registry.html">открытый реестр</a>.</div>
+<div class="status">Черновик v0.8 — рецензии review2 применены (слияние трёх независимых прогонов); публикация в развитии. Места <b>[задание]</b> требуют документального подтверждения. Ссылки <b>SRC-/CLM-</b> в тексте ведут в <a href="registry.html">открытый реестр</a>.</div>
 {body_html}
 </article>
 </div>
@@ -519,9 +519,9 @@ index = f"""<!doctype html>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Место современной Республики Беларусь в системе мирового империализма — ThinkRed</title>
-<meta name="description" content="Исследование места Беларуси в системе мирового империализма по Ленину: пять признаков как отношения, критерий субъектности К + В + Г + Р, контуры накопления, классовая структура и проект программных тезисов. Черновик v0.7 — цикл внешних рецензий применён."/>
+<meta name="description" content="Исследование места Беларуси в системе мирового империализма по Ленину: пять признаков как отношения, критерий субъектности К + В + Г + Р, контуры накопления, классовая структура и проект программных тезисов. Черновик v0.8 — рецензии review2 применены."/>
 <meta property="og:title" content="Место современной Республики Беларусь в системе мирового империализма"/>
-<meta property="og:description" content="Книга ThinkRed: критерий прежде вывода; политика из экономики; черновик v0.7 — цикл внешних рецензий под открытым рецензированием."/>
+<meta property="og:description" content="Книга ThinkRed: критерий прежде вывода; политика из экономики; черновик v0.8 — под открытым рецензированием."/>
 <meta property="og:type" content="book"/>
 <link rel="canonical" href="{BASE}{BOOK_SLUG}"/>
 <link rel="icon" href="https://thinkred.ru/favicon.png"/>
@@ -576,7 +576,7 @@ body{{margin:0;background:var(--bg);color:var(--fg);font-family:-apple-system,Bl
 <div class="hero"><div class="in">
   <h1>{html_mod.escape(BOOK_TITLE)}</h1>
   <p>Исследование места Беларуси в системе мирового империализма по методологии «Империализма как высшей стадии капитализма»: пять признаков Ленина как система отношений, критерий субъектности К + В + Г + Р, контуры накопления, классовая структура и проект программных тезисов самостоятельной рабочей организации.</p>
-  <div class="meta">ThinkRed · 2026 · черновик v0.7 · под открытым рецензированием</div>
+  <div class="meta">ThinkRed · 2026 · черновик v0.8 · под открытым рецензированием</div>
 </div></div>
 <div class="wrap">
   <div class="status"><b>Публикуется в развитии.</b> {VERSION_NOTE}</div>
