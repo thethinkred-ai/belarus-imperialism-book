@@ -416,9 +416,15 @@ def build_registry_page():
             if label not in clm_chapters[cid]:
                 clm_chapters[cid].append(label)
     src_cards = []
+    # ключи конспектов (схема ассистента) → русские названия пунктов карточки
+    NOTES_RU = {"concepts": "основные понятия", "positions": "положения", "theses": "тезисы",
+                "facts": "факты", "authorHypotheses": "гипотезы автора", "conclusions": "выводы",
+                "quotes": "цитаты", "remarks": "примечания", "tasks": "связь с задачами книги",
+                "sections": "связь с параграфами", "link-status": "статус ссылки",
+                "summary": "обзор"}
     for srcref in reg["sources"]:
         notes = srcref.get("notes", {}) or {}
-        nk = "".join(f"<div><b>{html_mod.escape(str(k))}:</b> {html_mod.escape(str(v)[:400])}</div>"
+        nk = "".join(f"<div><b>{html_mod.escape(NOTES_RU.get(str(k), str(k)))}:</b> {html_mod.escape(str(v)[:400])}</div>"
                      for k, v in notes.items() if v)
         url = (f'<a href="{srcref["url"]}" target="_blank" rel="noopener">{html_mod.escape(srcref["url"])}</a>'
                if srcref.get("url") else "—")
