@@ -8,7 +8,7 @@
 <link rel="canonical" href="https://thinkred.ru/library/bel-pril-g.html"/>
 <link rel="icon" href="https://thinkred.ru/favicon.png"/>
 <style>
-:root{--fg:#1f2328;--muted:#5b636e;--bg:#ffffff;--card:#f6f7f9;--line:#e3e6ea;--accent:#e11d2a;--accent-soft:rgba(225,29,42,.08)}
+:root{--fg:#1f2328;--muted:#5b636e;--bg:#ffffff;--card:#f6f7f9;--line:#e3e6ea;--hair:#eef0f3;--accent:#e11d2a;--accent-soft:rgba(225,29,42,.08)}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;background:var(--bg);color:var(--fg);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",Arial,"Noto Sans Cyrillic",sans-serif;font-size:17px;line-height:1.7;-webkit-font-smoothing:antialiased}
@@ -24,10 +24,15 @@ h2{font-size:21px;margin:34px 0 12px}
 h3{font-size:17.5px;margin:26px 0 10px;color:#2b3138}
 a{color:var(--accent)}
 p{margin:0 0 14px}
-blockquote{margin:16px 0;padding:10px 18px;border-left:3px solid var(--accent);background:var(--accent-soft);border-radius:0 8px 8px 0;color:#28303a}
-table{border-collapse:collapse;width:100%;margin:18px 0;font-size:14.5px;display:block;overflow-x:auto}
-th,td{border:1px solid var(--line);padding:7px 10px;text-align:left;vertical-align:top}
-th{background:var(--card);font-weight:600}
+blockquote{margin:18px 0;padding:12px 18px;border-left:3px solid var(--accent);background:var(--accent-soft);border-radius:0 10px 10px 0;color:#2a313b;font-size:15.5px;line-height:1.65}
+.tblwrap{margin:20px 0;border:1px solid var(--line);border-radius:12px;background:#fff;overflow-x:auto;-webkit-overflow-scrolling:touch}
+table{border-collapse:separate;border-spacing:0;width:100%;font-size:14.2px;min-width:520px}
+thead th{background:var(--card);font-weight:700;font-size:12.6px;color:#3c434d;text-align:left;padding:10px 12px;border-bottom:2px solid #d9dde3;white-space:nowrap;vertical-align:bottom}
+tbody td{padding:9px 12px;border-bottom:1px solid var(--hair);vertical-align:top;line-height:1.55}
+tbody tr:last-child td{border-bottom:0}
+tbody tr:nth-child(even) td{background:#fafbfd}
+tbody tr:hover td{background:#f4f7ff}
+td code,th code{white-space:nowrap;background:transparent;padding:0;font-size:.92em;color:#3c434d;font-weight:600}
 code{background:var(--card);border-radius:5px;padding:1px 6px;font-size:.9em}
 pre{background:#0f1115;color:#e6edf3;padding:14px;border-radius:10px;overflow:auto;font-size:13px;white-space:pre-wrap}
 hr{border:0;border-top:1px solid var(--line);margin:34px 0}
@@ -49,10 +54,12 @@ hr{border:0;border-top:1px solid var(--line);margin:34px 0}
 .sitebar nav a:hover{color:#e11d2a}
 .sitefoot{border-top:1px solid rgba(17,24,39,.08);background:#fff;margin-top:40px;padding:20px 18px;text-align:center;color:#7a7a8a;font-size:13px}
 .sitefoot a{color:#4a4a5a;text-decoration:none;margin:0 8px}
-.figure{margin:20px 0}
-.figure figcaption{font-size:13px;color:var(--muted);margin-top:8px;line-height:1.45}
+.figure{margin:26px 0;background:#fcfdfe;border:1px solid var(--hair);border-radius:14px;padding:16px 16px 4px}
+.figure svg{display:block;width:100%;height:auto}
+.figure figcaption{font-size:13px;color:var(--muted);margin-top:12px;padding:10px 4px 10px;border-top:1px solid var(--hair);line-height:1.55}
+.figure .fno{color:var(--fg);font-weight:700}
 a.ref{white-space:nowrap}
-.badge{display:inline-block;border-radius:20px;padding:1px 10px;font-size:12px;white-space:nowrap}
+.badge{display:inline-block;border-radius:999px;padding:2px 10px;font-size:12px;white-space:nowrap;border:1px solid rgba(16,24,40,.07)}
 .b-ok{background:#e7f5ee;color:#047857}
 .b-part{background:#fff4e0;color:#9a6700}
 .b-na{background:#eef0f3;color:#5b636e}
@@ -60,21 +67,25 @@ a.ref{white-space:nowrap}
 .src{border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin:12px 0}
 .src .m{color:var(--muted);font-size:13px;margin:4px 0}
 .src div{font-size:14px}
-.widget{margin:22px 0;border:1px solid var(--line);border-radius:12px;background:var(--card);padding:16px 18px}
-.widget h4{margin:0 0 6px;font-size:16px}
-.widget .hint{font-size:13px;color:var(--muted);margin:0 0 12px}
-.wrow{display:flex;align-items:center;gap:10px;margin:9px 0;flex-wrap:wrap}
-.wrow label{flex:0 0 300px;font-size:14px}
-.wrow input[type=range]{flex:1 1 180px;accent-color:#e11d2a}
-.wrow output{flex:0 0 92px;font-size:13px;font-variant-numeric:tabular-nums}
-.wstatus{display:inline-block;min-width:132px;text-align:center;border-radius:14px;padding:1px 8px;font-size:12px;font-weight:600}
-.s-prov{background:#e7f5ee;color:#047857}.s-na{background:#eef0f3;color:#5b636e}.s-ref{background:#fde8e8;color:#c11d2a}
-.wverdict{margin-top:12px;background:#fff;border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:0 8px 8px 0;padding:10px 14px;font-size:14.5px;line-height:1.55}
-.wbtns{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}
-.wbtns button{border:1px solid var(--line);background:#fff;border-radius:8px;padding:6px 12px;font-size:13px;cursor:pointer}
+.widget{margin:26px 0;border:1px solid var(--line);border-radius:16px;background:#fff;padding:18px 20px;box-shadow:0 1px 3px rgba(16,24,40,.05)}
+.widget h4{margin:0 0 8px;font-size:15.5px;display:flex;align-items:baseline;gap:9px}
+.widget h4::before{content:"";width:9px;height:9px;border-radius:3px;background:var(--accent);flex:0 0 auto;transform:translateY(1px)}
+.widget .hint{font-size:13.5px;color:var(--muted);margin:0 0 14px;line-height:1.55}
+.wrow{display:flex;align-items:center;gap:12px;margin:10px 0;flex-wrap:wrap}
+.wrow label{flex:0 0 268px;font-size:13.8px;color:#333a44}
+.wrow input[type=range]{flex:1 1 150px;accent-color:#2c5fc4;height:20px}
+.wrow output{flex:0 0 64px;font-size:13px;font-variant-numeric:tabular-nums;background:var(--card);border:1px solid var(--hair);border-radius:8px;padding:2px 6px;text-align:center}
+.wstatus{display:inline-flex;align-items:center;justify-content:center;gap:6px;min-width:126px;border-radius:999px;padding:3px 9px;font-size:11.5px;font-weight:600;border:1px solid transparent}
+.wstatus::before{content:"●";font-size:8px;line-height:1}
+.s-prov{background:#e9f7f0;color:#0b6e4f;border-color:#c4e8d6}
+.s-na{background:#f1f3f6;color:#5b636e;border-color:#e0e3e8}
+.s-ref{background:#fdecec;color:#b3252f;border-color:#f5c9c9}
+.wverdict{margin-top:14px;background:#fbfcfe;border:1px solid var(--hair);border-left:3px solid var(--accent);border-radius:0 10px 10px 0;padding:12px 16px;font-size:14.5px;line-height:1.6}
+.wbtns{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}
+.wbtns button{border:1px solid var(--line);background:#fff;border-radius:9px;padding:6px 13px;font-size:13px;cursor:pointer;color:#333a44;transition:border-color .15s,color .15s}
 .wbtns button:hover{border-color:var(--accent);color:var(--accent)}
-.wsel{font-size:13px;padding:4px 6px;border-radius:6px;border:1px solid var(--line);background:#fff}
-.wnote{font-size:12.5px;color:var(--muted);margin-top:8px}
+.wsel{font-size:13px;padding:5px 8px;border-radius:8px;border:1px solid var(--line);background:#fff;color:#333a44}
+.wnote{font-size:12.5px;color:var(--muted);margin-top:10px}
 @media (max-width:640px){.wrow label{flex:1 1 100%}}
 @media print{.sitebar,.pnav,.backtop,.sitefoot,.crumb{display:none}}
 </style>
@@ -105,7 +116,7 @@ a.ref{white-space:nowrap}
 <ul><li><strong>Закон «О противодействии экстремизму»</strong> от 04.01.2007 № 203-З (в редакции, действующей с 16.06.2021; изменения 2021–2023 гг., вкл. Закон № 298-З от 13.12.2023 — институт «нежелательных иностранных/международных формирований»).</li><li><strong>Перечни</strong>: республиканский список экстремистских материалов — Мининформации (по решениям судов); перечень экстремистских формирований и перечень лиц, причастных к экстремистской деятельности, — МВД (совместно с КГБ/Генпрокуратурой/СК); перечень причастных к террористической деятельности — КГБ.</li><li><strong>Ответственность</strong>: ст. 19.11 КоАП — распространение (в практике: размещение, репост, <strong>ссылка, лайк, подписка</strong>) экстремистских материалов; ст. 361-1 УК — создание экстремистского формирования, ст. 361-2 — финансирование, ст. 361-4 — содействие; ст. 369-1 УК — дискредитация Республики Беларусь; ст. 130-1 УК — реабилитация нацизма (научное/музейное использование символики исключено).</li><li>Официальные источники статусов: mininform.gov.by (список материалов), mvd.gov.by (перечни формирований и лиц), kgb.by (перечень причастных к террористической деятельности) [задание: сверить адреса перечней по первичным источникам].</li></ul>
 <h2 id="г3-источники-книги-и-их-статусы-по-перечням-сверка-2026-10-09">Г.3. Источники книги и их статусы по перечням (сверка 2026-10-09)</h2>
 <p><strong>А. Источники, находящиеся в перечнях РБ</strong> (упомянуты в книге; статус — по решениям госорганов):</p>
-<table><thead><tr><th>Источник</th><th>Где в книге</th><th>Статус (дата/орган)</th><th>Характер риска</th></tr></thead><tbody><tr><td>«Хартия'97»</td><td>гл. 13 (таблица 2020, §13.6 — имя источника, без URL в тексте)</td><td>экстремистские материалы (02.2022, суд); экстремистское формирование (08.2022, МВД)</td><td>имя источника в библиографии</td></tr><tr><td>Профсоюзная ассоциация «Салідарнасць»</td><td>гл. 13 §13.6; реестр <a class="ref" href="registry.html#SRC-054">SRC-054</a></td><td>материалы сайта и логотип — в республиканском списке Мининформа</td><td>URL исключён 2026-10-09 (доступен по запросу)</td></tr><tr><td>«Настоящее время»</td><td>прил. Б; реестр <a class="ref" href="registry.html#SRC-078">SRC-078</a></td><td>экстремистское формирование (07.2023, МВД)</td><td>URL исключён 2026-10-09</td></tr><tr><td>Mediazona</td><td>реестр <a class="ref" href="registry.html#SRC-078">SRC-078</a> (упоминание в конспекте)</td><td>материалы (05.2022); формирование (02.2025, МВД)</td><td>упоминание</td></tr><tr><td>«Зеркало»</td><td>реестр <a class="ref" href="registry.html#SRC-073">SRC-073</a>/074 (упоминание в конспектах)</td><td>экстремистское формирование (06.2023, МВД)</td><td>упоминание</td></tr><tr><td>DW («DW Беларусь»)</td><td>прил. Б; реестр <a class="ref" href="registry.html#SRC-054">SRC-054</a>/078 (конспекты)</td><td>материалы (03.2022); формирование (04.2024, МВД)</td><td>упоминание</td></tr><tr><td>hrodna.life</td><td>реестр <a class="ref" href="registry.html#SRC-078">SRC-078</a> (конспект)</td><td>материалы (2021); формирование (11.2022, КГБ)</td><td>упоминание</td></tr><tr><td>Euronews</td><td>реестр <a class="ref" href="registry.html#SRC-066">SRC-066</a> (конспект)</td><td>материалы (лето 2026, Мининформ)</td><td>упоминание</td></tr><tr><td>DOXA</td><td>реестр <a class="ref" href="registry.html#SRC-078">SRC-078</a> (конспект)</td><td>материалы (09.2024)</td><td>упоминание</td></tr><tr><td>Координационный совет (2020)</td><td>гл. 13 §13.2 (факт координации стачкомов, 2 упоминания)</td><td>экстремистское формирование (перечень МВД, 01.2023; дело возбуждено 12.2020)</td><td>упоминание как исторического факта</td></tr></tbody></table>
+<div class="tblwrap"><table><thead><tr><th>Источник</th><th>Где в книге</th><th>Статус (дата/орган)</th><th>Характер риска</th></tr></thead><tbody><tr><td>«Хартия'97»</td><td>гл. 13 (таблица 2020, §13.6 — имя источника, без URL в тексте)</td><td>экстремистские материалы (02.2022, суд); экстремистское формирование (08.2022, МВД)</td><td>имя источника в библиографии</td></tr><tr><td>Профсоюзная ассоциация «Салідарнасць»</td><td>гл. 13 §13.6; реестр <a class="ref" href="registry.html#SRC-054">SRC-054</a></td><td>материалы сайта и логотип — в республиканском списке Мининформа</td><td>URL исключён 2026-10-09 (доступен по запросу)</td></tr><tr><td>«Настоящее время»</td><td>прил. Б; реестр <a class="ref" href="registry.html#SRC-078">SRC-078</a></td><td>экстремистское формирование (07.2023, МВД)</td><td>URL исключён 2026-10-09</td></tr><tr><td>Mediazona</td><td>реестр <a class="ref" href="registry.html#SRC-078">SRC-078</a> (упоминание в конспекте)</td><td>материалы (05.2022); формирование (02.2025, МВД)</td><td>упоминание</td></tr><tr><td>«Зеркало»</td><td>реестр <a class="ref" href="registry.html#SRC-073">SRC-073</a>/074 (упоминание в конспектах)</td><td>экстремистское формирование (06.2023, МВД)</td><td>упоминание</td></tr><tr><td>DW («DW Беларусь»)</td><td>прил. Б; реестр <a class="ref" href="registry.html#SRC-054">SRC-054</a>/078 (конспекты)</td><td>материалы (03.2022); формирование (04.2024, МВД)</td><td>упоминание</td></tr><tr><td>hrodna.life</td><td>реестр <a class="ref" href="registry.html#SRC-078">SRC-078</a> (конспект)</td><td>материалы (2021); формирование (11.2022, КГБ)</td><td>упоминание</td></tr><tr><td>Euronews</td><td>реестр <a class="ref" href="registry.html#SRC-066">SRC-066</a> (конспект)</td><td>материалы (лето 2026, Мининформ)</td><td>упоминание</td></tr><tr><td>DOXA</td><td>реестр <a class="ref" href="registry.html#SRC-078">SRC-078</a> (конспект)</td><td>материалы (09.2024)</td><td>упоминание</td></tr><tr><td>Координационный совет (2020)</td><td>гл. 13 §13.2 (факт координации стачкомов, 2 упоминания)</td><td>экстремистское формирование (перечень МВД, 01.2023; дело возбуждено 12.2020)</td><td>упоминание как исторического факта</td></tr></tbody></table></div>
 <p>Пояснение: <strong>само по себе упоминание названия источника составом не является</strong> — перечни публикуются госорганами и цитируются в официальных материалах. Риск создают активные гиперссылки на признанные материалы: прокуратура и суды трактуют ссылку как «распространение» (ст. 19.11 КоАП). В книге такие ссылки были в двух местах реестра (<a class="ref" href="registry.html#SRC-054">SRC-054</a>, <a class="ref" href="registry.html#SRC-078">SRC-078</a>) — <strong>исключены 2026-10-09</strong> (см. §Г.5).</p>
 <p><strong>Б. Источники, в перечнях РБ не обнаруженные</strong> (проверено 2026-10-09 по mininform.gov.by и сводным спискам; требуют повторной сверки перед печатью — перечень обновляется еженедельно): OSW (Польша), OCCRP, NED, Фонд Фридриха Эберта, ITUC, IndustriALL, Solidarity Center (AFL-CIO), marxists.org. Оговорки: Белорусский расследовательский центр (партнёр OCCRP) признан экстремистской организацией (2023); отдельный Instagram-аккаунт «Belarusian Solidarity Center» признан экстремистскими материалами (не путать с американским Solidarity Center).</p>
 <p><strong>OSW — целевая сверка (2026-10-09, по запросу редакции).</strong> Ośrodek Studiów Wschodnich (osw.waw.pl) — государственный аналитический институт Польши — в перечнях РБ (экстремистские материалы, экстремистские формирования, «нежелательные формирования») не значится; родственный по профилю Центр восточноевропейских и международных исследований (CESWI, Краков) внесён в перечень «нежелательных» в России (2023), но не OSW в Беларуси. Профиль источника (гос. институт страны, находящейся в остром политическом конфликте с РБ) — повышенного внимания: повторная сверка перед каждой версией. В книге OSW используется только как хронология событий августа 2020 г. (две строки таблицы гл. 13; <a class="ref" href="registry.html#SRC-066">SRC-066</a>) — без цитат из материалов.</p>
@@ -124,7 +135,7 @@ a.ref{white-space:nowrap}
 <p>Принятые меры перечислены в §Г.5 (пп. 1, 3–5). Антивоенная позиция 10в сохранена: нейтральная терминология снижает терминологические риски, но не отменяет содержательного тезиса повышенного внимания (§Г.4 п. 1) ни для одной из двух юрисдикций.</p>
 <p><strong>Доступность из РБ (фиксация фактов, вне правовой оценки).</strong> Данные о доступности неоднородны и систематической проверки не проводилось: (1) по автоматической проверке 09.10.2026 из сети одного белорусского хостинг-провайдера сайт thinkred.ru был недоступен (ICMP — 100% потерь, HTTPS — таймаут, трассировка обрывается на магистральных узлах); (2) по прямому подтверждению автора из Республики Беларусь (11.10.2026) сайт доступен и открывается. Сопоставить оба наблюдения нельзя: проверки из разных сетей, независимого мониторинга с белорусских нод нет (check-host.net не имеет ноды в РБ). Причина расхождения не установлена — возможны сетевые ограничения выборочного характера или проблема конкретного оператора. Следствие для книги: недоступность в отдельных сетях РБ возможна, поэтому печатная/PDF-версия без URL (§Г.5, возможные меры, п. 1) остаётся целесообразной как канал, не зависящий от сетевой доступности. Перед изданием 1.0 — проверка доступности с нескольких операторов РБ.</p>
 <h2 id="г7-итоговая-сводка">Г.7. Итоговая сводка</h2>
-<table><thead><tr><th>Риск-область</th><th>Уровень</th><th>Комментарий</th></tr></thead><tbody><tr><td>Активные URL на перечневые материалы (2 шт., реестр)</td><td><strong>снято 2026-10-09</strong> (исключены; была ст. 19.11 КоАП)</td><td>см. §Г.5</td></tr><tr><td>Имена источников из перечней в тексте/библиографии</td><td>средний</td><td>упоминание ≠ распространение; практика широка</td></tr><tr><td>Позиция по военным действиям (10в, гл. 11, прил. А)</td><td>содержательный</td><td>ст. 369-1/361 в правоприменении (сверка — §Г.4); терминология нейтральная (ред. 2026-10-10)</td></tr><tr><td>Программные тезисы (9, 12, максимальная)</td><td>содержательный</td><td>без призывов/сроков — по построению (§14.6)</td></tr><tr><td>Юрисдикция хостинга (РФ)</td><td>понижен</td><td>ст. 207.3/280.3 УК РФ, 20.3.3–20.3.4 КоАП РФ; нейтральная терминология (§Г.6)</td></tr><tr><td>Доступность сайта из РБ</td><td>факт (вне правовой оценки)</td><td>неоднородна: недоступность из одной сети (09.10.2026), доступ подтверждён автором из РБ (11.10.2026); §Г.6</td></tr><tr><td>Основная доказательная база (гл. 3–12)</td><td>низкий</td><td>гос. и международная статистика (группа В)</td></tr></tbody></table>
+<div class="tblwrap"><table><thead><tr><th>Риск-область</th><th>Уровень</th><th>Комментарий</th></tr></thead><tbody><tr><td>Активные URL на перечневые материалы (2 шт., реестр)</td><td><strong>снято 2026-10-09</strong> (исключены; была ст. 19.11 КоАП)</td><td>см. §Г.5</td></tr><tr><td>Имена источников из перечней в тексте/библиографии</td><td>средний</td><td>упоминание ≠ распространение; практика широка</td></tr><tr><td>Позиция по военным действиям (10в, гл. 11, прил. А)</td><td>содержательный</td><td>ст. 369-1/361 в правоприменении (сверка — §Г.4); терминология нейтральная (ред. 2026-10-10)</td></tr><tr><td>Программные тезисы (9, 12, максимальная)</td><td>содержательный</td><td>без призывов/сроков — по построению (§14.6)</td></tr><tr><td>Юрисдикция хостинга (РФ)</td><td>понижен</td><td>ст. 207.3/280.3 УК РФ, 20.3.3–20.3.4 КоАП РФ; нейтральная терминология (§Г.6)</td></tr><tr><td>Доступность сайта из РБ</td><td>факт (вне правовой оценки)</td><td>неоднородна: недоступность из одной сети (09.10.2026), доступ подтверждён автором из РБ (11.10.2026); §Г.6</td></tr><tr><td>Основная доказательная база (гл. 3–12)</td><td>низкий</td><td>гос. и международная статистика (группа В)</td></tr></tbody></table></div>
 <p>Сверка проведена 2026-10-09. Обязательство: перед изданием 1.0 — повторная сверка перечней и обновление настоящего приложения. Документ подготовлен автором; по всем вопросам правовой оценки — к профильному юристу.</p>
 <hr/>
 <p><em>Реестр: <a class="ref" href="registry.html#SRC-081">SRC-081</a> (законодательство и перечни РБ об экстремизме — pravo.by, mininform.gov.by, mvd.gov.by, kgb.by; практика прокуратуры и судов 2021–2026). Статусы источников — по решениям госорганов РБ на дату сверки; список перечней обновляется еженедельно.</em></p>

@@ -120,10 +120,10 @@ def md_to_html(md):
                 cells = [c.strip() for c in lines_[i].strip().strip("|").split("|")]
                 rows.append(cells); i += 1
             header, bodyr = rows[0], rows[2:]
-            t = "<table><thead><tr>" + "".join(f"<th>{inline(c)}</th>" for c in header) + "</tr></thead><tbody>"
+            t = '<div class="tblwrap"><table><thead><tr>' + "".join(f"<th>{inline(c)}</th>" for c in header) + "</tr></thead><tbody>"
             for r in bodyr:
                 t += "<tr>" + "".join(f"<td>{inline(c)}</td>" for c in r) + "</tr>"
-            out.append(t + "</tbody></table>"); continue
+            out.append(t + "</tbody></table></div>"); continue
         m_u = re.match(r"^\s*[-*]\s+(.*)$", ln)
         m_o = re.match(r"^\s*(\d+)[.)]\s+(.*)$", ln)
         if m_u or m_o:
@@ -173,7 +173,13 @@ def render_figures(body_html):
         fn, cap = diagrams.ALL.get(mo.group(1), (None, None))
         if not fn:
             return ""
-        return f'<figure class="figure">{fn()}<figcaption>{html_mod.escape(cap)}</figcaption></figure>'
+        mno = re.match(r"(Рис\.\s*\d+\.\d+\.)\s*(.*)", cap, re.S)
+        if mno:
+            cap_html = ('<b class="fno">' + html_mod.escape(mno.group(1)) + "</b> "
+                        + html_mod.escape(mno.group(2)))
+        else:
+            cap_html = html_mod.escape(cap)
+        return f'<figure class="figure">{fn()}<figcaption>{cap_html}</figcaption></figure>'
     return re.sub(r"<p>\{\{SVG:(\w+)\}\}</p>", _fig, body_html)
 
 def headings(md, lvl=2):
@@ -209,7 +215,7 @@ SITEFOOT = '''<div class="sitefoot">
 </div>'''
 
 CH_CSS = """<style>
-:root{--fg:#1f2328;--muted:#5b636e;--bg:#ffffff;--card:#f6f7f9;--line:#e3e6ea;--accent:#e11d2a;--accent-soft:rgba(225,29,42,.08)}
+:root{--fg:#1f2328;--muted:#5b636e;--bg:#ffffff;--card:#f6f7f9;--line:#e3e6ea;--hair:#eef0f3;--accent:#e11d2a;--accent-soft:rgba(225,29,42,.08)}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;background:var(--bg);color:var(--fg);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",Arial,"Noto Sans Cyrillic",sans-serif;font-size:17px;line-height:1.7;-webkit-font-smoothing:antialiased}
@@ -225,10 +231,15 @@ h2{font-size:21px;margin:34px 0 12px}
 h3{font-size:17.5px;margin:26px 0 10px;color:#2b3138}
 a{color:var(--accent)}
 p{margin:0 0 14px}
-blockquote{margin:16px 0;padding:10px 18px;border-left:3px solid var(--accent);background:var(--accent-soft);border-radius:0 8px 8px 0;color:#28303a}
-table{border-collapse:collapse;width:100%;margin:18px 0;font-size:14.5px;display:block;overflow-x:auto}
-th,td{border:1px solid var(--line);padding:7px 10px;text-align:left;vertical-align:top}
-th{background:var(--card);font-weight:600}
+blockquote{margin:18px 0;padding:12px 18px;border-left:3px solid var(--accent);background:var(--accent-soft);border-radius:0 10px 10px 0;color:#2a313b;font-size:15.5px;line-height:1.65}
+.tblwrap{margin:20px 0;border:1px solid var(--line);border-radius:12px;background:#fff;overflow-x:auto;-webkit-overflow-scrolling:touch}
+table{border-collapse:separate;border-spacing:0;width:100%;font-size:14.2px;min-width:520px}
+thead th{background:var(--card);font-weight:700;font-size:12.6px;color:#3c434d;text-align:left;padding:10px 12px;border-bottom:2px solid #d9dde3;white-space:nowrap;vertical-align:bottom}
+tbody td{padding:9px 12px;border-bottom:1px solid var(--hair);vertical-align:top;line-height:1.55}
+tbody tr:last-child td{border-bottom:0}
+tbody tr:nth-child(even) td{background:#fafbfd}
+tbody tr:hover td{background:#f4f7ff}
+td code,th code{white-space:nowrap;background:transparent;padding:0;font-size:.92em;color:#3c434d;font-weight:600}
 code{background:var(--card);border-radius:5px;padding:1px 6px;font-size:.9em}
 pre{background:#0f1115;color:#e6edf3;padding:14px;border-radius:10px;overflow:auto;font-size:13px;white-space:pre-wrap}
 hr{border:0;border-top:1px solid var(--line);margin:34px 0}
@@ -250,10 +261,12 @@ hr{border:0;border-top:1px solid var(--line);margin:34px 0}
 .sitebar nav a:hover{color:#e11d2a}
 .sitefoot{border-top:1px solid rgba(17,24,39,.08);background:#fff;margin-top:40px;padding:20px 18px;text-align:center;color:#7a7a8a;font-size:13px}
 .sitefoot a{color:#4a4a5a;text-decoration:none;margin:0 8px}
-.figure{margin:20px 0}
-.figure figcaption{font-size:13px;color:var(--muted);margin-top:8px;line-height:1.45}
+.figure{margin:26px 0;background:#fcfdfe;border:1px solid var(--hair);border-radius:14px;padding:16px 16px 4px}
+.figure svg{display:block;width:100%;height:auto}
+.figure figcaption{font-size:13px;color:var(--muted);margin-top:12px;padding:10px 4px 10px;border-top:1px solid var(--hair);line-height:1.55}
+.figure .fno{color:var(--fg);font-weight:700}
 a.ref{white-space:nowrap}
-.badge{display:inline-block;border-radius:20px;padding:1px 10px;font-size:12px;white-space:nowrap}
+.badge{display:inline-block;border-radius:999px;padding:2px 10px;font-size:12px;white-space:nowrap;border:1px solid rgba(16,24,40,.07)}
 .b-ok{background:#e7f5ee;color:#047857}
 .b-part{background:#fff4e0;color:#9a6700}
 .b-na{background:#eef0f3;color:#5b636e}
@@ -261,21 +274,25 @@ a.ref{white-space:nowrap}
 .src{border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin:12px 0}
 .src .m{color:var(--muted);font-size:13px;margin:4px 0}
 .src div{font-size:14px}
-.widget{margin:22px 0;border:1px solid var(--line);border-radius:12px;background:var(--card);padding:16px 18px}
-.widget h4{margin:0 0 6px;font-size:16px}
-.widget .hint{font-size:13px;color:var(--muted);margin:0 0 12px}
-.wrow{display:flex;align-items:center;gap:10px;margin:9px 0;flex-wrap:wrap}
-.wrow label{flex:0 0 300px;font-size:14px}
-.wrow input[type=range]{flex:1 1 180px;accent-color:#e11d2a}
-.wrow output{flex:0 0 92px;font-size:13px;font-variant-numeric:tabular-nums}
-.wstatus{display:inline-block;min-width:132px;text-align:center;border-radius:14px;padding:1px 8px;font-size:12px;font-weight:600}
-.s-prov{background:#e7f5ee;color:#047857}.s-na{background:#eef0f3;color:#5b636e}.s-ref{background:#fde8e8;color:#c11d2a}
-.wverdict{margin-top:12px;background:#fff;border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:0 8px 8px 0;padding:10px 14px;font-size:14.5px;line-height:1.55}
-.wbtns{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}
-.wbtns button{border:1px solid var(--line);background:#fff;border-radius:8px;padding:6px 12px;font-size:13px;cursor:pointer}
+.widget{margin:26px 0;border:1px solid var(--line);border-radius:16px;background:#fff;padding:18px 20px;box-shadow:0 1px 3px rgba(16,24,40,.05)}
+.widget h4{margin:0 0 8px;font-size:15.5px;display:flex;align-items:baseline;gap:9px}
+.widget h4::before{content:"";width:9px;height:9px;border-radius:3px;background:var(--accent);flex:0 0 auto;transform:translateY(1px)}
+.widget .hint{font-size:13.5px;color:var(--muted);margin:0 0 14px;line-height:1.55}
+.wrow{display:flex;align-items:center;gap:12px;margin:10px 0;flex-wrap:wrap}
+.wrow label{flex:0 0 268px;font-size:13.8px;color:#333a44}
+.wrow input[type=range]{flex:1 1 150px;accent-color:#2c5fc4;height:20px}
+.wrow output{flex:0 0 64px;font-size:13px;font-variant-numeric:tabular-nums;background:var(--card);border:1px solid var(--hair);border-radius:8px;padding:2px 6px;text-align:center}
+.wstatus{display:inline-flex;align-items:center;justify-content:center;gap:6px;min-width:126px;border-radius:999px;padding:3px 9px;font-size:11.5px;font-weight:600;border:1px solid transparent}
+.wstatus::before{content:"●";font-size:8px;line-height:1}
+.s-prov{background:#e9f7f0;color:#0b6e4f;border-color:#c4e8d6}
+.s-na{background:#f1f3f6;color:#5b636e;border-color:#e0e3e8}
+.s-ref{background:#fdecec;color:#b3252f;border-color:#f5c9c9}
+.wverdict{margin-top:14px;background:#fbfcfe;border:1px solid var(--hair);border-left:3px solid var(--accent);border-radius:0 10px 10px 0;padding:12px 16px;font-size:14.5px;line-height:1.6}
+.wbtns{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}
+.wbtns button{border:1px solid var(--line);background:#fff;border-radius:9px;padding:6px 13px;font-size:13px;cursor:pointer;color:#333a44;transition:border-color .15s,color .15s}
 .wbtns button:hover{border-color:var(--accent);color:var(--accent)}
-.wsel{font-size:13px;padding:4px 6px;border-radius:6px;border:1px solid var(--line);background:#fff}
-.wnote{font-size:12.5px;color:var(--muted);margin-top:8px}
+.wsel{font-size:13px;padding:5px 8px;border-radius:8px;border:1px solid var(--line);background:#fff;color:#333a44}
+.wnote{font-size:12.5px;color:var(--muted);margin-top:10px}
 @media (max-width:640px){.wrow label{flex:1 1 100%}}
 @media print{.sitebar,.pnav,.backtop,.sitefoot,.crumb{display:none}}
 </style>"""

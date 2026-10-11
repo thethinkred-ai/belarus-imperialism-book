@@ -8,7 +8,7 @@
 <link rel="canonical" href="https://thinkred.ru/library/bel-pril-v.html"/>
 <link rel="icon" href="https://thinkred.ru/favicon.png"/>
 <style>
-:root{--fg:#1f2328;--muted:#5b636e;--bg:#ffffff;--card:#f6f7f9;--line:#e3e6ea;--accent:#e11d2a;--accent-soft:rgba(225,29,42,.08)}
+:root{--fg:#1f2328;--muted:#5b636e;--bg:#ffffff;--card:#f6f7f9;--line:#e3e6ea;--hair:#eef0f3;--accent:#e11d2a;--accent-soft:rgba(225,29,42,.08)}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;background:var(--bg);color:var(--fg);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",Arial,"Noto Sans Cyrillic",sans-serif;font-size:17px;line-height:1.7;-webkit-font-smoothing:antialiased}
@@ -24,10 +24,15 @@ h2{font-size:21px;margin:34px 0 12px}
 h3{font-size:17.5px;margin:26px 0 10px;color:#2b3138}
 a{color:var(--accent)}
 p{margin:0 0 14px}
-blockquote{margin:16px 0;padding:10px 18px;border-left:3px solid var(--accent);background:var(--accent-soft);border-radius:0 8px 8px 0;color:#28303a}
-table{border-collapse:collapse;width:100%;margin:18px 0;font-size:14.5px;display:block;overflow-x:auto}
-th,td{border:1px solid var(--line);padding:7px 10px;text-align:left;vertical-align:top}
-th{background:var(--card);font-weight:600}
+blockquote{margin:18px 0;padding:12px 18px;border-left:3px solid var(--accent);background:var(--accent-soft);border-radius:0 10px 10px 0;color:#2a313b;font-size:15.5px;line-height:1.65}
+.tblwrap{margin:20px 0;border:1px solid var(--line);border-radius:12px;background:#fff;overflow-x:auto;-webkit-overflow-scrolling:touch}
+table{border-collapse:separate;border-spacing:0;width:100%;font-size:14.2px;min-width:520px}
+thead th{background:var(--card);font-weight:700;font-size:12.6px;color:#3c434d;text-align:left;padding:10px 12px;border-bottom:2px solid #d9dde3;white-space:nowrap;vertical-align:bottom}
+tbody td{padding:9px 12px;border-bottom:1px solid var(--hair);vertical-align:top;line-height:1.55}
+tbody tr:last-child td{border-bottom:0}
+tbody tr:nth-child(even) td{background:#fafbfd}
+tbody tr:hover td{background:#f4f7ff}
+td code,th code{white-space:nowrap;background:transparent;padding:0;font-size:.92em;color:#3c434d;font-weight:600}
 code{background:var(--card);border-radius:5px;padding:1px 6px;font-size:.9em}
 pre{background:#0f1115;color:#e6edf3;padding:14px;border-radius:10px;overflow:auto;font-size:13px;white-space:pre-wrap}
 hr{border:0;border-top:1px solid var(--line);margin:34px 0}
@@ -49,10 +54,12 @@ hr{border:0;border-top:1px solid var(--line);margin:34px 0}
 .sitebar nav a:hover{color:#e11d2a}
 .sitefoot{border-top:1px solid rgba(17,24,39,.08);background:#fff;margin-top:40px;padding:20px 18px;text-align:center;color:#7a7a8a;font-size:13px}
 .sitefoot a{color:#4a4a5a;text-decoration:none;margin:0 8px}
-.figure{margin:20px 0}
-.figure figcaption{font-size:13px;color:var(--muted);margin-top:8px;line-height:1.45}
+.figure{margin:26px 0;background:#fcfdfe;border:1px solid var(--hair);border-radius:14px;padding:16px 16px 4px}
+.figure svg{display:block;width:100%;height:auto}
+.figure figcaption{font-size:13px;color:var(--muted);margin-top:12px;padding:10px 4px 10px;border-top:1px solid var(--hair);line-height:1.55}
+.figure .fno{color:var(--fg);font-weight:700}
 a.ref{white-space:nowrap}
-.badge{display:inline-block;border-radius:20px;padding:1px 10px;font-size:12px;white-space:nowrap}
+.badge{display:inline-block;border-radius:999px;padding:2px 10px;font-size:12px;white-space:nowrap;border:1px solid rgba(16,24,40,.07)}
 .b-ok{background:#e7f5ee;color:#047857}
 .b-part{background:#fff4e0;color:#9a6700}
 .b-na{background:#eef0f3;color:#5b636e}
@@ -60,21 +67,25 @@ a.ref{white-space:nowrap}
 .src{border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin:12px 0}
 .src .m{color:var(--muted);font-size:13px;margin:4px 0}
 .src div{font-size:14px}
-.widget{margin:22px 0;border:1px solid var(--line);border-radius:12px;background:var(--card);padding:16px 18px}
-.widget h4{margin:0 0 6px;font-size:16px}
-.widget .hint{font-size:13px;color:var(--muted);margin:0 0 12px}
-.wrow{display:flex;align-items:center;gap:10px;margin:9px 0;flex-wrap:wrap}
-.wrow label{flex:0 0 300px;font-size:14px}
-.wrow input[type=range]{flex:1 1 180px;accent-color:#e11d2a}
-.wrow output{flex:0 0 92px;font-size:13px;font-variant-numeric:tabular-nums}
-.wstatus{display:inline-block;min-width:132px;text-align:center;border-radius:14px;padding:1px 8px;font-size:12px;font-weight:600}
-.s-prov{background:#e7f5ee;color:#047857}.s-na{background:#eef0f3;color:#5b636e}.s-ref{background:#fde8e8;color:#c11d2a}
-.wverdict{margin-top:12px;background:#fff;border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:0 8px 8px 0;padding:10px 14px;font-size:14.5px;line-height:1.55}
-.wbtns{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}
-.wbtns button{border:1px solid var(--line);background:#fff;border-radius:8px;padding:6px 12px;font-size:13px;cursor:pointer}
+.widget{margin:26px 0;border:1px solid var(--line);border-radius:16px;background:#fff;padding:18px 20px;box-shadow:0 1px 3px rgba(16,24,40,.05)}
+.widget h4{margin:0 0 8px;font-size:15.5px;display:flex;align-items:baseline;gap:9px}
+.widget h4::before{content:"";width:9px;height:9px;border-radius:3px;background:var(--accent);flex:0 0 auto;transform:translateY(1px)}
+.widget .hint{font-size:13.5px;color:var(--muted);margin:0 0 14px;line-height:1.55}
+.wrow{display:flex;align-items:center;gap:12px;margin:10px 0;flex-wrap:wrap}
+.wrow label{flex:0 0 268px;font-size:13.8px;color:#333a44}
+.wrow input[type=range]{flex:1 1 150px;accent-color:#2c5fc4;height:20px}
+.wrow output{flex:0 0 64px;font-size:13px;font-variant-numeric:tabular-nums;background:var(--card);border:1px solid var(--hair);border-radius:8px;padding:2px 6px;text-align:center}
+.wstatus{display:inline-flex;align-items:center;justify-content:center;gap:6px;min-width:126px;border-radius:999px;padding:3px 9px;font-size:11.5px;font-weight:600;border:1px solid transparent}
+.wstatus::before{content:"●";font-size:8px;line-height:1}
+.s-prov{background:#e9f7f0;color:#0b6e4f;border-color:#c4e8d6}
+.s-na{background:#f1f3f6;color:#5b636e;border-color:#e0e3e8}
+.s-ref{background:#fdecec;color:#b3252f;border-color:#f5c9c9}
+.wverdict{margin-top:14px;background:#fbfcfe;border:1px solid var(--hair);border-left:3px solid var(--accent);border-radius:0 10px 10px 0;padding:12px 16px;font-size:14.5px;line-height:1.6}
+.wbtns{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}
+.wbtns button{border:1px solid var(--line);background:#fff;border-radius:9px;padding:6px 13px;font-size:13px;cursor:pointer;color:#333a44;transition:border-color .15s,color .15s}
 .wbtns button:hover{border-color:var(--accent);color:var(--accent)}
-.wsel{font-size:13px;padding:4px 6px;border-radius:6px;border:1px solid var(--line);background:#fff}
-.wnote{font-size:12.5px;color:var(--muted);margin-top:8px}
+.wsel{font-size:13px;padding:5px 8px;border-radius:8px;border:1px solid var(--line);background:#fff;color:#333a44}
+.wnote{font-size:12.5px;color:var(--muted);margin-top:10px}
 @media (max-width:640px){.wrow label{flex:1 1 100%}}
 @media print{.sitebar,.pnav,.backtop,.sitefoot,.crumb{display:none}}
 </style>
@@ -118,7 +129,7 @@ a.ref{white-space:nowrap}
 <p><strong>Цикл внешних рецензий v0.7</strong> (файлы <code>review/</code>): та же атакующая функция — каждый проверенный материал прогонялся на восемь провалов метода; центральные находки зафиксированы в §В.3–В.4 и в реестре (поля <code>review-correction</code>). <strong>Что считается отдельной рецензией:</strong> один файл рецензии на один проверенный материал (глава, заключение или приложение); повторная проверка уже исправленного текста — отдельный повторный проход, а не отдельный материал; число отдельных рецензий и число завершённых циклов проверки — разные величины. По описанию цикла проверены главы 2–14 (13 материалов), заключение и настоящее приложение; точное число файлов рецензий и повторных проходов определяется каталогом <code>review/</code> и логом консультаций [задание: перед изданием 1.0 зафиксировать число файлов рецензий цикла v0.7 и число повторных проходов с указанием критерия счёта].</p>
 <h2 id="в3-найденные-и-исправленные-ошибки-самокритика">В.3. Найденные и исправленные ошибки (самокритика)</h2>
 <p><strong>Ниже перечислены наиболее значимые ошибки и методологические сбои, выявленные в процессе работы; список не является полным реестром исправлений</strong> — полная трассировка правок в <code><a href="registry.html">sources/registry.json</a></code> (поля <code>review-correction</code>) и истории версий.</p>
-<table><thead><tr><th>Было</th><th>Проблема</th><th>Стало (v0.6→v0.7)</th><th>Основание</th></tr></thead><tbody><tr><td>«Субъектность отсутствует» (v0.5)</td><td>отсутствие доказательства превращено в отрицание</td><td>«устойчивый внешний контур не установлен»; тип III — предварительная классификация с неустранённой альтернативой</td><td>гл. 12; <a class="ref" href="registry.html#CLM-042">CLM-042</a></td></tr><tr><td>«Вывоз капитала отсутствует» (по отрицательному сальдо)</td><td>агрегированный баланс использован как тест отдельного контура</td><td>«систематический вывоз капитала как источник накопления не установлен»; баланс — фон, не тест</td><td>гл. 9; <a class="ref" href="registry.html#CLM-035">CLM-035</a></td></tr><tr><td>«Гос. собственность = монополистический контроль»</td><td>собственность смешана с контролем и присвоением</td><td>«гос. контроль установлен; монопольное отношение в строгом смысле доказано по отдельным контурам»</td><td>гл. 12; <a class="ref" href="registry.html#CLM-061">CLM-061</a></td></tr><tr><td>«Доля производства калия показывает монопольную позицию»</td><td>показатель производства превращён в категорию рыночной власти</td><td>«доля ≠ монопольная способность; навязывание условий рынка требует доказательства»</td><td>гл. 12; <a class="ref" href="registry.html#CLM-062">CLM-062</a></td></tr><tr><td>«90% прироста и запаса»</td><td>арифметическое смешение долей запаса и прироста</td><td>«≈90% запаса и ≈93% прироста — доля РФ; величины раздельно»</td><td>гл. 9 §9.3</td></tr><tr><td>«Военная сила обслуживает чужую экспансию — субподряд и плацдарм»</td><td>военно-политическая интеграция отождествлена с экономическим присвоением</td><td>«интеграция установлена; экономическое обеспечение чужих сфер присвоения — не установлено»; гипотеза [Л-5R]</td><td>гл. 11; <a class="ref" href="registry.html#CLM-041">CLM-041</a></td></tr><tr><td>«Труд атомизирован»</td><td>«организация не показана» превращено в «организации нет»</td><td>«легальная независимая профсоюзная сеть ликвидирована (2022); сопоставимая общенациональная независимая организация — не установлена»</td><td>гл. 13; <a class="ref" href="registry.html#CLM-046">CLM-046</a></td></tr><tr><td>«Часть российской ренты»</td><td>экономическая выгода превращена в доказанное присвоение ренты</td><td>«экономические выгоды от особых условий; квалификация как ренты требует контрфактического расчёта»</td><td>гл. 10, 12, 14, закл.; <a class="ref" href="registry.html#CLM-066">CLM-066</a></td></tr><tr><td>«Требование 10 — пакет разных предметов» (v0.5)</td><td>общее политическое пожелание не отделено от эмпирического вывода; термин «переходная программа» без атрибуции</td><td>требования разведены по предметам; нормативная посылка отделена от анализа; 9-шаговый канон выводимости</td><td>гл. 14; <a class="ref" href="registry.html#CLM-048">CLM-048</a>, <a class="ref" href="registry.html#CLM-065">CLM-065</a></td></tr></tbody></table>
+<div class="tblwrap"><table><thead><tr><th>Было</th><th>Проблема</th><th>Стало (v0.6→v0.7)</th><th>Основание</th></tr></thead><tbody><tr><td>«Субъектность отсутствует» (v0.5)</td><td>отсутствие доказательства превращено в отрицание</td><td>«устойчивый внешний контур не установлен»; тип III — предварительная классификация с неустранённой альтернативой</td><td>гл. 12; <a class="ref" href="registry.html#CLM-042">CLM-042</a></td></tr><tr><td>«Вывоз капитала отсутствует» (по отрицательному сальдо)</td><td>агрегированный баланс использован как тест отдельного контура</td><td>«систематический вывоз капитала как источник накопления не установлен»; баланс — фон, не тест</td><td>гл. 9; <a class="ref" href="registry.html#CLM-035">CLM-035</a></td></tr><tr><td>«Гос. собственность = монополистический контроль»</td><td>собственность смешана с контролем и присвоением</td><td>«гос. контроль установлен; монопольное отношение в строгом смысле доказано по отдельным контурам»</td><td>гл. 12; <a class="ref" href="registry.html#CLM-061">CLM-061</a></td></tr><tr><td>«Доля производства калия показывает монопольную позицию»</td><td>показатель производства превращён в категорию рыночной власти</td><td>«доля ≠ монопольная способность; навязывание условий рынка требует доказательства»</td><td>гл. 12; <a class="ref" href="registry.html#CLM-062">CLM-062</a></td></tr><tr><td>«90% прироста и запаса»</td><td>арифметическое смешение долей запаса и прироста</td><td>«≈90% запаса и ≈93% прироста — доля РФ; величины раздельно»</td><td>гл. 9 §9.3</td></tr><tr><td>«Военная сила обслуживает чужую экспансию — субподряд и плацдарм»</td><td>военно-политическая интеграция отождествлена с экономическим присвоением</td><td>«интеграция установлена; экономическое обеспечение чужих сфер присвоения — не установлено»; гипотеза [Л-5R]</td><td>гл. 11; <a class="ref" href="registry.html#CLM-041">CLM-041</a></td></tr><tr><td>«Труд атомизирован»</td><td>«организация не показана» превращено в «организации нет»</td><td>«легальная независимая профсоюзная сеть ликвидирована (2022); сопоставимая общенациональная независимая организация — не установлена»</td><td>гл. 13; <a class="ref" href="registry.html#CLM-046">CLM-046</a></td></tr><tr><td>«Часть российской ренты»</td><td>экономическая выгода превращена в доказанное присвоение ренты</td><td>«экономические выгоды от особых условий; квалификация как ренты требует контрфактического расчёта»</td><td>гл. 10, 12, 14, закл.; <a class="ref" href="registry.html#CLM-066">CLM-066</a></td></tr><tr><td>«Требование 10 — пакет разных предметов» (v0.5)</td><td>общее политическое пожелание не отделено от эмпирического вывода; термин «переходная программа» без атрибуции</td><td>требования разведены по предметам; нормативная посылка отделена от анализа; 9-шаговый канон выводимости</td><td>гл. 14; <a class="ref" href="registry.html#CLM-048">CLM-048</a>, <a class="ref" href="registry.html#CLM-065">CLM-065</a></td></tr></tbody></table></div>
 <p>Отдельные фактические исправления: Белтрансгаз «в счёт погашения долга» → продажа 50% акций за $2.5 млрд с газовым пакетом (договор 25.11.2011); «независимые оси» → «аналитически различные»; смешение потоков/запасов/доходов в гл. 9; прокси GNI−GDP понижен до кросс-чека; дубли в таблице 2020 г.; «сознательность» → наблюдаемые требования.</p>
 <p>Примеры из рецензионного цикла показывают, что механизм работает не только на теоретическом ядре, но и на программе, классовой структуре и межглавной согласованности:</p>
 <ul><li><strong>Программа</strong>: переход от общего политического пожелания к конкретному требованию сопровождался явной маркировкой «эмпирическая опора / нормативная посылка / программная гипотеза» в §14.0 — нормативная посылка отделена от эмпирического вывода.</li><li><strong>Классовая структура</strong>: слои определены через отношение к средствам производства и распорядительное право, а не через доход или статус; по ряду строк классовая позиция — «не установлена» (гл. 13).</li><li><strong>Межглавная согласованность</strong>: обновление карточки <a class="ref" href="registry.html#CLM-033">CLM-033</a> по прямым строкам НБРБ сопровождалось одновременной правкой гл. 9, гл. 12 и заключения — один пересмотр вместо расползания статусов между главами; формула «часть российской ренты» согласована сразу в четырёх местах (гл. 10, 12, 14, заключение), а «военная сила обслуживает чужую экспансию» — разведена между военно-политической интеграцией (гл. 11) и недоказанным экономическим присвоением (гл. 12).</li></ul>

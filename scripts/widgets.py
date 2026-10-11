@@ -31,7 +31,7 @@ W1 = """<div class="widget" id="w1">
 <div class="wrow"><label>Р — воспроизводимость контура</label><input type="range" id="w1r" min="0" max="100" value="35"><output id="w1ro">35</output><span class="wstatus s-na" id="w1rs">не установлено</span></div>
 <div class="wrow"><label>Порог «доказано» (стандарт доказательства)</label><input type="range" id="w1thr" min="30" max="95" value="75"><output id="w1thro">75</output><span></span></div>
 <div class="wrow"><label>Ось II — структурная зависимость (сила свидетельств)</label><input type="range" id="w1dep" min="0" max="100" value="80"><output id="w1depo">80</output><span class="wstatus s-prov" id="w1deps">доказано</span></div>
-<div class="wrow"><label>Внешняя монопольная позиция (тип III, как калий)</label><input type="checkbox" id="w1mono" style="accent-color:#e11d2a"><span class="wnote">отдельный статус — см. гл. 12</span></div>
+<div class="wrow"><label>Внешняя монопольная позиция (тип III, как калий)</label><input type="checkbox" id="w1mono" style="accent-color:#2c5fc4"><span class="wnote">отдельный статус — см. гл. 12</span></div>
 <div class="wbtns">
 <button id="w1p-by">Пресет: Беларусь-2026</button>
 <button id="w1p-center">Пресет: империалистический центр</button>
@@ -180,7 +180,7 @@ W3 = """<div class="widget" id="w3">
   else if(shareReval>50){verdict='<b>Более половины прироста запаса — переоценка</b> ('+Math.round(shareReval)+'%). Сам по себе рост позиции <b>не доказывает новые инвестиции</b>: нужна декомпозиция (гл. 9 §9.4).';}
   else {verdict='Переоценка объясняет только '+Math.round(shareReval)+'% прироста: рост запаса в основном из потоков (приток + реинвест). Но и это <b>не отвечает на вопрос о механизме присвоения</b> — нужны доходы (income) и реинвестиции по компонентам.';}
   document.getElementById('w3table').innerHTML=
-   '<table style="margin:8px 0;font-size:13px">'+rows+'</table><b>Прирост запаса за 5 лет: '+growth.toFixed(2)+' млрд $.</b> '+verdict+
+   '<div class="tblwrap"><table>'+rows+'</table></div><b>Прирост запаса за 5 лет: '+growth.toFixed(2)+' млрд $.</b> '+verdict+
    '<br><i>Доходы к выплате за 5 лет: '+(inc*5).toFixed(2)+' млрд $ — это income, они меняют платёжный баланс, но не запас.</i>';
  }
  [F,RE,RV,IN,S0].forEach(function(el){el.addEventListener('input',upd);});

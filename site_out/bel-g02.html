@@ -8,7 +8,7 @@
 <link rel="canonical" href="https://thinkred.ru/library/bel-g02.html"/>
 <link rel="icon" href="https://thinkred.ru/favicon.png"/>
 <style>
-:root{--fg:#1f2328;--muted:#5b636e;--bg:#ffffff;--card:#f6f7f9;--line:#e3e6ea;--accent:#e11d2a;--accent-soft:rgba(225,29,42,.08)}
+:root{--fg:#1f2328;--muted:#5b636e;--bg:#ffffff;--card:#f6f7f9;--line:#e3e6ea;--hair:#eef0f3;--accent:#e11d2a;--accent-soft:rgba(225,29,42,.08)}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;background:var(--bg);color:var(--fg);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",Arial,"Noto Sans Cyrillic",sans-serif;font-size:17px;line-height:1.7;-webkit-font-smoothing:antialiased}
@@ -24,10 +24,15 @@ h2{font-size:21px;margin:34px 0 12px}
 h3{font-size:17.5px;margin:26px 0 10px;color:#2b3138}
 a{color:var(--accent)}
 p{margin:0 0 14px}
-blockquote{margin:16px 0;padding:10px 18px;border-left:3px solid var(--accent);background:var(--accent-soft);border-radius:0 8px 8px 0;color:#28303a}
-table{border-collapse:collapse;width:100%;margin:18px 0;font-size:14.5px;display:block;overflow-x:auto}
-th,td{border:1px solid var(--line);padding:7px 10px;text-align:left;vertical-align:top}
-th{background:var(--card);font-weight:600}
+blockquote{margin:18px 0;padding:12px 18px;border-left:3px solid var(--accent);background:var(--accent-soft);border-radius:0 10px 10px 0;color:#2a313b;font-size:15.5px;line-height:1.65}
+.tblwrap{margin:20px 0;border:1px solid var(--line);border-radius:12px;background:#fff;overflow-x:auto;-webkit-overflow-scrolling:touch}
+table{border-collapse:separate;border-spacing:0;width:100%;font-size:14.2px;min-width:520px}
+thead th{background:var(--card);font-weight:700;font-size:12.6px;color:#3c434d;text-align:left;padding:10px 12px;border-bottom:2px solid #d9dde3;white-space:nowrap;vertical-align:bottom}
+tbody td{padding:9px 12px;border-bottom:1px solid var(--hair);vertical-align:top;line-height:1.55}
+tbody tr:last-child td{border-bottom:0}
+tbody tr:nth-child(even) td{background:#fafbfd}
+tbody tr:hover td{background:#f4f7ff}
+td code,th code{white-space:nowrap;background:transparent;padding:0;font-size:.92em;color:#3c434d;font-weight:600}
 code{background:var(--card);border-radius:5px;padding:1px 6px;font-size:.9em}
 pre{background:#0f1115;color:#e6edf3;padding:14px;border-radius:10px;overflow:auto;font-size:13px;white-space:pre-wrap}
 hr{border:0;border-top:1px solid var(--line);margin:34px 0}
@@ -49,10 +54,12 @@ hr{border:0;border-top:1px solid var(--line);margin:34px 0}
 .sitebar nav a:hover{color:#e11d2a}
 .sitefoot{border-top:1px solid rgba(17,24,39,.08);background:#fff;margin-top:40px;padding:20px 18px;text-align:center;color:#7a7a8a;font-size:13px}
 .sitefoot a{color:#4a4a5a;text-decoration:none;margin:0 8px}
-.figure{margin:20px 0}
-.figure figcaption{font-size:13px;color:var(--muted);margin-top:8px;line-height:1.45}
+.figure{margin:26px 0;background:#fcfdfe;border:1px solid var(--hair);border-radius:14px;padding:16px 16px 4px}
+.figure svg{display:block;width:100%;height:auto}
+.figure figcaption{font-size:13px;color:var(--muted);margin-top:12px;padding:10px 4px 10px;border-top:1px solid var(--hair);line-height:1.55}
+.figure .fno{color:var(--fg);font-weight:700}
 a.ref{white-space:nowrap}
-.badge{display:inline-block;border-radius:20px;padding:1px 10px;font-size:12px;white-space:nowrap}
+.badge{display:inline-block;border-radius:999px;padding:2px 10px;font-size:12px;white-space:nowrap;border:1px solid rgba(16,24,40,.07)}
 .b-ok{background:#e7f5ee;color:#047857}
 .b-part{background:#fff4e0;color:#9a6700}
 .b-na{background:#eef0f3;color:#5b636e}
@@ -60,21 +67,25 @@ a.ref{white-space:nowrap}
 .src{border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin:12px 0}
 .src .m{color:var(--muted);font-size:13px;margin:4px 0}
 .src div{font-size:14px}
-.widget{margin:22px 0;border:1px solid var(--line);border-radius:12px;background:var(--card);padding:16px 18px}
-.widget h4{margin:0 0 6px;font-size:16px}
-.widget .hint{font-size:13px;color:var(--muted);margin:0 0 12px}
-.wrow{display:flex;align-items:center;gap:10px;margin:9px 0;flex-wrap:wrap}
-.wrow label{flex:0 0 300px;font-size:14px}
-.wrow input[type=range]{flex:1 1 180px;accent-color:#e11d2a}
-.wrow output{flex:0 0 92px;font-size:13px;font-variant-numeric:tabular-nums}
-.wstatus{display:inline-block;min-width:132px;text-align:center;border-radius:14px;padding:1px 8px;font-size:12px;font-weight:600}
-.s-prov{background:#e7f5ee;color:#047857}.s-na{background:#eef0f3;color:#5b636e}.s-ref{background:#fde8e8;color:#c11d2a}
-.wverdict{margin-top:12px;background:#fff;border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:0 8px 8px 0;padding:10px 14px;font-size:14.5px;line-height:1.55}
-.wbtns{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}
-.wbtns button{border:1px solid var(--line);background:#fff;border-radius:8px;padding:6px 12px;font-size:13px;cursor:pointer}
+.widget{margin:26px 0;border:1px solid var(--line);border-radius:16px;background:#fff;padding:18px 20px;box-shadow:0 1px 3px rgba(16,24,40,.05)}
+.widget h4{margin:0 0 8px;font-size:15.5px;display:flex;align-items:baseline;gap:9px}
+.widget h4::before{content:"";width:9px;height:9px;border-radius:3px;background:var(--accent);flex:0 0 auto;transform:translateY(1px)}
+.widget .hint{font-size:13.5px;color:var(--muted);margin:0 0 14px;line-height:1.55}
+.wrow{display:flex;align-items:center;gap:12px;margin:10px 0;flex-wrap:wrap}
+.wrow label{flex:0 0 268px;font-size:13.8px;color:#333a44}
+.wrow input[type=range]{flex:1 1 150px;accent-color:#2c5fc4;height:20px}
+.wrow output{flex:0 0 64px;font-size:13px;font-variant-numeric:tabular-nums;background:var(--card);border:1px solid var(--hair);border-radius:8px;padding:2px 6px;text-align:center}
+.wstatus{display:inline-flex;align-items:center;justify-content:center;gap:6px;min-width:126px;border-radius:999px;padding:3px 9px;font-size:11.5px;font-weight:600;border:1px solid transparent}
+.wstatus::before{content:"●";font-size:8px;line-height:1}
+.s-prov{background:#e9f7f0;color:#0b6e4f;border-color:#c4e8d6}
+.s-na{background:#f1f3f6;color:#5b636e;border-color:#e0e3e8}
+.s-ref{background:#fdecec;color:#b3252f;border-color:#f5c9c9}
+.wverdict{margin-top:14px;background:#fbfcfe;border:1px solid var(--hair);border-left:3px solid var(--accent);border-radius:0 10px 10px 0;padding:12px 16px;font-size:14.5px;line-height:1.6}
+.wbtns{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}
+.wbtns button{border:1px solid var(--line);background:#fff;border-radius:9px;padding:6px 13px;font-size:13px;cursor:pointer;color:#333a44;transition:border-color .15s,color .15s}
 .wbtns button:hover{border-color:var(--accent);color:var(--accent)}
-.wsel{font-size:13px;padding:4px 6px;border-radius:6px;border:1px solid var(--line);background:#fff}
-.wnote{font-size:12.5px;color:var(--muted);margin-top:8px}
+.wsel{font-size:13px;padding:5px 8px;border-radius:8px;border:1px solid var(--line);background:#fff;color:#333a44}
+.wnote{font-size:12.5px;color:var(--muted);margin-top:10px}
 @media (max-width:640px){.wrow label{flex:1 1 100%}}
 @media print{.sitebar,.pnav,.backtop,.sitefoot,.crumb{display:none}}
 </style>
@@ -105,12 +116,12 @@ a.ref{white-space:nowrap}
 <ul><li><strong>«Классовый результат» — теоретический вывод</strong>, а не пятое эмпирическое число: из изменения отраслевого отношения нельзя автоматически вывести изменение классового положения — нужны данные о собственности, зарплатах, налогах, прибыли, проценте, ренте. Если классовый результат не может быть установлен непосредственно, глава фиксирует установленный механизм распределения и отдельно указывает границу вывода.</li><li><strong>Показатель без установленного отношения не является достаточным основанием для вывода</strong> — он остаётся в тексте только как описание.</li></ul>
 <ol><li><strong>Показатель.</strong> Наблюдаемая величина: доля рынка, поток инвестиций, ставка кредита, численность занятых. Сама по себе — ничего не доказывает.</li><li><strong>Экономическое отношение.</strong> Какое отношение между людьми и капиталами стоит за показателем: кто кому подчинён в производстве, кто распоряжается, кто присваивает. Это звено требует теории (гл. 1) и конкретного анализа (главы 3–11).</li><li><strong>Механизм присвоения.</strong> Через что воспроизводится отношение: цены, кредит, собственность, инфраструктура, стандарты, сила. Здесь показатель превращается в свидетельство.</li><li><strong>Положение контура накопления в мировой системе.</strong> Что следует для места контура: господствует ли он над чужим воспроизводством, встроен ли в чужой контур, где баланс присвоения.</li><li><strong>Классовый результат.</strong> Кому достаётся произведённая и перераспределённая прибавочная стоимость; что это означает для положения и борьбы классов.</li></ol>
 <p><strong>Минимальные требования перехода между звеньями.</strong> Переход требует отдельного обоснования: заполнение всех пяти ячеек не доказывает, что переходы между ними сделаны. Это не универсальный алгоритм автоматического доказательства, а минимальный контроль против пропуска логических звеньев:</p>
-<table><thead><tr><th>Переход</th><th>Минимальное требование</th><th>Если требование не выполнено</th></tr></thead><tbody><tr><td>Показатель → отношение</td><td>Установлено, что именно измеряет показатель и какое отношение за ним стоит</td><td>Отношение <strong>не установлено</strong>; статус — НЕ ДОКАЗАНО (ОТКРЫТО)</td></tr><tr><td>Отношение → механизм</td><td>Показан действующий механизм контроля или присвоения</td><td>Механизм не доказан; статус — НЕ ДОКАЗАНО (ОТКРЫТО)</td></tr><tr><td>Механизм → положение</td><td>Обосновано место в цепи накопления и во внешней зависимости</td><td>Положение предварительное; статус — НЕ ДОКАЗАНО (ОТКРЫТО)</td></tr><tr><td>Положение → классовый результат</td><td>Показано, кто получает доход, кто несёт издержки и кто контролирует воспроизводство</td><td>Классовый результат открыт; вывод остаётся гипотезой</td></tr></tbody></table>
+<div class="tblwrap"><table><thead><tr><th>Переход</th><th>Минимальное требование</th><th>Если требование не выполнено</th></tr></thead><tbody><tr><td>Показатель → отношение</td><td>Установлено, что именно измеряет показатель и какое отношение за ним стоит</td><td>Отношение <strong>не установлено</strong>; статус — НЕ ДОКАЗАНО (ОТКРЫТО)</td></tr><tr><td>Отношение → механизм</td><td>Показан действующий механизм контроля или присвоения</td><td>Механизм не доказан; статус — НЕ ДОКАЗАНО (ОТКРЫТО)</td></tr><tr><td>Механизм → положение</td><td>Обосновано место в цепи накопления и во внешней зависимости</td><td>Положение предварительное; статус — НЕ ДОКАЗАНО (ОТКРЫТО)</td></tr><tr><td>Положение → классовый результат</td><td>Показано, кто получает доход, кто несёт издержки и кто контролирует воспроизводство</td><td>Классовый результат открыт; вывод остаётся гипотезой</td></tr></tbody></table></div>
 <p>Отсюда правило чтения дашборда 2.1: у каждого звена отображается собственный статус и краткое объяснение, на чём он основан, — не один итоговый цвет; пять звеньев — не независимые измерения, которые можно сложить, поэтому сводный статус выводится как минимум из статусов звеньев, а не как «средний цвет». Незаполненное звено нельзя автоматически считать доказанным.</p>
 <p><strong>Тот же проход на одном предприятии.</strong> Завод отгружает комплектующие иностранному заказчику: показатель — объём зарубежных продаж; отношение — кто контролирует производство и сбыт, а кто только выполняет операцию; механизм — кто устанавливает цену и по какому правилу она пересчитывается; положение — производительный контур, торговая оболочка или звено чужой сети поставок; классовый результат — кому достаётся прибыль, кто несёт издержки переподготовки и риска спроса, кто контролирует рабочий процесс. Пример сопровождает терминологию и показывает границы определения, но не заменяет теоретического определения; тот же путь проходится один к одному в главах 3–11 — и чем длиннее цепочка, тем вероятнее, что на одном из переходов данных не хватит: тогда это «не установлено», а не вывод.</p>
 <p><strong>Контрольный пример-антипример.</strong> Показатель: «Беларуськалий — один из трёх крупнейших экспортёров калийных удобрений мира». Наивный вывод Морозовой-типа: «значит, Беларусь — империалистическая держава» либо обратный «значит, это не важно». Правильный проход: (2) отношение — монопольное положение на мировом товарном рынке; (3) механизм — контроль над мощностями и квотами? ценовой картель? или лишь ценополучатель при чужой инфраструктуре? (4) положение — сторона торга или объект; куда идёт рента; (5) классовый результат — кто в Беларуси и за рубежом платит и присваивает. Без звеньев 2–5 показатель ничего не решает — как и в книге Морозовой, где он решал всё.</p>
 <h2 id="22-рамка-совокупного-воспроизводства-малая-открытая-экономика">2.2. Рамка совокупного воспроизводства: малая открытая экономика</h2>
-<figure class="figure"><svg viewBox="0 0 640 150" role="img" style="width:100%;height:auto;display:block" font-family="system-ui,Segoe UI,Arial,sans-serif"><rect x="16" y="30" width="88" height="54" rx="8" fill="#fff" stroke="#1d4ed8" stroke-width="1.4"/><text x="60.0" y="54" font-size="10.5" fill="#111827" text-anchor="middle" font-weight="normal" >Центр</text><text x="60.0" y="69" font-size="10.5" fill="#111827" text-anchor="middle" font-weight="normal" >командования</text><line x1="104" y1="57.0" x2="118" y2="57.0" stroke="#6b7280" marker-end="url(#arw2)"/><rect x="118" y="30" width="88" height="54" rx="8" fill="#fff" stroke="#1d4ed8" stroke-width="1.4"/><text x="162.0" y="54" font-size="10.5" fill="#111827" text-anchor="middle" font-weight="normal" >Мобилизация</text><text x="162.0" y="69" font-size="10.5" fill="#111827" text-anchor="middle" font-weight="normal" >ресурсов</text><line x1="206" y1="57.0" x2="220" y2="57.0" stroke="#6b7280" marker-end="url(#arw2)"/><rect x="220" y="30" width="88" height="54" rx="8" fill="#fff" stroke="#1d4ed8" stroke-width="1.4"/><text x="264.0" y="54" font-size="10.5" fill="#111827" text-anchor="middle" font-weight="normal" >Производство</text><line x1="308" y1="57.0" x2="322" y2="57.0" stroke="#6b7280" marker-end="url(#arw2)"/><rect x="322" y="30" width="88" height="54" rx="8" fill="#fff" stroke="#1d4ed8" stroke-width="1.4"/><text x="366.0" y="54" font-size="10.5" fill="#111827" text-anchor="middle" font-weight="normal" >Присвоение</text><line x1="410" y1="57.0" x2="424" y2="57.0" stroke="#6b7280" marker-end="url(#arw2)"/><rect x="424" y="30" width="88" height="54" rx="8" fill="#fff" stroke="#1d4ed8" stroke-width="1.4"/><text x="468.0" y="54" font-size="10.5" fill="#111827" text-anchor="middle" font-weight="normal" >Реинвест</text><line x1="512" y1="57.0" x2="526" y2="57.0" stroke="#6b7280" marker-end="url(#arw2)"/><rect x="526" y="30" width="88" height="54" rx="8" fill="#fff" stroke="#1d4ed8" stroke-width="1.4"/><text x="570.0" y="54" font-size="10.5" fill="#111827" text-anchor="middle" font-weight="normal" >Гос.</text><text x="570.0" y="69" font-size="10.5" fill="#111827" text-anchor="middle" font-weight="normal" >обеспечение</text><rect x="16" y="102" width="598" height="36" rx="8" fill="none" stroke="#e11d2a" stroke-dasharray="5 4"/><text x="315.0" y="125" font-size="11" fill="#e11d2a" text-anchor="middle" font-weight="600" >7-й вопрос рамки: кто контролирует условия доступа к каждому звену контура?</text><defs><marker id="arw2" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6" fill="#6b7280"/></marker></defs></svg><figcaption>Рис. 2.1. Контур накопления как единица анализа (схема; цепочка доказательства — §2.2).</figcaption></figure>
+<figure class="figure"><svg viewBox="0 0 640 150" role="img" style="width:100%;height:auto;display:block" font-family="system-ui,Segoe UI,Arial,sans-serif"><rect x="16" y="30" width="88" height="54" rx="10" fill="#fff" stroke="#2c5fc4" stroke-width="1.3"/><text x="60.0" y="54" font-size="10.5" fill="#1b2330" text-anchor="middle" font-weight="normal" >Центр</text><text x="60.0" y="69" font-size="10.5" fill="#1b2330" text-anchor="middle" font-weight="normal" >командования</text><line x1="104" y1="57.0" x2="118" y2="57.0" stroke="#69707d" marker-end="url(#arw2)"/><rect x="118" y="30" width="88" height="54" rx="10" fill="#fff" stroke="#2c5fc4" stroke-width="1.3"/><text x="162.0" y="54" font-size="10.5" fill="#1b2330" text-anchor="middle" font-weight="normal" >Мобилизация</text><text x="162.0" y="69" font-size="10.5" fill="#1b2330" text-anchor="middle" font-weight="normal" >ресурсов</text><line x1="206" y1="57.0" x2="220" y2="57.0" stroke="#69707d" marker-end="url(#arw2)"/><rect x="220" y="30" width="88" height="54" rx="10" fill="#fff" stroke="#2c5fc4" stroke-width="1.3"/><text x="264.0" y="54" font-size="10.5" fill="#1b2330" text-anchor="middle" font-weight="normal" >Производство</text><line x1="308" y1="57.0" x2="322" y2="57.0" stroke="#69707d" marker-end="url(#arw2)"/><rect x="322" y="30" width="88" height="54" rx="10" fill="#fff" stroke="#2c5fc4" stroke-width="1.3"/><text x="366.0" y="54" font-size="10.5" fill="#1b2330" text-anchor="middle" font-weight="normal" >Присвоение</text><line x1="410" y1="57.0" x2="424" y2="57.0" stroke="#69707d" marker-end="url(#arw2)"/><rect x="424" y="30" width="88" height="54" rx="10" fill="#fff" stroke="#2c5fc4" stroke-width="1.3"/><text x="468.0" y="54" font-size="10.5" fill="#1b2330" text-anchor="middle" font-weight="normal" >Реинвест</text><line x1="512" y1="57.0" x2="526" y2="57.0" stroke="#69707d" marker-end="url(#arw2)"/><rect x="526" y="30" width="88" height="54" rx="10" fill="#fff" stroke="#2c5fc4" stroke-width="1.3"/><text x="570.0" y="54" font-size="10.5" fill="#1b2330" text-anchor="middle" font-weight="normal" >Гос.</text><text x="570.0" y="69" font-size="10.5" fill="#1b2330" text-anchor="middle" font-weight="normal" >обеспечение</text><rect x="16" y="102" width="598" height="36" rx="10" fill="none" stroke="#e11d2a" stroke-dasharray="6 4"/><text x="315.0" y="125" font-size="11" fill="#e11d2a" text-anchor="middle" font-weight="600" >7-й вопрос рамки: кто контролирует условия доступа к каждому звену контура?</text><defs><marker id="arw2" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6" fill="#69707d"/></marker></defs></svg><figcaption><b class="fno">Рис. 2.1.</b> Контур накопления как единица анализа (схема; цепочка доказательства — §2.2).</figcaption></figure>
 <div class="widget" id="w2">
 <h4>Дашборд 2.1. Цепочка доказательства: от показателя к классовому результату</h4>
 <p class="hint">Задайте статус каждого звена цепочки «показатель → экономическое отношение → механизм присвоения → положение в системе → классовый результат» (гл. 2 §2.2). Видно, почему <b>показатель сам по себе не доказывает категорию</b> и почему пропуск звена делает вывод гипотезой.</p>
@@ -208,7 +219,7 @@ a.ref{white-space:nowrap}
   else if(shareReval>50){verdict='<b>Более половины прироста запаса — переоценка</b> ('+Math.round(shareReval)+'%). Сам по себе рост позиции <b>не доказывает новые инвестиции</b>: нужна декомпозиция (гл. 9 §9.4).';}
   else {verdict='Переоценка объясняет только '+Math.round(shareReval)+'% прироста: рост запаса в основном из потоков (приток + реинвест). Но и это <b>не отвечает на вопрос о механизме присвоения</b> — нужны доходы (income) и реинвестиции по компонентам.';}
   document.getElementById('w3table').innerHTML=
-   '<table style="margin:8px 0;font-size:13px">'+rows+'</table><b>Прирост запаса за 5 лет: '+growth.toFixed(2)+' млрд $.</b> '+verdict+
+   '<div class="tblwrap"><table>'+rows+'</table></div><b>Прирост запаса за 5 лет: '+growth.toFixed(2)+' млрд $.</b> '+verdict+
    '<br><i>Доходы к выплате за 5 лет: '+(inc*5).toFixed(2)+' млрд $ — это income, они меняют платёжный баланс, но не запас.</i>';
  }
  [F,RE,RV,IN,S0].forEach(function(el){el.addEventListener('input',upd);});
