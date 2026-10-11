@@ -331,12 +331,27 @@ SRC_P = "%d %s" % (N_SRC, ru_plural(N_SRC, "источник", "источник
 CLM_P = "%d %s" % (N_CLM, ru_plural(N_CLM, "утверждение", "утверждения", "утверждений"))
 VERSION_NOTE = VERSION_NOTE.replace("{n_src}", SRC_P).replace("{n_clm}", CLM_P)
 
+TYPE_RU = {"definition": "определение", "theoretical": "теоретическое", "textual": "текстуальное (цитата)",
+           "causal": "причинное", "quantitative": "количественное", "empirical": "эмпирическое",
+           "historical": "историческое", "normative": "нормативное"}
+
+def registry_list_md():
+    """Полный список источников реестра для прил. Б §Б.6 (генерируется при сборке)."""
+    rows = ["| ID | Источник | Тип | Годы |", "|---|---|---|---|"]
+    for s in _reg0["sources"]:
+        rows.append("| %s | %s | %s | %s |" % (
+            s["id"], s.get("title", ""), TYPE_RU.get(s.get("type", ""), s.get("type", "")),
+            s.get("year", "")))
+    return "\n".join(rows)
+
 toc_cards = []
 toc_app_cards = []
 jsonld_parts = []
 for n, (md_file, out_file, name, desc) in enumerate(PARTS):
     desc = desc.replace("{n_src}", SRC_P).replace("{n_clm}", CLM_P)
     md = open(os.path.join(CH, md_file), encoding="utf-8").read()
+    if md_file == "prilozhenie-b-reestr.md":
+        md = md.replace("{{REGISTRY_LIST}}", registry_list_md())
     # отрезать статус-строки (> Статус:...) в начале — они уходят в плашку/мета
     body = re.sub(r"^>\s*Статус:[^\n]*\n(>.*\n)*", "", md.lstrip("# " + md_file), count=0) if False else md
     body = re.sub(r"^(> Статус:[^\n]*(?:\n>[^\n]*)*)\n+", "", body, flags=re.M)
@@ -378,9 +393,6 @@ STATUS_RU = {"supported": "подтверждено", "partial": "частичн
              "refuted": "опровергнуто", "monitoring": "мониторинг", "controversial": "спорное"}
 STATUS_CLS = {"supported": "b-ok", "partial": "b-part", "unverified": "b-na",
               "refuted": "b-no", "monitoring": "b-na", "controversial": "b-part"}
-TYPE_RU = {"definition": "определение", "theoretical": "теоретическое", "textual": "текстуальное (цитата)",
-           "causal": "причинное", "quantitative": "количественное", "empirical": "эмпирическое",
-           "historical": "историческое", "normative": "нормативное"}
 
 def build_registry_page():
     reg = json.load(open(os.path.join(ROOT, "sources", "registry.json"), encoding="utf-8"))
