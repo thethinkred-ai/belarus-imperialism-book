@@ -37,6 +37,18 @@ def main():
     ftp = connect()
     files = sorted(p for p in LOCAL_DIR.iterdir() if p.is_file() and p.suffix == ".html")
     print(f"к загрузке в {REMOTE_DIR}: {[p.name for p in files]}")
+    # страницы, убранные из сборки (политическая часть — отдельная брошюра, не на сайте)
+    retired = ["bel-g13.html", "bel-g14.html", "bel-pril-a.html"]
+    for name in retired:
+        remote = f"{REMOTE_DIR}/{name}"
+        try:
+            BACKUP_DIR.mkdir(exist_ok=True)
+            with (BACKUP_DIR / f"{stamp}-retired-{name}").open("wb") as f:
+                ftp.retrbinary(f"RETR {remote}", f.write)
+            ftp.delete(remote)
+            print(f"удалён с сервера {remote} (копия в backup/)")
+        except Exception as e:
+            print(f"{remote}: не удалён ({type(e).__name__}: {e}) — вероятно, уже отсутствует")
     failed = []
     for lp in files:
         remote = f"{REMOTE_DIR}/{lp.name}"
