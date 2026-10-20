@@ -330,7 +330,22 @@ built = []
 # счётчики реестра — до сборки карточек: подставляются в VERSION_NOTE и описания PARTS;
 # числа не вписываются руками, чтобы не расходиться с registry.json
 _reg0 = json.load(open(os.path.join(ROOT, "sources", "registry.json"), encoding="utf-8"))
-N_SRC, N_CLM = len(_reg0["sources"]), len(_reg0["claims"])
+# ЧАСТЬ I (сайт) — только записи экономической части; политическая часть (гл. 13–14,
+# прил. А) публикуется отдельной брошюрой и на сайте не показывается (прил. Г §Г.5 п. 0)
+PART2_CLM_CH = {"13", "14", "ч. II", "ч. II (гл. 13)", "ч. II (гл. 14)"}
+def _is_part2_clm(c):
+    ch = str(c.get("chapter", "")).strip()
+    return ch in PART2_CLM_CH or ch.startswith("прил.А") or ch.startswith("ч. II")
+REG_CLM = [c for c in _reg0["claims"] if not _is_part2_clm(c)]
+_part1_src = set()
+for c in REG_CLM:
+    _part1_src.update(c.get("sourceIds", []))
+# плюс SRC, процитированные прямо в текстах части I
+for _pf in PARTS:
+    _pt = open(os.path.join(CH, _pf[0]), encoding="utf-8").read()
+    _part1_src.update(re.findall(r"SRC-\d{3}", _pt))
+REG_SRC = [s for s in _reg0["sources"] if s["id"] in _part1_src]
+N_SRC, N_CLM = len(REG_SRC), len(REG_CLM)
 
 def ru_plural(n, one, few, many):
     n = abs(n) % 100
@@ -348,9 +363,9 @@ TYPE_RU = {"definition": "определение", "theoretical": "теорет�
            "historical": "историческое", "normative": "нормативное"}
 
 def registry_list_md():
-    """Полный список источников реестра для прил. Б §Б.6 (генерируется при сборке)."""
+    """Список источников части I для прил. Б §Б.6 (генерируется при сборке)."""
     rows = ["| ID | Источник | Тип | Годы |", "|---|---|---|---|"]
-    for s in _reg0["sources"]:
+    for s in REG_SRC:
         rows.append("| %s | %s | %s | %s |" % (
             s["id"], s.get("title", ""), TYPE_RU.get(s.get("type", ""), s.get("type", "")),
             s.get("year", "")))
@@ -434,7 +449,7 @@ def build_registry_page():
                 "quotes": "цитаты", "remarks": "примечания", "tasks": "связь с задачами книги",
                 "sections": "связь с параграфами", "link-status": "статус ссылки",
                 "summary": "обзор"}
-    for srcref in reg["sources"]:
+    for srcref in REG_SRC:
         notes = srcref.get("notes", {}) or {}
         nk = "".join(f"<div><b>{html_mod.escape(NOTES_RU.get(str(k), str(k)))}:</b> {html_mod.escape(str(v)[:400])}</div>"
                      for k, v in notes.items() if v)
@@ -448,7 +463,7 @@ def build_registry_page():
             f'надёжность: {html_mod.escape(str(srcref.get("reliability","")))}</div>'
             f'<div>{url}</div>{nk}</div>')
     rows = []
-    for c in reg["claims"]:
+    for c in REG_CLM:
         cid = c["id"]
         st = c.get("status", "")
         st_ru = STATUS_RU.get(st, st or "—")
@@ -516,7 +531,8 @@ def build_registry_page():
 N_SRC, N_CLM = build_registry_page()
 toc_app_cards.append(
     f'<div class="toc-card"><b><a href="registry.html">Реестр SRC и CLM — открытые данные книги</a></b>'
-    f'<span>{SRC_P} и {CLM_P} со статусами: каждая ссылка SRC-/CLM- в главах ведёт сюда</span></div>')
+    f'<span>{SRC_P} и {CLM_P} со статусами (часть I); каждая ссылка SRC-/CLM- в главах ведёт сюда. '
+    f'Записи политической части — в реестре брошюры (по запросу)</span></div>')
 
 
 # ---------------- индексная страница ----------------
@@ -618,8 +634,8 @@ body{{margin:0;background:var(--bg);color:var(--fg);font-family:-apple-system,Bl
     тезисов) — обращена к политической организации и действию, поэтому издаётся отдельной брошюрой
     и распространяется отдельно (см. заключение).</p>
     <p><b>Что в книге.</b> Введение, 12 глав и заключение, приложения и открытый реестр источников и утверждений
-    со статусами доказанности. Отдельно: семиуровневая проверка КПБ (собрано 08.10.2026), правовой риск-обзор
-    по законодательству РБ (приложение&nbsp;Г), схемы к главам и интерактивные дашборды к гл.&nbsp;1–2.</p>
+    со статусами доказанности. Отдельно: правовой риск-обзор (приложение&nbsp;Г), схемы к главам и интерактивные
+    дашборды к гл.&nbsp;1–2.</p>
   </div>
   <div class="cta-read">
     <a href="bel-v00.html">Введение</a><a href="bel-g01.html">Читать с главы 1 →</a>
